@@ -1,0 +1,33 @@
+<bibdata type="standard">
+<title language="en" format="text/plain">IT Security Guidelines</title>
+<docidentifier type="ogc-internal">G3</docidentifier>
+<docnumber>G3</docnumber>
+<date type="published">
+<on>2016-12</on>
+</date>
+<contributor>
+<role type="publisher"/>
+<organization>
+<name>Open Geospatial Consortium</name>
+</organization>
+</contributor>
+<edition>8.0</edition>
+
+<language>en</language>
+<script>Latn</script>
+<status>
+<stage>approved</stage>
+</status>
+<copyright>
+<from>2016</from>
+<owner>
+<organization>
+<name>Open Geospatial Consortium</name>
+</organization>
+</owner>
+</copyright>
+<ext>
+<doctype>standard</doctype>
+<docsubtype>implementation</docsubtype>
+</ext>
+</bibdata>

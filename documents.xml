@@ -1,0 +1,253 @@
+<relaton-collection xmlns="https://open.ribose.com/relaton-xml"><title>HK OGCIO InfoSec documents in Metanorma</title><contributor><role type='author'/><organization><name>Metanorma : Standards for standards</name></organization></contributor><relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">IT Security Guidelines</title>
+  <uri type="xml">documents/ogcio-g3.xml</uri>
+  <uri type="pdf">documents/ogcio-g3.pdf</uri>
+  <uri type="doc">documents/ogcio-g3.doc</uri>
+  <uri type="html">documents/ogcio-g3.html</uri>
+  <uri type="rxl">documents/ogcio-g3.rxl</uri>
+  <docidentifier type="ogc-internal">G3</docidentifier>
+  <docnumber>G3</docnumber>
+  <date type="published">
+    <on>2016-12-01</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>8.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2016</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>standard</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Practice Guide for Cloud Computing Security [ISPG-SM04]</title>
+  <uri type="xml">documents/ogcio-ispg-sm04.xml</uri>
+  <uri type="pdf">documents/ogcio-ispg-sm04.pdf</uri>
+  <uri type="doc">documents/ogcio-ispg-sm04.doc</uri>
+  <uri type="html">documents/ogcio-ispg-sm04.html</uri>
+  <uri type="rxl">documents/ogcio-ispg-sm04.rxl</uri>
+  <docidentifier type="ogc-internal">ISPG-SM04</docidentifier>
+  <docnumber>ISPG-SM04</docnumber>
+  <date type="published">
+    <on>2018-07-01</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>standard</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Practice Guide for Information Security Incident Handling</title>
+  <uri type="xml">documents/ogcio-ispg-sm02.xml</uri>
+  <uri type="pdf">documents/ogcio-ispg-sm02.pdf</uri>
+  <uri type="doc">documents/ogcio-ispg-sm02.doc</uri>
+  <uri type="html">documents/ogcio-ispg-sm02.html</uri>
+  <uri type="rxl">documents/ogcio-ispg-sm02.rxl</uri>
+  <docidentifier type="ogc-internal">ISPG-SM02</docidentifier>
+  <docnumber>ISPG-SM02</docnumber>
+  <date type="published">
+    <on>2017-11-01</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2017</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>standard</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Baseline IT Security Policy</title>
+  <uri type="xml">documents/ogcio-s17.xml</uri>
+  <uri type="pdf">documents/ogcio-s17.pdf</uri>
+  <uri type="doc">documents/ogcio-s17.doc</uri>
+  <uri type="html">documents/ogcio-s17.html</uri>
+  <uri type="rxl">documents/ogcio-s17.rxl</uri>
+  <docidentifier type="ogc-internal">S17</docidentifier>
+  <docnumber>S17</docnumber>
+  <date type="published">
+    <on>2016-12-01</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>6.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2016</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>standard</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Practice Guide for Securing Network Printers in the Offices</title>
+  <uri type="xml">documents/ogcio-ispg-so01.xml</uri>
+  <uri type="pdf">documents/ogcio-ispg-so01.pdf</uri>
+  <uri type="doc">documents/ogcio-ispg-so01.doc</uri>
+  <uri type="html">documents/ogcio-ispg-so01.html</uri>
+  <uri type="rxl">documents/ogcio-ispg-so01.rxl</uri>
+  <docidentifier type="ogc-internal">ISPG-SO01</docidentifier>
+  <docnumber>ISPG-SO01</docnumber>
+  <date type="published">
+    <on>2018-08-01</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.0</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>standard</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Practice Guide for Mobile Security</title>
+  <uri type="xml">documents/ogcio-ispg-sm03.xml</uri>
+  <uri type="pdf">documents/ogcio-ispg-sm03.pdf</uri>
+  <uri type="doc">documents/ogcio-ispg-sm03.doc</uri>
+  <uri type="html">documents/ogcio-ispg-sm03.html</uri>
+  <uri type="rxl">documents/ogcio-ispg-sm03.rxl</uri>
+  <docidentifier type="ogc-internal">ISPG-SM03</docidentifier>
+  <docnumber>ISPG-SM03</docnumber>
+  <date type="published">
+    <on>2018-07-01</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2018</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>standard</doctype>
+  </ext>
+</bibdata></relation>
+<relation type='partOf'><bibdata type="standard">
+  <title format="text/plain" language="en">Practice Guide for Security Risk Assessment &amp;amp; Audit</title>
+  <uri type="xml">documents/ogcio-ispg-sm01.xml</uri>
+  <uri type="pdf">documents/ogcio-ispg-sm01.pdf</uri>
+  <uri type="doc">documents/ogcio-ispg-sm01.doc</uri>
+  <uri type="html">documents/ogcio-ispg-sm01.html</uri>
+  <uri type="rxl">documents/ogcio-ispg-sm01.rxl</uri>
+  <docidentifier type="ogc-internal">ISPG-SM01</docidentifier>
+  <docnumber>ISPG-SM01</docnumber>
+  <date type="published">
+    <on>2017-11-01</on>
+  </date>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>Open Geospatial Consortium</name>
+    </organization>
+  </contributor>
+  <edition>1.1</edition>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>approved</stage>
+  </status>
+  <copyright>
+    <from>2017</from>
+    <owner>
+      <organization>
+        <name>Open Geospatial Consortium</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>standard</doctype>
+  </ext>
+</bibdata></relation>
+</relaton-collection>

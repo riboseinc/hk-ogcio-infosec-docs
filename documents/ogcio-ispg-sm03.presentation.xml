@@ -1,0 +1,1296 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="presentation" version="1.3.5">
+<bibdata type="standard">
+<title language="en" format="text/plain">Practice Guide for Mobile Security</title>
+<docidentifier type="ogc-internal">ISPG-SM03</docidentifier>
+<docnumber>ISPG-SM03</docnumber>
+<date type="published">
+<on>2018-07</on>
+</date>
+<contributor>
+<role type="publisher"/>
+<organization>
+<name>Open Geospatial Consortium</name>
+</organization>
+</contributor>
+<edition>1.1</edition>
+
+<language current="true">en</language>
+<script current="true">Latn</script>
+<status>
+<stage language="">approved</stage><stage language="en">Approved</stage>
+</status>
+<copyright>
+<from>2018</from>
+<owner>
+<organization>
+<name>Open Geospatial Consortium</name>
+</organization>
+</owner>
+</copyright>
+<ext>
+<doctype language="">standard</doctype>
+<docsubtype>implementation</docsubtype>
+</ext>
+</bibdata><localized-strings><localized-string key="scope" language="en">Scope</localized-string><localized-string key="symbolsabbrev" language="en">Symbols and abbreviated terms</localized-string><localized-string key="abbrev" language="en">Abbreviated terms</localized-string><localized-string key="symbols" language="en">Symbols</localized-string><localized-string key="table_of_contents" language="en">Table of contents</localized-string><localized-string key="introduction" language="en">Introduction</localized-string><localized-string key="foreword" language="en">Preface</localized-string><localized-string key="abstract" language="en">Abstract</localized-string><localized-string key="acknowledgements" language="en">Acknowledgements</localized-string><localized-string key="termsdef" language="en">Terms and definitions</localized-string><localized-string key="termsdefsymbolsabbrev" language="en">Terms, definitions, symbols and abbreviated terms</localized-string><localized-string key="termsdefsymbols" language="en">Terms, definitions and symbols</localized-string><localized-string key="termsdefabbrev" language="en">Terms, definitions and abbreviated terms</localized-string><localized-string key="normref" language="en">Normative references</localized-string><localized-string key="bibliography" language="en">Bibliography</localized-string><localized-string key="preface" language="en">Preface</localized-string><localized-string key="clause" language="en">Clause</localized-string><localized-string key="annex" language="en">Annex</localized-string><localized-string key="appendix" language="en">Appendix</localized-string><localized-string key="no_terms_boilerplate" language="en"><p>No terms and definitions are listed in this document.</p>
+</localized-string><localized-string key="internal_terms_boilerplate" language="en"><p>For the purposes of this document, 
+    the following terms and definitions apply.</p>
+</localized-string><localized-string key="norm_with_refs_pref" language="en">The following documents are referred to in the text in such a way that some or all of their content constitutes requirements of this document. For dated references, only the edition cited applies. For undated references, the latest edition of the referenced document (including any amendments) applies.</localized-string><localized-string key="norm_empty_pref" language="en">There are no normative references in this document.</localized-string><localized-string key="external_terms_boilerplate" language="en"><p>For the purposes of this document, 
+  the terms and definitions given in % apply.</p>
+</localized-string><localized-string key="internal_external_terms_boilerplate" language="en"><p>For the purposes of this document, the terms and definitions 
+  given in % and the following apply.</p>
+</localized-string><localized-string key="term_defined_in" language="en">[term defined in %]</localized-string><localized-string key="note" language="en">NOTE</localized-string><localized-string key="note_xref" language="en">Note</localized-string><localized-string key="termnote" language="en">Note % to entry</localized-string><localized-string key="list" language="en">List</localized-string><localized-string key="figure" language="en">Figure</localized-string><localized-string key="formula" language="en">Formula</localized-string><localized-string key="inequality" language="en">Formula</localized-string><localized-string key="table" language="en">Table</localized-string><localized-string key="requirement" language="en">Requirement</localized-string><localized-string key="recommendation" language="en">Recommendation</localized-string><localized-string key="permission" language="en">Permission</localized-string><localized-string key="key" language="en">Key</localized-string><localized-string key="example" language="en">Example</localized-string><localized-string key="example_xref" language="en">Example</localized-string><localized-string key="where" language="en">where</localized-string><localized-string key="wholeoftext" language="en">Whole of text</localized-string><localized-string key="draft_label" language="en">draft</localized-string><localized-string key="inform_annex" language="en">informative</localized-string><localized-string key="norm_annex" language="en">normative</localized-string><localized-string key="modified" language="en">modified</localized-string><localized-string key="deprecated" language="en">DEPRECATED</localized-string><localized-string key="source" language="en">SOURCE</localized-string><localized-string key="and" language="en">and</localized-string><localized-string key="all_parts" language="en">All Parts</localized-string><localized-string key="month_january" language="en">January</localized-string><localized-string key="month_february" language="en">February</localized-string><localized-string key="month_march" language="en">March</localized-string><localized-string key="month_april" language="en">April</localized-string><localized-string key="month_may" language="en">May</localized-string><localized-string key="month_june" language="en">June</localized-string><localized-string key="month_july" language="en">July</localized-string><localized-string key="month_august" language="en">August</localized-string><localized-string key="month_september" language="en">September</localized-string><localized-string key="month_october" language="en">October</localized-string><localized-string key="month_november" language="en">November</localized-string><localized-string key="month_december" language="en">December</localized-string><localized-string key="obligation" language="en">Obligation</localized-string><localized-string key="subject" language="en">Subject</localized-string><localized-string key="inherits" language="en">Inherits</localized-string><localized-string key="admonition.danger" language="en">Danger</localized-string><localized-string key="admonition.warning" language="en">Warning</localized-string><localized-string key="admonition.caution" language="en">Caution</localized-string><localized-string key="admonition.important" language="en">Important</localized-string><localized-string key="admonition.safety_precautions" language="en">Safety Precautions</localized-string><localized-string key="locality.section" language="en">Section</localized-string><localized-string key="locality.clause" language="en">Clause</localized-string><localized-string key="locality.part" language="en">Part</localized-string><localized-string key="locality.paragraph" language="en">Paragraph</localized-string><localized-string key="locality.chapter" language="en">Chapter</localized-string><localized-string key="locality.page" language="en">Page</localized-string><localized-string key="locality.table" language="en">Table</localized-string><localized-string key="locality.annex" language="en">Annex</localized-string><localized-string key="locality.figure" language="en">Figure</localized-string><localized-string key="locality.example" language="en">Example</localized-string><localized-string key="locality.note" language="en">Note</localized-string><localized-string key="locality.formula" language="en">Formula</localized-string><localized-string key="Clause.sg" language="en">Clause</localized-string><localized-string key="Clause.pl" language="en">Clauses</localized-string><localized-string key="Annex.sg" language="en">Annex</localized-string><localized-string key="Annex.pl" language="en">Annexes</localized-string><localized-string key="Appendix.sg" language="en">Appendix</localized-string><localized-string key="Appendix.pl" language="en">Appendixes</localized-string><localized-string key="Note.sg" language="en">Note</localized-string><localized-string key="Note.pl" language="en">Notes</localized-string><localized-string key="Note_%_to_entry.sg" language="en">Note % to entry</localized-string><localized-string key="Note_%_to_entry.pl" language="en">Notes % to entry</localized-string><localized-string key="List.sg" language="en">List</localized-string><localized-string key="List.pl" language="en">Lists</localized-string><localized-string key="Figure.sg" language="en">Figure</localized-string><localized-string key="Figure.pl" language="en">Figures</localized-string><localized-string key="Formula.sg" language="en">Formula</localized-string><localized-string key="Formula.pl" language="en">Formulas</localized-string><localized-string key="Table.sg" language="en">Table</localized-string><localized-string key="Table.pl" language="en">Tables</localized-string><localized-string key="Requirement.sg" language="en">Requirement</localized-string><localized-string key="Requirement.pl" language="en">Requirements</localized-string><localized-string key="Recommendation.sg" language="en">Recommendation</localized-string><localized-string key="Recommendation.pl" language="en">Recommendations</localized-string><localized-string key="Permission.sg" language="en">Permission</localized-string><localized-string key="Permission.pl" language="en">Permissions</localized-string><localized-string key="Example.sg" language="en">Example</localized-string><localized-string key="Example.pl" language="en">Examples</localized-string><localized-string key="Part.sg" language="en">Part</localized-string><localized-string key="Part.pl" language="en">Parts</localized-string><localized-string key="Section.sg" language="en">Section</localized-string><localized-string key="Section.pl" language="en">Sections</localized-string><localized-string key="Paragraph.sg" language="en">Paragraph</localized-string><localized-string key="Paragraph.pl" language="en">Paragraphs</localized-string><localized-string key="Chapter.sg" language="en">Chapter</localized-string><localized-string key="Chapter.pl" language="en">Chapters</localized-string><localized-string key="Page.sg" language="en">Page</localized-string><localized-string key="Page.pl" language="en">Pages</localized-string><localized-string key="submitters" language="en">Submitters</localized-string><localized-string key="recommendationtest" language="en">Recommendation Test</localized-string><localized-string key="requirementtest" language="en">Requirement Test</localized-string><localized-string key="permissiontest" language="en">Permission Test</localized-string><localized-string key="recommendationclass" language="en">Recommendation Class</localized-string><localized-string key="requirementclass" language="en">Requirement Class</localized-string><localized-string key="permissionclass" language="en">Permission Class</localized-string><localized-string key="abstracttest" language="en">Abstract Test</localized-string><localized-string key="conformanceclass" language="en">Conformance Class</localized-string><localized-string key="security_empty" language="en">No security considerations have been made for this %.</localized-string><localized-string key="stage_dict.swg-draft" language="en">Candidate SWG Draft</localized-string><localized-string key="stage_dict.oab-review" language="en">Candidate OAB Review Draft</localized-string><localized-string key="stage_dict.public-rfc" language="en">Candidate Public RFC Draft</localized-string><localized-string key="stage_dict.tc-vote" language="en">Candidate TC Vote Draft</localized-string><localized-string key="stage_dict.approved" language="en">Approved</localized-string><localized-string key="stage_dict.published" language="en">Approved</localized-string><localized-string key="stage_dict.deprecated" language="en">Deprecated</localized-string><localized-string key="stage_dict.retired" language="en">Retired</localized-string><localized-string key="language" language="en">en</localized-string><localized-string key="script" language="en">Latn</localized-string></localized-strings>
+<boilerplate>
+  <copyright-statement>
+    <clause>
+      <title depth="1">Copyright notice</title>
+
+      <p align="center" id="_a4a04562-aa9e-4af4-b36e-75a6b98c6693">Copyright
+        &#169; 2018 Open Geospatial Consortium<br/>
+        To obtain additional rights of use, visit 
+        <link target="http://www.ogc.org/legal/">http://www.ogc.org/legal/</link></p>
+    </clause>
+    <clause>
+      <title depth="1">Note</title>
+      <p align="left" id="_514bc198-043e-4b9f-b1ff-07faaf2a46e2">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+      <p align="left" id="_c19a5be0-7840-4c35-bcac-cbb16a058bc5">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+    </clause>
+  </copyright-statement>
+  <license-statement>
+    <clause>
+      <title depth="1">License Agreement</title>
+
+      <p id="_b9d5c3b3-2836-47fa-88e1-81f64f41d48b">Permission is hereby granted by the Open Geospatial
+        Consortium, (&#8220;Licensor&#8221;), free of charge and subject to the terms set
+        forth below, to any person obtaining a copy of this Intellectual Property and
+        any associated documentation, to deal in the Intellectual Property without
+        restriction (except as set forth below), including without limitation the
+        rights to implement, use, copy, modify, merge, publish, distribute, and/or
+        sublicense copies of the Intellectual Property, and to permit persons to whom
+        the Intellectual Property is furnished to do so, provided that all copyright notices
+        on the intellectual property are retained intact and that each person to whom
+        the Intellectual Property is furnished agrees to the terms of this Agreement.</p>
+
+      <p id="_1af6e1ed-b0a6-4d84-95dc-e944644edcee">If you modify the Intellectual Property, all copies of
+        the modified Intellectual Property must include, in addition to the above
+        copyright notice, a notice that the Intellectual Property includes
+        modifications that have not been approved or adopted by LICENSOR.</p>
+
+      <p id="_8f8e36d3-3153-477e-a063-de7d1508ca9d">THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT
+        CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.
+        THE INTELLECTUAL PROPERTY IS PROVIDED &#8220;AS
+        IS&#8221;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+        LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+        AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THE COPYRIGHT HOLDER OR HOLDERS
+        INCLUDED IN THIS NOTICE DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE
+        INTELLECTUAL PROPERTY WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE
+        INTELLECTUAL PROPERTY WILL BE UNINTERRUPTED OR ERROR FREE. ANY USE OF THE
+        INTELLECTUAL PROPERTY SHALL BE MADE ENTIRELY AT THE USER&#8217;S OWN RISK. IN NO
+        EVENT SHALL THE COPYRIGHT HOLDER OR ANY CONTRIBUTOR OF INTELLECTUAL PROPERTY
+        RIGHTS TO THE INTELLECTUAL PROPERTY BE LIABLE FOR ANY CLAIM, OR ANY DIRECT,
+        SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING
+        FROM ANY ALLEGED INFRINGEMENT OR ANY LOSS OF USE, DATA OR PROFITS, WHETHER IN
+        AN ACTION OF CONTRACT, NEGLIGENCE OR UNDER ANY OTHER LEGAL THEORY, ARISING OUT
+        OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR
+        PERFORMANCE OF THIS INTELLECTUAL PROPERTY.</p>
+
+      <p id="_2652c1e2-cd56-4db3-a048-c6353cd43565">This license is effective until terminated. You may
+        terminate it at any time by destroying the Intellectual Property together with
+        all copies in any form. The license will also terminate if you fail to comply
+        with any term or condition of this Agreement. Except as provided in the
+        following sentence, no such termination of this license shall require the
+        termination of any third party end-user sublicense to the Intellectual Property
+        which is in force as of the date of notice of such termination. In addition,
+        should the Intellectual Property, or the operation of the Intellectual
+        Property, infringe, or in LICENSOR&#8217;s sole opinion be
+        likely to infringe, any patent, copyright, trademark or other right of a third
+        party, you agree that LICENSOR, in its sole discretion, may terminate this
+        license without any compensation or liability to you, your licensees or any
+        other party. You agree upon termination of any kind to destroy or cause to be
+        destroyed the Intellectual Property together with all copies in any form,
+        whether held by you or by any third party.</p>
+
+      <p id="_98f6d459-325d-4a12-b321-1d4653913611">Except as contained in this notice, the name of
+        LICENSOR or of any other holder of a copyright in all or part of the Intellectual
+        Property shall not be used in advertising or otherwise to promote the sale, use
+        or other dealings in this Intellectual Property without prior written
+        authorization of LICENSOR or such copyright holder. LICENSOR is and shall at
+        all times be the sole entity that may authorize you or any third party to use
+        certification marks, trademarks or other special designations to indicate
+        compliance with any LICENSOR standards or specifications.
+        This Agreement is
+        governed by the laws of the Commonwealth of Massachusetts. The application to
+        this Agreement of the United Nations Convention on Contracts for the
+        International Sale of Goods is hereby expressly excluded. In the event any
+        provision of this Agreement shall be deemed unenforceable, void or invalid, such
+        provision shall be modified so as to make it valid and enforceable, and as so
+        modified the entire Agreement shall remain in full force and effect. No
+        decision, action or inaction by LICENSOR shall be construed to be a waiver of
+        any rights or remedies available to it.</p>
+
+      <p id="_442c8bb3-5318-41dc-b8ba-2540f8fcbd89">None of the Intellectual Property or underlying information or technology may be downloaded or otherwise exported or reexported in violation of U.S. export laws and regulations. In addition, you are responsible for complying with any local laws in your jurisdiction which may impact your right to import, export or use the Intellectual Property, and you represent that you have complied with any regulations or registration procedures required by applicable law to make this license enforceable.</p>
+    </clause>
+  </license-statement>
+
+  <legal-statement>
+    
+    
+    <clause>
+      <title depth="1">Warning</title>
+      <p id="_c0d356f2-3cd3-43a5-872b-9b3d3ce7d8dd">This document is an OGC Member approved international standard. This document is available on a royalty free, non-discriminatory basis. Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.
+      </p>
+    </clause>
+    
+
+
+    
+
+  </legal-statement>
+
+
+
+
+  <feedback-statement>
+    
+    <clause id="boilerplate-standard-feedback">
+      <p id="_08ca339d-0f96-4a51-b239-7c102d9efb54">Suggested additions, changes and comments on this standard are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <link target="http://portal.opengeospatial.org/public_ogc/change_request.php">http://portal.opengeospatial.org/public_ogc/change_request.php</link></p>
+    </clause>
+    
+  </feedback-statement>
+</boilerplate>
+<preface/><sections><clause id="_copyright_notice" obligation="normative" displayorder="1"><title depth="1">1.<tab/>COPYRIGHT NOTICE</title><p id="_dddb9273-f405-4928-b2da-d90ff3d45543">&#169; 2018 by the Government of the Hong Kong Special Administrative Region</p>
+<p id="_f979deda-ae8c-4576-8071-95b7bbc5f4c6">Unless otherwise indicated, the copyright in the works contained in this publication is owned by the Government of the Hong Kong Special Administrative Region. You may generally copy and distribute these materials in any format or medium provided the following conditions are met -</p>
+<ol id="_0b894a01-aec1-4e27-a0a8-ff38cee0782e" type="arabic">
+<li>
+<p id="_863bf04d-d991-4f45-b2a8-52c66e143095">the particular item has not been specifically indicated to be excluded and is therefore not to be copied or distributed;</p>
+</li>
+<li>
+<p id="_1f6b6d17-a2b4-4010-8003-099db0dc08dc">the copying is not done for the purpose of creating copies for sale;</p>
+</li>
+<li>
+<p id="_b512b5ca-7bf4-4ad1-b022-4f050c64e1fc">the materials must be reproduced accurately and must not be used in a misleading context; and</p>
+</li>
+<li>
+<p id="_bdc5744d-2496-4ac4-ab82-6962a33460b8">the copies shall be accompanied by the words &#8220;copied/distributed with the permission of the Government of the Hong Kong Special Administrative Region. All rights reserved.&#8221;</p>
+</li>
+</ol>
+<p id="_088700f6-5c37-41ac-888f-27cb7534d533">If you wish to make copies for purposes other than that permitted above, you should seek permission by contacting the Office of the Government Chief Information Officer.</p>
+<table id="_d7a0e68d-f6f3-44d6-9ecc-b5aeaab1c369" unnumbered="true">
+<tbody>
+<tr>
+<th colspan="5" valign="middle" align="center">Amendment History</th>
+</tr>
+<tr>
+<th valign="top" align="center">Change Number</th>
+<th valign="top" align="center">Revision Description</th>
+<th valign="top" align="center">Pages Affected</th>
+<th valign="top" align="center">Revision Number</th>
+<th valign="top" align="center">Date</th>
+</tr>
+<tr>
+<td valign="top" align="left">1</td>
+<td valign="top" align="left">Renamed the document from &#8220;Practice Guide for Mobile Device Security 1.0&#8221; to &#8220;Practice Guide for Mobile Security 1.1&#8221;, added new chapters on information security management and mobile app development, and aligned references with other practice guides.</td>
+<td valign="top" align="left">Whole document</td>
+<td valign="top" align="left">1.1</td>
+<td valign="top" align="left">July 2018</td>
+</tr>
+</tbody>
+</table></clause>
+<clause id="_introduction" obligation="normative" displayorder="2"><title depth="1">2.<tab/>Introduction</title><p id="_f76e79ba-0657-41eb-9f69-7b756780e5f3">Mobile devices are getting more common and allow users to access information from anywhere at any time. This changes the mode of Internet usage and also brings together new risks in daily operations. While mobile devices and mobile applications (apps) installed in the devices bring convenience and improve efficiency, insecure protection of mobile devices or insecurely written mobile apps pose risks to mobile users and may cause data loss or reputation damage to the app owner. In view of the extra risks introduced by mobile devices due to its high portability, wireless connection capabilities and diverse techniques in mobile app development, this practice guide is developed to provide guidance notes for Bureaux/Departments (B/Ds) to make reference in securing the use of mobile devices in their business and the development of mobile apps for business use.</p>
+<clause id="_purpose" obligation="normative"><title depth="2">2.1.<tab/>Purpose</title><p id="_46612688-5c7e-4feb-b678-e7c3224d62ae">The purpose of this document is to provide common security considerations and best practices to B/Ds on the management and use of mobile devices as well as secure development of mobile apps. The best practices on the use and management of mobile devices are described in <xref target="sec-mobile-device-security">Clause 5</xref> and they are intended for staff who are involved in the use and adoption of mobile devices and related management solutions. The security best practices on mobile app development are described in <xref target="sec-mobile-app-development-security">Clause 6</xref> and they are intended for developers who are involved in related development life cycle.</p>
+<p id="_36eaec6a-ad29-4a0d-9ff0-529be883e1de">This document should be used in conjunction with established government requirements and documents including the Baseline IT Security Policy [S17], the IT Security Guidelines [G3] and other relevant procedures and guidelines, where applicable. In addition to government security requirements, B/Ds should also assess the security risks before adoption of mobile device solutions based on their business needs. B/Ds should consider the security measures and best practices recommended in this document and implement adequate security protection for their mobile solutions.</p>
+<p id="_1906799b-119e-464d-9dc1-cb7b56bd37cd">The materials included in this document are general in nature and are prepared irrespective of the types or platforms of the mobile devices. According to the definition in government security documents, the term &#8220;mobile devices&#8221; means portable computing and communication devices with information storage and processing capability. Examples include portable computers, mobile phones, tablets, digital cameras, and digital audio or video recording devices. Readers should consider and select the security measures and best practices that are applicable to their own environment.</p></clause>
+<clause id="_normative_references" obligation="normative"><title depth="2">2.2.<tab/>Normative References</title><p id="_ff832c46-2f72-4bfe-80e1-1af2f68efe90">The following referenced documents are indispensable for the application of this document.</p>
+<ul id="_0164739a-c619-4960-b710-9264fcd1d049">
+<li>
+<p id="_1320584c-33ab-4c7b-ac70-6a0af048da1a">Baseline IT Security Policy [S17], the Government of Hong Kong Special Administrative Region</p>
+</li>
+<li>
+<p id="_318d1da1-2987-4f42-bef9-5832de8991a2">IT Security Guidelines [G3], the Government of Hong Kong Special Administrative Region</p>
+</li>
+<li>
+<p id="_5e97dcfe-19e5-465c-aa0e-ddab582c2733">Information technology&#8201;&#8212;&#8201;Security techniques&#8201;&#8212;&#8201;Information security management systems&#8201;&#8212;&#8201;Requirements (second edition), ISO/IEC 27001:2013</p>
+</li>
+<li>
+<p id="_e43e6abc-f73a-4bcb-89af-1579936b5869">Information technology&#8201;&#8212;&#8201;Security techniques&#8201;&#8212;&#8201;Code of practice for information security controls (second edition), ISO/IEC 27002:2013</p>
+</li>
+<li>
+<p id="_15f1def6-9013-4f5c-913c-7549ccbcf8ed">Information technology&#8201;&#8212;&#8201;Security techniques&#8201;&#8212;&#8201;Governance of information security, ISO/IEC 27014:2013</p>
+</li>
+<li>
+<p id="_9b55ce50-512d-455a-8e7d-fa8eabd597e4">Information technology&#8201;&#8212;&#8201;Security techniques&#8201;&#8212;&#8201;Storage security, ISO/IEC 27040:2015</p>
+</li>
+</ul></clause>
+<clause id="_terms_and_convention" obligation="normative"><title depth="2">2.3.<tab/>Terms and Convention</title><p id="_1a120796-d025-418c-a43d-1b85b3f46f11">For the purposes of this document, the terms and convention given in S17, G3, and the following apply.</p>
+<table id="_97308f33-106f-4d48-b417-648a7f12fd86" unnumbered="true">
+<tbody>
+<tr>
+<th colspan="2" valign="top" align="left">Abbreviation and Terms</th>
+</tr>
+<tr>
+<td valign="top" align="left">NA</td>
+<td valign="top" align="left">NA</td>
+</tr>
+</tbody>
+</table></clause>
+<clause id="_contact" obligation="normative"><title depth="2">2.4.<tab/>Contact</title><p id="_037085e9-ef84-4ea5-84ed-ee4ccff6a928">This document is produced and maintained by the Office of the Government Chief Information Officer (OGCIO). For comments or suggestions, please send to:</p>
+<p id="_4e61d40c-e7cc-4f25-a6b1-ff21199c314e">Email: <link target="mailto:it_security@ogcio.gov.hk"/></p>
+<p id="_84f1c9b7-dbe9-4d0e-abcc-5b2e74ddc745">Lotus Notes mail: IT Security Team/OGCIO/HKSARG@OGCIO</p></clause></clause>
+<clause id="_information_security_management" obligation="normative" displayorder="3"><title depth="1">3.<tab/>Information Security Management</title><p id="_21dcd414-4b15-4d12-990e-632cd164815c">Information security is about the planning, implementation and continuous enhancement of security controls and measures to protect the confidentiality, integrity and availability of information assets, whether in storage, processing, or transmission and its associated information systems. Information security management is a set of principles relating to the functions of planning, organising, directing, controlling, and the application of these principles in harnessing physical, financial, human and informational resources efficiently and effectively to assure the safety of information assets and information systems.
+Information security management involves a series of activities that require continuous monitoring and control. These activities include but not limited to the following functional areas:</p>
+<ul id="_a0eac853-3897-47cf-bf8b-b3820ee8b1ee">
+<li>
+<p id="_8f67a7a9-a9ea-4613-8e29-da2d114a75a7">Security Management Framework and the Organisation;</p>
+</li>
+<li>
+<p id="_c52a6ade-8564-428a-acde-0524008f2922">Governance, Risk Management, and Compliance;</p>
+</li>
+<li>
+<p id="_8b50eb8a-3602-40a5-a7c6-50df0b0f20a8">Security Operations;</p>
+</li>
+<li>
+<p id="_57cb5293-dd3e-4176-9351-311c760874fe">Security Event and Incident Management;</p>
+</li>
+<li>
+<p id="_447fe030-8a5b-460d-b614-0fd61dac9cbc">Awareness Training and Capability Building; and</p>
+</li>
+<li>
+<p id="_e76760fe-3381-4244-bc58-f6aa5c1fb89c">Situational Awareness and Information Sharing.</p>
+</li>
+</ul>
+<clause id="_security_management_framework_and_organisation" obligation="normative"><title depth="2">3.1.<tab/>Security Management Framework and Organisation</title><p id="_3e05828c-26f7-46a0-bf44-b22f67ceaba9">B/Ds shall establish and enforce departmental information security policies, standards, guidelines and procedures in accordance with the business needs and the government security requirements.</p>
+<p id="_04428332-553d-4dec-8545-3f720d641090">B/Ds shall also define the organisation structure on information security and provide clear definitions and proper assignment of security accountability and responsibility to involved parties.</p></clause>
+<clause id="_governance_risk_management_and_compliance" obligation="normative"><title depth="2">3.2.<tab/>Governance, Risk Management and Compliance</title><p id="_60a9e06c-6d8c-4fa8-af01-654543ff9983">B/Ds shall adopt a risk-based approach to identify, prioritise and address the security risks of information systems in a consistent and effective manner.</p>
+<p id="_e21c0407-65e8-46bd-bb2f-f775290d4fc9">B/Ds shall perform security risk assessments for information systems and production applications periodically and when necessary so as to identify risks and consequences associated with vulnerabilities, and to provide a basis to establish a cost-effective security program and implement appropriate security protection and safeguards.</p>
+<p id="_d0c9f62f-b649-448c-adca-f99159e297a6">B/Ds shall also perform security audit on information systems regularly to ensure that current security measures comply with departmental information security policies, standards, and other contractual or legal requirements.</p></clause>
+<clause id="_security_operations" obligation="normative"><title depth="2">3.3.<tab/>Security Operations</title><p id="_cbaec54d-ebd5-4db2-b74f-f53d4c18b4f0">To protect information assets and information systems, B/Ds should implement comprehensive security measures based on their business needs, covering different technological areas in their business, and adopt the principle of &#8220;Prevent, Detect, Respond and Recover&#8221; in their daily operations.</p>
+<ul id="_28a01ca4-b825-42ae-bcf2-c3546a5f965c">
+<li>
+<p id="_8f55ca6f-ceb1-42b1-b4c2-257374b968f8">Preventive measures avoid or deter the occurrence of an undesirable event;</p>
+</li>
+<li>
+<p id="_41c47277-45e7-40d4-a880-b8ea80157e9f">Detective measures identify the occurrence of an undesirable event;</p>
+</li>
+<li>
+<p id="_fe82ba95-f481-4793-bf93-68790a7ed90c">Response measures refer to coordinated actions to contain damage when an undesirable event or incident occurs; and</p>
+</li>
+<li>
+<p id="_67618889-cda4-4cbb-8476-f1168a77a56e">Recovery measures are for restoring the confidentiality, integrity and availability of information systems to their expected state.</p>
+</li>
+</ul></clause>
+<clause id="_security_event_and_incident_management" obligation="normative">
+<title depth="2">3.4.<tab/>Security Event and Incident Management</title>
+<p id="_e28d9365-cd9a-4e4e-84b6-5202f99e2a81">In reality, security incidents might still occur due to unforeseeable, disruptive events. In cases where security events compromise business continuity or give rise to risk of data security, B/Ds shall activate their standing incident management plan to identifying, managing, recording, and analysing security threats, attacks, or incidents in real-time. B/Ds should also prepare to communicate appropriately with relevant parties by sharing information on response for security risks to subdue distrust or unnecessary speculation. When developing an incident management plan, B/Ds should plan and prepare the right resources as well as develop the procedures to address necessary follow-up investigations.</p>
+</clause>
+<clause id="_awareness_training_and_capability_building" obligation="normative">
+<title depth="2">3.5.<tab/>Awareness Training and Capability Building</title>
+<p id="_af9b7dc0-9371-4b44-91d2-b787d209887e">As information security is everyone&#8217;s business, B/Ds should continuously promote information security awareness throughout the organisations and arrange training and education to ensure that all related parties understand the risks, observe the security regulations and requirements, and conform to security best practices.</p>
+</clause>
+<clause id="_situational_awareness_and_information_sharing" obligation="normative"><title depth="2">3.6.<tab/>Situational Awareness and Information Sharing</title><p id="_8710bd42-4680-40de-be13-09cd848f7d44">As cyber threat landscape is constantly changing, B/Ds should also constantly attend to current vulnerabilities information, threat alerts, and important notices disseminated by the security industry and the GovCERT.HK. The security alerts on impending and actual threats should be disseminated to and shared with those responsible colleagues within B/Ds so that timely mitigation measures could be taken.</p>
+<p id="_8753b986-c33a-4768-82e9-8b29fd168a80">B/Ds could make use of the cyber risk information sharing platform to receive and share information regarding security issues, vulnerabilities, and cyber threat intelligence.</p></clause></clause>
+<clause id="_introduction_to_mobile_security" obligation="normative" displayorder="4"><title depth="1">4.<tab/>Introduction to Mobile Security</title><p id="_170edd30-1df5-4f6f-807b-988330dff4e2">As technologies advance, the computational power of mobile devices continues to increase, and at the same time they become even smaller and lighter. While there are many obvious advantages with these devices, they also bring security concerns that need to be addressed. Also, while mobile apps bring much convenience to users, poorly written mobile apps increase risk of data loss. This section highlights the security measures and best practices to address the common security concerns and illustrates how they should be incorporated in the major stages of mobile device management life cycle and mobile app development life cycle. B/Ds may select and map the security measures and best practices to their own management and development life cycle model based on their business needs.</p>
+<clause id="_security_concerns_of_mobile_technologies" obligation="normative"><title depth="2">4.1.<tab/>Security Concerns of Mobile Technologies</title><p id="_40d90dc3-e9df-4b67-a440-5bf866e792f0">Security threats to mobile devices come from many directions. Mobile devices often need additional protection because their nature generally places them at higher exposure to threats than other client devices, such as a workstation in the office area. Major threats to mobile devices can come from the device itself, network (e.g. mobile, internet) or application (e.g. mobile app, mobile web app). The security concerns of mobile technologies are highlighted below:</p>
+<p id="_c5b95b6a-7dff-4ba0-9068-94102ac1774a">
+<strong>Device</strong>
+</p>
+<ul id="_76b451b7-139a-46ed-9da3-6e419d118542">
+<li>
+<p id="_f7963e88-1c7e-435c-861f-851b939af108">Lack of physical security controls</p>
+<p id="_e321a498-e855-4de0-9e57-f3f74b9f0b08">Mobile devices are typically used in a variety of locations outside the B/Ds&#8217; control, such as employees&#8217; homes, coffee shops, hotels, and conferences. The devices&#8217; mobile nature makes them much more likely to be lost or stolen than other devices, so their data is at increased risk of compromise.</p>
+</li>
+<li>
+<p id="_dcb98711-ef9b-450d-b88b-a8ca1c42e88c">Insufficient control to accessories in mobile devices</p>
+<p id="_60801eff-125f-4892-ac68-4a582b702025">Mobile devices are usually equipped with cameras and microphones. Inappropriate video capturing, audio recording and photo taking may cause a security concern. Moreover, sensitive information in video/audio records or photos might be retrieved by unauthorised persons if the mobile device is not properly protected.</p>
+</li>
+<li>
+<p id="_0a4ddd84-5c9a-407a-a162-9f10a98f4532">Use of untrusted mobile devices</p>
+<p id="_543b060b-29db-482c-9645-0577ae4f7b8c">Many mobile devices, particularly those that are privately owned, are not necessarily trustworthy. The use of mobile devices that have been jailbroken or rooted can pose additional security risks because the built-in restrictions on security have been bypassed in such devices.</p>
+</li>
+</ul>
+<p id="_cd03f862-11e7-45d5-9c1b-25bf0e158c61">
+<strong>Network</strong>
+</p>
+<ul id="_d3021f9d-faf4-4aad-82a4-5446a2b6f8f2">
+<li>
+<p id="_6dc6eab8-9d1b-4973-ad78-0b51755c4797">Use of untrusted networks</p>
+<p id="_ba9b1606-6124-4b6f-949e-1265277420f0">Mobile devices primarily use non-organisational networks, such as external Wi-Fi or cellular networks, for Internet access. These networks are susceptible to eavesdropping, which place sensitive information transmitted at risk of compromise.</p>
+</li>
+<li>
+<p id="_e05ec4c8-f01b-477a-b013-5ea1fc700826">Use of unsecure communication technologies</p>
+<p id="_b41ce860-4f35-48fa-86a1-11c05c125643">In contrast to workstations in the office area which mainly rely on Local Area Network (LAN) or office Wi-Fi for communication, mobile users can deploy a wide variety of communication technologies such as Bluetooth, Near Field Communication (NFC) for data connection. Every communication technology has its own security risk. If sensitive information is intercepted over an unsecure communication media, it would lead to a security breach.</p>
+</li>
+</ul>
+<p id="_503aa4d1-0844-48c8-92d9-0f1e7d3d0b9b">
+<strong>Application</strong>
+</p>
+<ul id="_bd28371d-39a1-45d4-a5a1-5ec2d7f29978">
+<li>
+<p id="_bd3aa07c-ece1-4247-b6a9-c791d197ae0a">Use of untrusted apps</p>
+<p id="_10bd74c2-8887-406e-bb29-ed06d9cf60b5">Mobile devices are designed to make them easy to find, acquire, install, and use third-party applications from mobile app stores. This poses obvious security risks, especially when mobile device platforms and mobile app stores do not place security restrictions or other limitations on the published applications developed by third-party.</p>
+</li>
+<li>
+<p id="_cae84f39-7a1d-4b79-9ff0-267995ddcf55">Use of location services</p>
+<p id="_42fda97b-69af-4990-b262-e49e3eb5059b">Location services are commonly used by social media, navigation, web browsers, and other mobile-centric applications to identify the locations of mobile devices and its owner. Mobile devices with location services enabled are at increased risk of targeted attacks because it is easier for potential attackers to determine where the user and the mobile device are, and to correlate that information with other sources to launch attacks such as spear phishing.</p>
+</li>
+<li>
+<p id="_e9c233af-6bbd-434e-a287-f12fb6c46829">Use of untrusted source</p>
+<p id="_4b3978e3-2d90-4f1a-a3ac-c5a83e633db5">Mobile apps may induce untrusted input from malicious source that are not common to other types of devices. An example is the 2D barcode, which are now commonly used because camera is a built-in component in today&#8217;s smartphones and tablets. This could induce targeted attacks, such as placing malicious 2D barcodes at a public location.</p>
+</li>
+</ul>
+<p id="_98601253-b903-4398-b9ca-30e7ff37acb9">The above paragraphs discuss on the general security concerns on mobile technology and its application. When developing mobile apps, further security risks need to be addressed. The developer can refer to Open Web Application Security Project (OWASP) Mobile Top 10 to understand those critical risks that mobile app development faces. B/Ds should take reference of these common security risks and avoid such problems in their codes. B/Ds should also review and define the security requirements of their applications to mitigate risks so as to avoid vulnerabilities originated from security design. The risks as mentioned by OWASP are highlighted below:</p>
+<ul id="_efa47a1b-0b15-43a3-b15d-c6f4ff3c4ea8">
+<li>
+<p id="_0c0f33a5-16b3-4f05-9b32-7c0df5eea7e4">Improper Platform Usage</p>
+<p id="_74584d64-c70a-4434-8ca2-22964e1fbb6c">The potential threat comes from the misuse of a platform feature and failure to use platform security controls, e.g., Android intents, platform permissions, misuse of biometric recognition features or other security controls of the mobile operating system. Misusing platform features may put the system under risk (e.g., cross-site scripting).</p>
+</li>
+<li>
+<p id="_61c07c78-a073-4a16-bbaf-69f2ea914e74">Insecure Data Storage</p>
+<p id="_e689a1eb-8926-4173-96f0-989792810faa">Insecure data storage vulnerabilities occur when development teams assume that users or malware will not have access to a mobile device&#8217;s filesystem and subsequent sensitive information on the device. This can result in data loss or extraction of the app&#8217;s sensitive information via mobile malware, modified apps or forensic tools.</p>
+</li>
+<li>
+<p id="_22a89364-8214-45d3-8b33-8673eaaf27e5">Insecure Communication</p>
+<p id="_004dd0cd-d6af-4efd-af32-082502e2cdda">Insecure communications from one point to another put the app data at risk of exposure, which may cause possible leakage of sensitive information over the network communication. The issue could be caused by poor handshaking, incorrect SSL versions, weak negotiation and plain text communication of sensitive assets.</p>
+</li>
+<li>
+<p id="_6b74e589-fe95-461e-afa5-1af7d7e8a12a">Insecure Authentication</p>
+<p id="_6a6678ed-c442-4936-b48c-fa81e0bbea25">Attackers may compromise passwords, keys, or authentication tokens to impersonate the identity of other users. The issue could be caused by the absence or improper implementation of authentication mechanisms and bad session management.</p>
+</li>
+<li>
+<p id="_0c5a1e5c-210a-471e-a1e2-34d2791dfea4">Insufficient Cryptography</p>
+<p id="_cedee73e-efd7-4fbf-a477-57af65401bf7">Attackers may steal or access poorly protected data resulting from missing or improper use of cryptographic functions to encrypt sensitive information assets.</p>
+</li>
+<li>
+<p id="_b0b4be54-615f-4f3d-8613-58d9e5e2a109">Insecure Authorisation</p>
+<p id="_5925eda5-d1e6-4bf9-a0a9-2a18a56e335b">Attackers may bypass the authorisation mechanism and execute over-privileged functionality. The issue could be caused by the failure of a server to correctly enforce identity and permissions as defined by the mobile app, if the mobile app only trusts the client-side authorisation but fails to perform server-side authorisation.</p>
+</li>
+<li>
+<p id="_c8c3c1d9-a8e5-4935-ac72-462c872fe30c">Client Code Quality</p>
+<p id="_03a14aa9-8280-4324-a3b9-ebb42b4ffa0a">Poor client codes may lead to vulnerabilities such as buffer overflows and memory leaks by passing malicious input to the mobile app. This may result in foreign code execution or denial of service on remote server.</p>
+</li>
+<li>
+<p id="_235f95d6-20fe-49a4-92a8-fc27789cdf74">Code Tampering</p>
+<p id="_3009afd3-b86d-4aca-aa30-302cc121f8a5">Attackers may modify a mobile app via creating malicious forms of the app hosted in third-party locations. The attacker may also use phishing attacks to induce user for installation.</p>
+</li>
+<li>
+<p id="_1256bcb4-342f-4384-b5a3-0c2431e2e20b">Reverse Engineering</p>
+<p id="_11a62fd2-498a-466d-94bb-4b78e3ad7cf0">Attackers may analyse the core binary of the mobile app and perform reverse engineering to obtain its source code, libraries, algorithms and other assets with the aim of exploiting vulnerabilities, harvesting sensitive data or stealing intellectual property.</p>
+</li>
+<li>
+<p id="_7fd74b4a-adfd-488a-b818-3c0128b821eb">Extraneous Functionality</p>
+<p id="_af95edfa-98d1-429f-b078-b0ed98fcae33">Developers may add hidden backdoors or functions during application debugging. If the developer forgets to remove such backdoors before production, attacker can make use of them to perform malicious attacks.</p>
+</li>
+</ul></clause></clause>
+<clause id="sec-mobile-device-security" obligation="normative" displayorder="5"><title depth="1">5.<tab/>Mobile Device Security</title><p id="_1c787916-b2a1-4e7f-99da-c3e1cf31a60d">This section is intended for users and administrators who are involved in the use and adoption of mobile devices and related management solutions. For developers who need to understand the details on protection measures for mobile app development, please refer to &#8220;<xref target="sec-mobile-app-development-security">Clause 6</xref>&#8201;&#8212;&#8201;Mobile App Development Security&#8221; for details.</p>
+<clause id="subsec-mobile-device-usage-lifecycle" obligation="normative"><title depth="2">5.1.<tab/>Mobile Device Usage Lifecycle</title><p id="_99745fb3-d57d-4382-bc01-9b6c02f1b476">Similar to other information systems, mobile devices include three major stages throughout their usage lifecycle&#8201;&#8212;&#8201;Provision, Usage and Decommission. The paragraphs below discuss the best practices on how to protect the mobile devices in various stages of the lifecycle.</p>
+<clause id="_provision_of_mobile_devices" obligation="normative"><title depth="3">5.1.1.<tab/>Provision of Mobile Devices</title><p id="_efa03682-f9f6-4fb1-b7d2-a6a3d1dc9e2e">When considering adoption of mobile device technologies in business, B/Ds should identify the needs for mobile device and how mobile device solutions can support their business. A mobile device security policy should be established to specify the business and security requirements for the use of mobile device technologies with the following considerations:</p>
+<ul id="_bf58df2c-86bb-429d-bb8d-9ce61c4e8632">
+<li>
+<p id="_76bd95a6-bfb1-4973-b1f5-0b50a81c2474">The types of approved mobile devices and the approval mechanism.</p>
+</li>
+<li>
+<p id="_c72b58f9-0dba-42b9-84bb-f3b91e1c4e72">The data classification permitted on each type of mobile device. Sensitive information shall not be stored in privately-owned mobile devices.</p>
+</li>
+<li>
+<p id="_45c8d941-61e7-4e65-9f32-299a9c13ab18">The control mechanism to ensure the compliance with government security requirements based on the data classification.</p>
+</li>
+<li>
+<p id="_14c48268-cec7-4f6c-a323-42510edc7918">The procedures to ensure timely sanitisation of government data stored in the mobile devices when staff is posted out or ceases to provide services.</p>
+</li>
+</ul>
+<p id="_d79abcd3-fab3-44a8-8570-b99f40bc1ca1">Based on the business and security requirements, B/Ds should develop adequate processes and procedures for provision of mobile device. In particular, security hardening procedures of mobile devices should be developed to enforce security configurations in accordance with government security requirements and the mobile device security policy. All mobile devices should be hardened according to the security hardening procedures before transferring to users. For sample configurations regarding security hardening, please refer to <xref target="annex-sample-configurations">Annex A</xref>.</p>
+<p id="_666f4857-d61e-4dd8-baa6-e604f2c85bbd">B/Ds should review and modify their processes and procedures with necessary adjustments to include the following best practices in the provisioning stage:</p>
+<ul id="_96acf928-6dd0-4aac-b400-3fe8ee546fbd">
+<li>
+<p id="_e70a5c9d-8d11-4975-ab3b-e2c9bd939f11">Identify the list of supported models that fulfils the operation and security requirements.</p>
+</li>
+<li>
+<p id="_42dd8bf3-591d-4a9e-bc28-3b3fc4c0b71a">Perform risk assessments prior to deployment of new mobile device models, and implement a continuous risk monitoring mechanism for evaluating changes in or new risks associated with the mobile devices.</p>
+</li>
+<li>
+<p id="_3cd38c08-1b5d-4939-a91d-50ae4a6573b6">Install security control tools, such as Mobile Device Management (MDM)<fn reference="1"><p id="_82efbe04-493e-469e-ac71-7a0a3c2025ac">MDM is an application (or a set of applications) that provides management capabilities in policy, inventory, security and service for mobile devices such as mobile phones and tablets. For details of MDM, please refer to <xref target="subsec-mobile-device-management-solution">Clause 5.2</xref> Mobile Device Management Solution</p></fn>, Data Loss Prevention (DLP), personal firewall software and anti-malware solution whenever feasible. The tools should be mentioned in B/Ds&#8217; hardening procedures.</p>
+</li>
+<li>
+<p id="_f524c388-88b3-408a-b1ac-bc4d82bdc683">Deploy ONLY authorised applications into government mobile devices. Users may install third-party applications if they are authorised by an officer as designated by the B/D. B/Ds shall define and maintain a list of authorised software including freeware, open source software and programming libraries based on operational needs.</p>
+</li>
+<li>
+<p id="_aa1e2b41-e855-43f3-8e6c-9178cabd5605">Perform security hardening and deliver hardened mobile devices to users.</p>
+</li>
+<li>
+<p id="_43cb202f-41ad-4c92-b04f-926c4eadc497">Disseminate the acceptable use policy and security reminders to users to remind them to apply security best practices.</p>
+</li>
+<li>
+<p id="_117dcb04-7cf0-4a03-ad54-e3daa2392a96">Obtain users&#8217; acknowledgement on receiving the acceptable use policy, security reminders and the mobile devices in good condition. The acknowledgement can be a signed agreement or email.</p>
+</li>
+<li>
+<p id="_5b071c35-df7e-43b4-b8ee-a918fb3e5abe">Enable a power-on password.</p>
+</li>
+<li>
+<p id="_787d433e-cbf9-4a87-9634-225081ce1808">Deploy minimal password length and complexity requirements according to B/Ds&#8217; departmental security requirements.</p>
+</li>
+<li>
+<p id="_48527043-6bed-4c61-b2f4-0d8d7c0af12e">Configure the mobile device in such a way that it locks automatically after a period of inactivity.</p>
+</li>
+<li>
+<p id="_d806b5ea-ea98-42de-a51d-08d068031636">Enable data erasing feature when there is consecutive incorrect attempts to enter the password if available. The actual number of consecutive incorrect attempts should be defined according to B/Ds operational needs. Remote wipe functionality should also be enabled to protect data from device lost or stolen. Moreover, selection of wiping solution should be carefully made such that sensitive data should not be recovered after the wipe.</p>
+</li>
+<li>
+<p id="_04f046cf-68bd-400d-a934-6dad8287a251">Enable device level, full disk or file based encryption feature for all storages of mobile devices, where possible.</p>
+</li>
+<li>
+<p id="_8c9fc599-e2c1-4d50-9a56-c7fb1ecdc97b">Consider using multiple factors authentication such as digital certification together with password for VPN connections.</p>
+</li>
+<li>
+<p id="_76bd2f0c-024d-461c-a886-d825c11f5f55">Maintain asset-tracking information such as serial number, inspect applications on devices, and keep track of them for audit.</p>
+</li>
+</ul></clause>
+<clause id="_use_of_mobile_devices" obligation="normative"><title depth="3">5.1.2.<tab/>Use of Mobile Devices</title><p id="_40f83640-14bb-4e16-b7ee-f4cd2788609c">Even if the security controls have been implemented in the provisioning stage, people and process are two important factors for keeping mobile devices in a safe environment. Therefore, this section focuses on the best practices related to the on-going operation process for the management and use of mobile devices.</p>
+<clause id="_administrators" obligation="normative"><title depth="4">5.1.2.1.<tab/>Administrators</title><p id="_0cf98687-255c-4256-b90f-4b65be0e6cb0">Administrators should follow the best practices as follows:</p>
+<ul id="_4052354b-7d1c-47ca-9951-c5e404338c2c">
+<li>
+<p id="_62d324b1-23d2-41ef-b4db-eeedab89cd3d">Check available upgrades and/or patches for the mobile device OS and mobile applications with proper change management.</p>
+</li>
+<li>
+<p id="_27b22a2a-1a7f-4710-b1f0-0b962e090ec2">Apply the verified update and/or patches to mobile devices.</p>
+</li>
+<li>
+<p id="_184ad487-11e0-4780-92dd-f6d274ce8797">Check the status of mobile devices regularly to ensure security measures are in place. Use of jail-broken, rooted and compromised devices should be detected and restricted.</p>
+</li>
+<li>
+<p id="_1414a31b-38d8-4a30-a444-2b2faf39aaba">Maintain an inventory record for government mobile devices with user information and a list of installed mobile applications.</p>
+</li>
+<li>
+<p id="_28b10f15-a8b1-4284-98ac-48a1458b19ce">Maintain a list of approved desktop or mobile applications for mobile devices which are defined by officer as designated by the B/D.</p>
+</li>
+<li>
+<p id="_7b37bb7f-509c-4624-b4be-9998423c4b7d">Enforce hardware encryption of a mobile device whenever possible.</p>
+</li>
+</ul></clause>
+<clause id="_mobile_users" obligation="normative"><title depth="4">5.1.2.2.<tab/>Mobile Users</title><p id="_03c72444-b8c7-4324-9ff9-db87a6986a17">Users should follow the acceptable use policy and security reminders including but not limited to:</p>
+<p id="_e858eb6b-17ec-499b-bdb9-4c8399d08087">
+<strong>DON&#8217;Ts:</strong>
+</p>
+<ul id="_a49c0a38-de44-4ba1-b541-8a44f5f76f43">
+<li>
+<p id="_2ad50d3c-5b04-465c-b16a-eac3abc1f93d">Do not modify mobile device setting unless approval is obtained.</p>
+</li>
+<li>
+<p id="_54a3e22b-4227-4f53-bfa7-519dfa1f8e14">Do not try to perform jailbreaking / rooting or exploit the OS of a mobile device by using unauthorised tool. Such manipulation may introduce unexpected security risk and void the warranty.</p>
+</li>
+<li>
+<p id="_2d086701-3ffc-4f43-8409-939e741d8ff6">Do not allow wireless connections from unknown or un-trusted sources on your device.</p>
+</li>
+<li>
+<p id="_96fe9a28-1fc3-42c8-9b7f-7fec19ba15e5">Do not open or access links in social media, instant message, Short Message Service (SMS), Multimedia Messaging Service (MMS), or email from misleading, suspicious or un-trusted sources.</p>
+</li>
+<li>
+<p id="_7c565fdd-6015-4423-9f93-4751fbe11979">Do not download programs and contents from unknown or un-trusted sources.</p>
+</li>
+<li>
+<p id="_ac9275d9-b159-4264-8d3f-7cf7d8c5593a">Do not install illegal or unauthorised software on the mobile device.</p>
+</li>
+<li>
+<p id="_d0408d43-ffd8-4cc3-b8dc-76613556699b">Do not connect to external data network directly (e.g. via cellular network) when the mobile device is connected to government internal network.</p>
+</li>
+<li>
+<p id="_46a445b0-dbe3-4567-bbc8-4f4379ddffd8">Do not use public printers.</p>
+</li>
+<li>
+<p id="_1dfeebeb-31d3-4fc8-aa09-9d80798609eb">Do not allow any mobile applications to automatically upload or synchronise information from a mobile device to other unauthorised devices. Example includes the public cloud storage vendor, photo sharing social media and mobile vendor backup solutions by cloud technology.</p>
+</li>
+<li>
+<p id="_df90f5e2-c8e2-4f1d-b0ee-33021a53ea88">Do not store password of any other systems (e.g. email, ATM card and network login) on mobile device. The password auto-save function should be disabled.</p>
+</li>
+<li>
+<p id="_cf69afc6-8351-4b6a-b5bb-fccf1609c17e">Do not use government provided mobile device extensively for private or personal activities.</p>
+</li>
+</ul>
+<p id="_c5437c5b-17ef-4ced-9cea-decb7d5365ca">
+<strong>DOs:</strong>
+</p>
+<ul id="_530f292b-1c51-44f5-b286-20548a672b12">
+<li>
+<p id="_08f0bc58-0f74-458e-bd8d-980927957984">Follow security procedures defined by B/D.</p>
+</li>
+<li>
+<p id="_00c115d2-4df2-4c93-9fc3-4c0903857ca2">Install only approved applications as provided by B/Ds.</p>
+</li>
+<li>
+<p id="_c46e07cf-36e0-4dd0-ad91-4ac16baff553">Ensure the security features of the OS and installed applications are enabled as specified in the hardening procedures.</p>
+</li>
+<li>
+<p id="_5b1e83fb-106b-4efe-a036-df62dda32670">Apply latest malware signatures and definitions, if available.</p>
+</li>
+<li>
+<p id="_54788745-cca6-4381-8f9c-4d813737fce8">Stay alert on security vulnerabilities on mobile devices, and follow the instructions to apply the relevant patches according to the affected systems and versions list.</p>
+</li>
+<li>
+<p id="_c9f4fd05-0745-4155-ab72-9a15c9c95d2f">Perform full data backup with encryption regularly to authorised computers or storage. If the device contains sensitive information, the protection of backup copies shall follow prevailing government security requirements.</p>
+</li>
+<li>
+<p id="_4808dffe-893e-4efe-96b3-e165210338c3">Turn off wireless connections such as Wi-Fi, Near Field Communication (NFC), Bluetooth and/or infrared connectivity when not in use.</p>
+</li>
+<li>
+<p id="_e36922f7-d628-48f5-91a1-a585d8a2356e">Disable the Wi-Fi auto-connect option to avoid connecting to un-trusted/rogue network automatically.</p>
+</li>
+<li>
+<p id="_13ff0d90-f5e9-4a61-9c32-de7283350dee">Turn off location services setting in your mobile device if it is not necessary to run location-based application.</p>
+</li>
+<li>
+<p id="_b6cbb5ea-282e-4d45-84da-47be74fdb50b">Be cautious when connecting to publicly available Wi-Fi hotspots, and do not access government data unless with adequate security protection.</p>
+</li>
+<li>
+<p id="_ef45a534-e2d8-45cd-a65d-b3c88ad9fbd3">Establish a VPN connection to your B/D&#8217;s government internal network. This can ensure that all data transmission would be subject to the corresponding security controls.</p>
+</li>
+<li>
+<p id="_dfe0fd13-1244-4765-ab8f-c65877ed2a3b">Safeguard a mobile device in your possession and do not leave the device unattended without proper security measures.</p>
+</li>
+<li>
+<p id="_654f934a-bcbf-409f-90de-a2d10bda763e">Be aware of surrounding environment when handling sensitive information to mitigate the risks of overhearing and peeping.</p>
+</li>
+</ul></clause>
+<clause id="_awareness_training" obligation="normative"><title depth="4">5.1.2.3.<tab/>Awareness Training</title><p id="_5046e63f-4a77-43e8-b38e-034b3caab4e7">User training is an important activity to promote user security awareness in using mobile devices. Government staff should understand security requirements from mobile user&#8217;s point of view such that human error can be minimised. Training to mobile users should be arranged such that a certain level of understanding of security requirement in mobile devices, the security measure and security threats can be delivered to users.</p>
+<p id="_3affd2e9-7b4d-4d2b-a45c-44aef3778171">General speaking, the awareness training to mobile users should include:</p>
+<ul id="_ff29a3ad-97fb-47ec-9a23-9b8713615f4e">
+<li>
+<p id="_73b8df6c-517c-463d-9c02-3dc2a35492f0">Security requirements for mobile devices in using and decommissioning stage.</p>
+</li>
+<li>
+<p id="_c6065f64-358d-4656-b0bb-3b821b56501e">Reporting mechanism of lost or stolen mobile device.</p>
+</li>
+<li>
+<p id="_4a387541-4f98-4a39-9fe7-554aeee1a938">Information classification and corresponding security requirements for sensitive information in mobile devices.</p>
+</li>
+<li>
+<p id="_5178695a-80aa-4c64-9f9c-092ac7d2b725">Recent mobile devices security news and trends as time goes by.</p>
+</li>
+</ul></clause></clause>
+<clause id="_decommissioning_of_mobile_devices" obligation="normative"><title depth="3">5.1.3.<tab/>Decommissioning of Mobile Devices</title><p id="_efc540d8-a0e4-4aa2-8357-2c352ed17ceb">At the last stage of mobile device management, the devices may be decommissioned due to physical damage, end of support, re-issue to other staff or other B/Ds, etc. B/Ds should define device decommission procedures consisting of secure data deletion, mobile devices factory reset and disposal such that mobile device can be re-used or securely disposed without data leakage. Mobile users and administrators should follow the procedures in order to protect government data in safe custody and reduce the chance for data leakage to unauthorised parties.</p>
+<p id="_86120282-689f-41ef-9e4f-c4bcb4e36d3b">For loss or theft of mobile devices, please refer to <xref target="subsec-loss-theft-and-security-incident">Clause 5.3.3</xref> which provides best practices for handling this scenario in details that mobile users and administrators should follow.</p>
+<clause id="_administrators_2" obligation="normative"><title depth="4">5.1.3.1.<tab/>Administrators</title><p id="_e696c28f-869f-4916-9fd3-cf1aadc7f238">Administrators should follow the best practices as follows:</p>
+<ul id="_425b6f4e-dda8-460e-a21b-c8b4e38fe8a2">
+<li>
+<p id="_edad9498-e753-4a01-858e-fbf57f3baa26">Verify the condition of the returned device.</p>
+</li>
+<li>
+<p id="_66692c3b-0555-4323-8bd9-c4010f9213cc">Check whether sensitive information has been processed and/or kept in the device. If in doubt, it should be assumed that it has.</p>
+</li>
+<li>
+<p id="_91d38f50-65f6-4326-b42c-9c9bab4b4b3c">Clear or destroy government data securely before disposal, reuse or repair. If the device contains sensitive information, administrators shall follow government security requirements. For physical damage, mobile users should inform administrators the classification of information stored within the damaged mobile device.</p>
+</li>
+<li>
+<p id="_a02c04b5-3928-450a-bb89-d17a2ad3f132">Perform vendor factory reset, if available.</p>
+</li>
+</ul></clause>
+<clause id="_mobile_users_2" obligation="normative"><title depth="4">5.1.3.2.<tab/>Mobile Users</title><p id="_aa4aeb2b-6d04-4ef9-92ae-7b042605eac3">Users should follow the best practices as follows:</p>
+<ul id="_34273a2f-f6fb-4aae-a53a-675a504dda00">
+<li>
+<p id="_206ac124-4963-4b0b-ad76-41db2db889f1">Perform necessary data backup for B/Ds&#8217; operations.</p>
+</li>
+<li>
+<p id="_91557835-9c65-4e84-995e-410ff0187324">Clear or destroy information securely before returning the mobile devices to administrators who may not be legitimate to access that information. For information erasure, please refer to the corresponding section in IT Security Guidelines and the Practice Guide for Destruction and Disposal of Storage Media.</p>
+</li>
+<li>
+<p id="_6b3bb5cd-6f53-4319-b578-1db50d593de5">Return the mobile device as soon as possible.</p>
+</li>
+</ul></clause></clause></clause>
+<clause id="subsec-mobile-device-management-solution" obligation="normative"><title depth="2">5.2.<tab/>Mobile Device Management Solution</title><p id="_791c75b5-f371-478a-8157-544cf7a56084">Centralised Mobile Device Management (MDM) technologies are becoming popular as a solution for controlling the use of mobile devices issued by the organisation or owned by individual staff. MDM solution provides additional management capability such that B/Ds should consider using such solution to maintain proper management to their mobile devices.</p>
+<clause id="subsec-capabilities-mobile-device-management" obligation="normative"><title depth="3">5.2.1.<tab/>Capabilities of Mobile Device Management Solution</title><p id="_0be41889-9560-4ae0-b73f-091e797b56fa">MDM solution provides management capabilities in policy, inventory, security and service for mobile devices such as mobile phones and tablets. Generally speaking, the technical capabilities include:</p>
+<ul id="_6962e8ab-dd6f-49ba-bb5d-7ed53bdfe2bb">
+<li>
+<p id="_99e31043-a499-4801-a747-9ae0fccb8ef7">Containerisation&#8201;&#8212;&#8201;provides an isolated environment for processing data via physical, virtual or per-app container (Please refer to <xref target="annex-containerisation-technology">Annex B</xref>).</p>
+</li>
+<li>
+<p id="_800c369d-f0e9-475b-a4bb-3965acfc4ad5">Wipe remotely when mobile device is lost or stolen, if available.</p>
+</li>
+<li>
+<p id="_09e838c4-c13a-4038-b6ea-fdad91af5373">Data wipe after repeated logon attempt failure.</p>
+</li>
+<li>
+<p id="_e4f48755-56b0-4936-81e9-b70606c69caf">Deploy and configure mobile devices with pre-configured setting.</p>
+</li>
+<li>
+<p id="_8763116b-280c-4200-8c74-1bbf2ca5906c">Enforce security controls such as using VPN for encrypting information transmission over wireless network.</p>
+</li>
+<li>
+<p id="_4da2ab8e-41e8-4dd7-8572-0cd60eb61f3a">Provide audit trailing details on data accessing.</p>
+</li>
+<li>
+<p id="_ee596da1-291c-4850-aeed-23f1dc839ae0">Monitor abnormal activities.</p>
+</li>
+<li>
+<p id="_562b1ea8-e225-4ec3-b7ea-4f7261152c36">Control mobile application installation and removal.</p>
+</li>
+</ul>
+<p id="_09bbe6fc-dcc5-4d17-adbe-8f35437ac153">The above capabilities are examples only and not indicated as mandatory requirements for B/Ds when selecting their MDM solution. B/Ds should consider the needs to enforce security controls with alternative solutions where applicable with regard to their own business and operation environment.</p></clause>
+<clause id="_best_practices_on_mobile_device_management_solution" obligation="normative"><title depth="3">5.2.2.<tab/>Best Practices on Mobile Device Management Solution</title><p id="_a93a7f2d-3e26-4627-acec-4288509cdbcc">The following are some best practices commonly enforced through MDM solution for security management of mobile devices.</p>
+<ul id="_3d01c4e0-01d9-444b-9612-70e9d2f78eb9">
+<li>
+<p id="_09732509-4909-4fae-98eb-25a6fc178bba">Enforcement of Security Policy</p>
+<p id="_1b9929da-4429-4789-9d40-d8cb3f42a492">With the help of MDM technologies, technical measures could be uniformly enforced on all departmental mobile devices in accordance with the departmental IT security policy and other relevant policies, procedures and guidelines. The configured MDM security policies should be documented and reviewed regularly.</p>
+</li>
+<li>
+<p id="_805582e3-6841-43c3-a4e7-8275ac9f16e2">Secure Data Communication and Storage</p>
+<p id="_bfe535b3-8435-4d7f-9a27-917a04f12a01">Data communications between the managed mobile devices and B/Ds&#8217; backend services should be protected by strong encryption, such as Virtual Private Network (VPN) technologies. Data stored on both built-in storage and removable media storage should also be protected by strong encryption. Data within the containers should be also encrypted. No copy/paste and cut/paste are permitted outside the MDM realm. Remote wipe functionality should be enabled in case the device has been lost or stolen. After a certain number of incorrect authentication attempts, the device should wipe itself automatically.</p>
+</li>
+<li>
+<p id="_2fa3c709-1153-4960-9e4e-d2dcf692d8c9">User and Device Authentication</p>
+<p id="_55585e91-9b45-44ce-87bb-f76b8d23291a">To access internal resources, the user and the device itself should be authenticated via various means, for example, network-based device authentication, password authentication, and token-based authentication. After idled for a predefined period, the device should be locked automatically. Remote lock functionality should be enabled such that administrators could lock the device remotely in case the device is believed to be lost, stolen, or left in an unsecured location.</p>
+</li>
+<li>
+<p id="_8bca9e01-b538-4de7-bb4c-4dc655973919">Enterprise Mobile Application Management</p>
+<p id="_5425964b-c03e-49c1-98d6-1b3c8e11ae02">B/D&#8217;s mobile applications should be distributed from a single, trusted mobile app store. The digital signatures should be verified to ensure that only applications from trusted sources could be installed on the device. Whitelisting should be used to further restrict which applications may be installed on B/Ds&#8217; mobile devices. An up-to-date inventory of all applications installed on each device should be maintained. Last but not least, the synchronisation services of mobile application should be disabled if not needed.</p>
+</li>
+</ul></clause>
+<clause id="_other_considerations_of_mobile_device_management_solutions" obligation="normative"><title depth="3">5.2.3.<tab/>Other Considerations of Mobile Device Management Solutions</title><p id="_2f059ebe-6437-4c20-8bae-b1f9231b4466">Some other considerations of MDM solutions for mobile devices are depicted as follows:</p>
+<ul id="_17c0e3cc-fe2d-4f1f-be2c-82a149a7d9f3">
+<li>
+<p id="_23082a5e-7397-45ac-b5a8-4d99270641c1">MDM solution may not be available for portable computer OS as MDM software is primarily designed for mobile phones and tablets OS instead of computer OS.</p>
+</li>
+<li>
+<p id="_7ee94a1b-e763-4b43-b472-2618e5323572">Data erasing feature after consecutive incorrect attempts for portable computer OS is yet to be a common feature while data erasing is commonly available for major mobile OS.</p>
+</li>
+<li>
+<p id="_77ef5dca-6e00-49d0-9c58-62660e049be8">Some OSs of mobile devices are customised by manufacturers, administrators or mobile users may not be able to apply security patches for known vulnerabilities in a timely manner.</p>
+</li>
+</ul></clause></clause>
+<clause id="_scenario_specific_security_guidance" obligation="normative"><title depth="2">5.3.<tab/>Scenario Specific Security Guidance</title><p id="_77afdd74-87e3-422e-af09-b6a65daa6859">This section provides security guidance focusing on different scenarios of government staff in using mobile devices, including: handling sensitive information, sharing of mobile devices within B/Ds, and loss or theft and security incident relating to mobile device. Other than the best practices mentioned in <xref target="subsec-mobile-device-usage-lifecycle">Clause 5.1</xref>, these scenarios may commonly occur in daily operation with noticeable impact to mobile device security. Example includes improper sensitive information handling, data leakage to other teams through device sharing or loss/theft of mobile devices, and attacks to mobile devices due to software vulnerabilities.</p>
+<clause id="_handling_sensitive_information_with_mobile_devices" obligation="normative"><title depth="3">5.3.1.<tab/>Handling Sensitive Information with Mobile Devices</title><p id="_007d0355-327e-405a-94dc-226b26c2ef7b">In compliance with the security requirements of the Government, B/Ds shall observe government security requirements and documents. In addition, B/Ds should adopt the following security practices to protect mobile devices and information against common security threats:</p>
+<ul id="_5677b56f-4a21-449b-8b16-ea7854c452bd">
+<li>
+<p id="_e9891038-8ec2-4c01-9f2f-614949ec7d73">Do not process or store TOP SECRET or SECRET information on mobile devices.</p>
+</li>
+<li>
+<p id="_92932b77-7b5b-4d72-bc1e-3d4d4dfacca7">Encrypt all sensitive information when stored in and transmitted from a mobile device.</p>
+</li>
+<li>
+<p id="_84cf14d0-7d45-4642-b59a-ed4312a0a599">Minimise storing of sensitive information on a mobile device.</p>
+</li>
+<li>
+<p id="_32c7ee6f-0a80-40ff-a0f6-a63975e6f40a">Do not store sensitive information on mobile device, except the information is protected with appropriate security measures.</p>
+</li>
+<li>
+<p id="_5db3eea8-9d2b-4cb9-8f5e-28c51b3bd7d5">Do not synchronise sensitive information from a mobile device to public cloud storage, privately-owned IT equipment or other unauthorised devices.</p>
+</li>
+<li>
+<p id="_671f966b-0f8b-41d1-9533-b93afce224dc">Completely clear or destroy all sensitive information in a mobile device when it is no longer required, and protect the storage of the device until disposal or re-use.</p>
+</li>
+<li>
+<p id="_d91efe2a-acdf-46ea-af0e-19b5617866f6">Do not store sensitive information in privately-owned mobile devices.</p>
+</li>
+<li>
+<p id="_4631252b-1dd9-4c21-997c-1cf0c2ad9964">If the mobile device contains sensitive information, put the mobile device in a secure place and keep it in a locked room or cabinet, when not attended.</p>
+</li>
+<li>
+<p id="_08b9f2d2-78e4-4d9b-86bf-5b43e550a33d">Use privacy screen filter to narrow the viewing angle and position carefully the display screen so that sensitive information cannot be peeked by unauthorised persons.</p>
+</li>
+<li>
+<p id="_c0003774-56b9-4bd4-8bd8-c0e122e84c34">Configure multi-level password control for use of a mobile device and access to sensitive information, if possible.</p>
+</li>
+<li>
+<p id="_abeeef87-fcdf-428f-8c2c-b714d2144421">Do not capture screen displaying any sensitive information.</p>
+</li>
+<li>
+<p id="_73424457-96bf-48f3-88d2-8575a0d4e6e7">Do not allow sensitive information to be transferred to the facilities of public IT services and vendors&#8217; backup services.</p>
+</li>
+<li>
+<p id="_08a74489-62a5-482c-909f-a2b639088863">Remind mobile users to inform administrators or the responsible party as soon as possible about any loss, theft or damage of government mobile device. Mobile user is responsible for the security and should protect the mobile devices from theft, loss and damage at all times.</p>
+</li>
+</ul></clause>
+<clause id="_shared_access_to_mobile_devices" obligation="normative"><title depth="3">5.3.2.<tab/>Shared Access to Mobile Devices</title><p id="_5c67b938-1020-43ee-8a12-ebe579b92ff9">Shared access to government mobile devices should be prohibited unless among persons who are authorised to access all the information stored on the device. Shared access should be authorised based on operational need. Example includes departmental mobile device accessing information within a team, testing device for mobile application development, and outside work and roster based jobs such as data centre operation. B/Ds should ensure that all activities in relation to sensitive information are tracked by audit trails and logical access control software in case shared access is needed.</p>
+<p id="_1bd9bb92-3223-47ba-b8f2-96fd75609f7a">If there is operational need for sharing mobile devices across government staff, the staff should observe the following best practices:</p>
+<ul id="_e2c95250-2738-406d-b5bc-e9f83166ba1b">
+<li>
+<p id="_501b3a37-e5a1-45e5-ac12-62aacb15eae6">Store information based on need-to-know basis.</p>
+</li>
+<li>
+<p id="_daa056f1-68d1-4940-8b2b-27b971b1c4cd">Do not perform any backup unless authorised.</p>
+</li>
+<li>
+<p id="_942f7673-2275-46b0-8a0d-83c45ace4866">Log out all applications after use or when handing over to other staff.</p>
+</li>
+<li>
+<p id="_4384aa45-9ec0-4903-be67-3d00e1ce0c5a">Do not configure or store individual email account and password.</p>
+</li>
+</ul></clause>
+<clause id="subsec-loss-theft-and-security-incident" obligation="normative"><title depth="3">5.3.3.<tab/>Loss, Theft and Security Incident</title><p id="_cbcbd5b7-46fa-436f-97d8-e85437837fd1">Mobile devices are usually small in size and easy to be stolen or lost. B/Ds should review and modify their security incident handling procedures with necessary adjustments for incident handling of lost or stolen devices. Users should report promptly and escalate if an information security incident occurs in accordance with the security incident handling procedures.</p>
+<p id="_09897b1c-db06-4be3-b961-e79677be1808">In particular, B/Ds should consider including the following best practices for handling lost or stolen mobile devices:</p>
+<ul id="_9404d5fb-abf0-41b8-b6e5-b8b361b57a9c">
+<li>
+<p id="_e103f7a8-ff1a-449a-b235-3ca520a781dd">Revoke the user accounts that may have been compromised.</p>
+</li>
+<li>
+<p id="_d94ad1f6-1d33-4e9c-ac8e-501109a9e2dd">Remotely wipe the data stored on the lost or stolen devices, whenever technically possible.</p>
+</li>
+<li>
+<p id="_ea4fde0e-06a9-4b58-94e3-a35e91a154ac">Establish, test and regularly review the handling procedures for handling lost or stolen mobile devices.</p>
+</li>
+<li>
+<p id="_629dcb78-184b-4e2a-a325-f2241177a080">Report the incident to the Government Information Security Incident Response Office (GIRO) if sensitive data is involved.</p>
+</li>
+</ul></clause></clause>
+<clause id="_security_guidance_on_privately_owned_mobile_devices" obligation="normative"><title depth="2">5.4.<tab/>Security Guidance On Privately-Owned Mobile Devices</title><p id="_0e11f858-b7d2-4432-8161-f8022a4ff60d">One basic security concern related to using privately-owned mobile devices in organisational environment is the role of ownership<fn reference="2"><p id="_60cd89d7-5e68-4ae8-bb26-c7dd4cb2f7af">Bring your own device Security and risk consideration for your mobile device program <link target="http://www.ey.com/Publication/vwLUAssets/EY_-_Bring_your_own_device:_mobile_security_and_risk/$FILE/Bring_your_own_device.pdf"/></p></fn>. With the sole control of their mobile devices, staff may install any mobile applications based on their own preferences, which may introduce malware to the mobile devices. In addition, staff may modify the booting up software and/or firmware of their mobile devices to override vendors&#8217; defined security controls so as to gain more control and flexibility on the devices. In view of the above security risks together with the risk of data leakage due to the loss of the devices to the wrong hands, using privately-owned mobile devices for business purpose should not be allowed unless with adequate security protection.</p>
+<p id="_58cfcc5c-20cc-4f4b-b4c7-3558f163370f">When considering adopting mobile device solution involving privately-owned mobile devices, B/Ds should observe government security requirements about use of privately-owned IT equipment. In addition, S17 section 20.1.3 requires that unclassified information should also be protected from unintentional disclosure.</p>
+<p id="_8c1fef34-95c3-4a11-a34b-73092abb6452">Mobile Device Management (MDM) and Mobile Data Loss Prevention (Mobile DLP) are two possible technical solutions for protecting government information from unauthorised access when using privately-owned mobile device for business purpose. MDM is more focused on device&#8217;s management capability while mobile DLP emphasises on data controls. B/Ds may refer to the Practice Guide for Data Loss Prevention for additional considerations in protecting government information under different scenarios. The security services supported by a typical MDM solution are specified in <xref target="subsec-capabilities-mobile-device-management">Clause 5.2.1</xref>.</p></clause>
+<clause id="_restrictions_on_mobile_devices_and_access_levels" obligation="normative"><title depth="2">5.5.<tab/>Restrictions on Mobile Devices and Access Levels</title><p id="_c91d57ca-2646-4f1f-a81c-615b3a58fde2">B/Ds should specify their business and security requirements for the use of mobile device technologies in the mobile device security policy. For example, B/Ds may limit the types of mobile devices (by operating system version, by brand/model of mobile phone, etc.) and require tiered levels of access, such as allowing government provided mobile devices to access many resources, while privately-owned mobile devices running the B/D&#8217;s mobile device management client software to access a limited set of resources.</p>
+<p id="_abc25cea-f19b-4f13-9ab0-6b74f982a29a">B/Ds should make their own risk-based decisions about what levels of access should be permitted from which types of mobile devices. Some factors that B/Ds should consider when setting mobile device security policy are highlighted in the following:</p>
+<ul id="_974a5bf4-ad4e-41aa-a69c-7518d72273f6">
+<li>
+<p id="_cc5e9302-11a0-47b1-bc41-318dfab253cf">Compliance with government security requirements</p>
+<p id="_4ad389f9-fc2b-433d-9b18-b4a7378dce0f">Privately-owned mobile devices for business purpose should not be allowed unless adequate security protection is enforced in accordance with government security requirements.</p>
+</li>
+<li>
+<p id="_e79aff89-2b01-4c65-bc7c-57fa42ea6ce8">Sensitivity of work</p>
+<p id="_fd3320d9-4db1-4d0b-9af0-20e8b83c009b">Some work involves access to sensitive information or resources, while other work does not. B/Ds may have more restrictive requirements for work based on their business needs.</p>
+</li>
+<li>
+<p id="_8dd41fbc-d5ac-4db7-84da-aa8e06688406">Technical limitations</p>
+<p id="_c3655f8f-4075-44b0-be7c-195c6166bbaf">Certain types of mobile devices or operating systems may be needed, such as those with hardware-based security features or those running a particular mobile device management client software.</p>
+</li>
+<li>
+<p id="_502641ce-cdd5-4cc5-b3ce-611ea2134cb8">Work location</p>
+<p id="_d175407d-a1c6-4198-998f-14ce674d3535">Risks will generally be lower for devices used only in the environment under B/Ds&#8217; direct control than for devices used in a variety of locations.</p>
+</li>
+</ul></clause></clause>
+<clause id="sec-mobile-app-development-security" obligation="normative" displayorder="6"><title depth="1">6.<tab/>Mobile App Development Security</title><p id="_8c81b7b5-bdc4-4a89-8209-a048fd7a1947">This section is intended for developers who are involved in mobile app development life cycle. For users and administrators who are involved in the use and adoption of mobile devices and related management solutions, please refer to <xref target="sec-mobile-device-security">Clause 5</xref>&#8201;&#8212;&#8201;Mobile Device Security.</p>
+<clause id="_considerations_in_mobile_app_development" obligation="normative"><title depth="2">6.1.<tab/>Considerations in Mobile App Development</title><p id="_901c14e5-105c-41bb-bce3-240d7fec726e">Mobile apps are also susceptible to different threats as the applications are now used to access sensitive information and perform business critical activities. As a best practice, to develop and maintain secure mobile apps, various security considerations and measures, both technical and administrative, need to be implemented during different stages of mobile app development.</p>
+<p id="_a7cd9d71-529c-4564-920a-fa29351ceb0f">The methodology on software development is evolving with new development style such as agile software development, DevOps / DevSecOps (compounding &#8220;development&#8221;, &#8220;security&#8221; and &#8220;operations&#8221;) for continuous integration and continuous delivery to build mobile apps faster and/or more secured using an iterative development process. It focuses on continuous communication, integration, measurement and delivery to foster the processes between app development, testing and quality assurance. No matter what methodology is used, design for a secure mobile app should be embedded into every stage of development life cycle, in particular early stage, so as to minimise security risk and avoid re-work due to design deficiency.</p>
+<p id="_e15a03a4-ac56-4973-8775-a92eeb36f589">The following are common stages and key security considerations to help identify potential security risks in mobile app development:</p>
+<table id="_b98c4a02-065f-4b16-82d2-e58810b9dcfd" unnumbered="true">
+<thead>
+<tr>
+<th valign="top" align="left">Development Life Cycle</th>
+<th valign="top" align="left">Security Considerations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td valign="top" align="left">Requirement</td>
+<td valign="top" align="left">Security requirements should be defined along with functional requirements and further incorporate security during other phases of software development.</td>
+</tr>
+<tr>
+<td valign="top" align="left">Design</td>
+<td valign="top" align="left">Design the application architecture in accordance with the security specifications aligned in the requirement stage.</td>
+</tr>
+<tr>
+<td valign="top" align="left">Development</td>
+<td valign="top" align="left">Develop the mobile app following secure coding best practices and perform source code security assessment</td>
+</tr>
+<tr>
+<td valign="top" align="left">Testing</td>
+<td valign="top" align="left">Validate the performance, accuracy and security of system functionalities.</td>
+</tr>
+<tr>
+<td valign="top" align="left">Pre-production</td>
+<td valign="top" align="left">Perform security risk assessment and security audit</td>
+</tr>
+<tr>
+<td valign="top" align="left">Maintenance and Support</td>
+<td valign="top" align="left">Maintain security assurance with continuous testing and appropriate security controls.</td>
+</tr>
+<tr>
+<td valign="top" align="left">Decommission</td>
+<td valign="top" align="left">Decommission the app when it no longer serves the purposes.</td>
+</tr>
+</tbody>
+</table></clause>
+<clause id="_mobile_app_development_lifecycle" obligation="normative"><title depth="2">6.2.<tab/>Mobile App Development Lifecycle</title><clause id="_requirement_stage" obligation="normative"><title depth="3">6.2.1.<tab/>Requirement Stage</title><p id="_42f77efe-3893-4399-bd85-8c6a1a1d4096">Security should be considered during the requirement phase so that security is included throughout the development life cycle. Security requirements should be defined along with functional requirements and further incorporate security during other phases of software development. If the requirements are defined properly, identified risks could be addressed in early stages, which can greatly reduce extra work in later stages and remediation effort. The following areas should be considered for security requirements:</p>
+<ul id="_cf214a0c-334f-49ae-8d22-35b8f0280104">
+<li>
+<p id="_7616b92d-9aa1-42be-81f9-db32e9e59ec2">Architecture, Design and Threat Modelling Requirements</p>
+<p id="_b4a01a46-eccb-4785-b491-b15a8ce49b0e">Process should be in place to ensure the security concern has been explicitly addressed when planning the architecture and design of the mobile app. The functional and security roles of each component should be well defined. Topics such as threat modelling, secure development and key management should be covered. For example, apply relevant and sufficient security controls to safeguard the data and transactions before implementation.</p>
+</li>
+<li>
+<p id="_69977c42-fc70-46e3-9c9a-c65c2cad9f19">Data Storage and Privacy Requirements</p>
+<p id="_585161cb-4d18-4bba-a41b-2f8b0ed35448">Developer should have good understanding on the type and sensitivity of data to be handled and if any critical transaction would be involved. Sensitive data can be unintentionally exposed to other apps on the same device and data may also be leaked during transmission. Moreover, mobile devices are more easily lost or stolen compared to other types of devices. Developers should adhere to concerned laws and regulations on privacy, e.g., Personal Data (Privacy) Ordinance, in order to define a suitable data storage and privacy requirements. Privacy Impact Assessment (PIA) should be conducted if the mobile app has significant privacy implications.</p>
+</li>
+<li><p id="_160ab646-f1d4-44c8-9046-2b4e3a5903b6">Cryptography Requirements</p><p id="_7ca2cee5-84c7-47af-ba32-ea4ab38a25b2">Cryptography should be adopted in protecting the data stored and processed on a mobile device, or in transit between the device and servers. Ensure the mobile app uses cryptography according to industry best practices, including:</p>
+<ol id="_e3d0c4f0-5a8d-42d7-8b4a-971ad85bf0a8" type="arabic">
+<li>
+<p id="_45ca84a2-7483-41e8-a138-a598cf81c29b">Use of proven cryptographic libraries.</p>
+</li>
+<li>
+<p id="_1a689e12-c74a-4938-9b17-70670c43b244">Proper choice and configuration of cryptographic primitives.</p>
+</li>
+<li>
+<p id="_9482c680-ec51-4fe0-83c4-10e78632ae95">Do not reuse the same cryptographic key for multiple purposes.</p>
+</li>
+<li>
+<p id="_b5506841-e1d8-4d32-9bcd-b2913b3f1603">Generate random values using a sufficiently secure random number generator.</p>
+</li>
+</ol></li>
+<li>
+<p id="_e85cd4a8-8ed5-4a92-b9f5-7d3ce643a086">Authentication and Session Management Requirements</p>
+<p id="_ac89fe30-9d9c-4bca-a7a1-33ca1a8b0d68">User accounts and sessions should be properly authenticated and managed. This includes using randomly generated access tokens to authenticate client requests, enforcing explicit password policy, and locking of user account when excessive login attempts are found, etc. Application should also be properly handled for change of states, such as requiring re-authentication when the app resumes from background.</p>
+</li>
+<li>
+<p id="_4239a66b-f7ee-4273-92f6-3e069c90310f">Network Communication Requirements</p>
+<p id="_7ebd6d4e-1211-458d-a15f-82b8125ce718">Developer should ensure the confidentiality and integrity of information exchanged between the mobile apps and remote service endpoints. Encrypted channel using the TLS protocol with appropriate settings should be used for handling all application data. When using TLS, the apps must enforce certificate validation functions and should not accept self-signed and/or un-trusted certificates. Apps should also be able to detect the use of unauthorised certificates to defend against network attack (e.g., man-in-the-middle attacks).</p>
+</li>
+<li>
+<p id="_cba8775e-bb46-45ca-8a75-94b44c46deaa">Platform Interaction Requirements</p>
+<p id="_a8a89f6c-1ef5-4459-8f9b-a399352d60c5">Platform application program interfaces (APIs) and standard components in a secure manner including communications between apps (inter-process communications, e.g. communication of APIs resided in different containers) should be considered.</p>
+</li>
+<li>
+<p id="_002add20-4bd8-4bf2-a23f-8a08c9d656de">Code Quality and Build Setting Requirements</p>
+<p id="_d2bcd4c3-a207-4b7e-ab77-0b98ab805e13">Security coding practices should be followed in developing the app. For example, the app should be signed with trusted certificate. Mobile device default accessed entitlement should be reduced to minimum (e.g. disable camera/microphone and enable &#8220;Do Not Track&#8221; by default).</p>
+</li>
+<li>
+<p id="_1caf711e-ad85-4e7f-bbd6-3c7aa1e41f2a">Resilience Against Reverse Engineering Requirements</p>
+<p id="_d707f553-cea0-421b-8b4e-c8164fb99837">If the mobile app will process or access sensitive information, protection measures should be applied to increase the app&#8217;s resiliency against reverse engineering. A list of obfuscation controls such as &#8220;app isolation&#8221;, &#8220;impede dynamic analysis and tampering&#8221;, &#8220;device binding&#8221; and &#8220;emulator detection&#8221; should be considered.</p>
+</li>
+</ul></clause>
+<clause id="_design_stage" obligation="normative"><title depth="3">6.2.2.<tab/>Design Stage</title><p id="_d885c8fa-8bbe-4c25-8e46-f3e3bd24fb11">The design stage involves designing the application architecture in accordance with the specifications aligned in the requirement stage. As application architecture is established, development team should review the system design by identifying possible compliance issues as well as security risks with reference to defined security requirements. This includes designing appropriate security controls for a given type of data and incorporating threat modelling to identify and address the risks associated with the application.</p>
+<p id="_753f04c8-9689-44d5-b419-0e644d18427d">A security review should also be conducted in the design stage. It serves as a checkpoint to ensure necessary security requirements are identified and incorporated in the system design.</p></clause>
+<clause id="_development_stage" obligation="normative">
+<title depth="3">6.2.3.<tab/>Development Stage</title>
+<p id="_6b0d57be-cb7c-4f49-a7c5-c7f2bf35e5d2">Observing secure coding standards can help improving security and reducing the number of common mistakes that may result in security breaches. Performing security assessments during the development stage also helps to identify necessary security controls, and provides timely feedback to developers regarding the security of their codes. Source code security assessments should also be performed to provide an early indicator of code quality in order to deliver consistent, high-quality mobile apps.</p>
+</clause>
+<clause id="_testing_stage" obligation="normative">
+<title depth="3">6.2.4.<tab/>Testing Stage</title>
+<p id="_6b6d8689-48e6-4c99-a220-32216369aedd">In addition to user acceptance test, system tests, stress tests, regression tests and unit tests are also useful in validating the performance and accuracy of system functionalities. Testing mobile apps could be more challenging than web apps due to the high variant of platforms and testing environment. A comprehensive testing plan should be established to design the testing approach and define the details on &#8220;what&#8221;, &#8220;when&#8221; and &#8220;how&#8221; to test.</p>
+</clause>
+<clause id="_pre_production_stage" obligation="normative">
+<title depth="3">6.2.5.<tab/>Pre-Production Stage</title>
+<p id="_09070bc6-274b-4722-b9db-ef93e20cc0fe">A security risk assessment with security audit should be performed before the production launch and after any major changes. Each vulnerability fix may require updates to custom codes that could introduce new vulnerabilities. It is imperative to continuously assess the risk and impact to maintain secure mobile app.</p>
+</clause>
+<clause id="_maintenance_and_support_stage" obligation="normative">
+<title depth="3">6.2.6.<tab/>Maintenance and Support Stage</title>
+<p id="_b37bef5c-3b78-4a1c-9d68-fce3ee498814">New functionalities to the app or updates to existing functions may introduce changes in which security controls should be identified, documented, tested and reviewed to ensure that the system can be effectively protected from attacks or being compromised. Continuous testing is vital to maintain security assurance and protect the app where most attacks occur. The app should be regularly reviewed to ensure sufficient security is in place.</p>
+</clause>
+<clause id="_decommission_stage" obligation="normative"><title depth="3">6.2.7.<tab/>Decommission Stage</title><p id="_afe31dcf-c89b-456f-a873-8d22f0c37c31">Consider decommissioning the app if it no longer meets the purposes, or when there are other apps that can better serve the business. Some suggestions on the decommission plan:</p>
+<ul id="_339b2c72-bd7d-48db-81e1-69c13c54cb96">
+<li>
+<p id="_1526bfa7-a30f-47e9-9c64-2c6a6d01239a">Develop communication strategy to inform all necessary stakeholders (e.g., app users)</p>
+</li>
+<li>
+<p id="_c0d26b4f-f12e-48a8-99f5-57317a65ab4d">Remove the app from the production environment (e.g., app store)</p>
+</li>
+</ul></clause></clause>
+<clause id="_security_by_design_and_data_privacy" obligation="normative"><title depth="2">6.3.<tab/>Security by Design and Data Privacy</title><p id="_90004d8c-5805-4740-90dd-3bc7daee6722">Security by design and data privacy should be embedded into the whole app system design and development processes to protect the data and individual&#8217;s right to privacy. Developers should ensure that security issues are incorporated as part of the basic architectural design. Detailed designs for possible security issues should be reviewed, and mitigations for possible threats should be determined and developed. Related laws, regulations and ordinances (e.g., Personal Data (Privacy) Ordinance) should also be followed when defining the privacy requirements. Developers should pay attention to the following best practices during system design in order to protect users&#8217; privacy.</p>
+<clause id="_user_notification" obligation="normative">
+<title depth="3">6.3.1.<tab/>User Notification</title>
+<ul id="_dbda5a21-9f2f-4946-8f20-f2652c2402f3">
+<li>
+<p id="_a371c4f8-5832-428d-8c5a-7fef50a3474a">Inform users on what information / data that the app would collect, what purpose it serves on and how data would be handled.</p>
+</li>
+<li>
+<p id="_d1c732c1-298b-428f-b2aa-4d279d4b659c">Allow users to opt-out from any personal data access/use.</p>
+</li>
+<li>
+<p id="_38a941ec-4e2b-44e8-bdd0-7a6b02030951">Offer users with option to delete all app-related data and account related information when he/she requests to remove the app or delete the account.</p>
+</li>
+</ul>
+</clause>
+<clause id="_data_handling" obligation="normative">
+<title depth="3">6.3.2.<tab/>Data Handling</title>
+<ul id="_91995730-4a41-4d45-9702-61405410db88">
+<li>
+<p id="_d66a5678-6966-452c-a793-1a95a826d09f">Reduce the collection of personal data (especially for sensitive personal data) and permission of mobile devices features (e.g., camera and location tracking) to the absolute minimum.</p>
+</li>
+<li>
+<p id="_098b40f2-f19a-4897-9fcf-e78cb8dbe327">Protect users&#8217; personal data from unauthorised access, disclosure or use by using strong encryption and access control. Avoid storing personally identifiable information (PII) (e.g., credential ID, call logs) or other sensitive data on the user device.</p>
+</li>
+<li>
+<p id="_8caa7b70-ffd9-4afd-b959-cc2ed4c51560">Do not upload or synchronise sensitive information to external systems or devices without users&#8217; permission.</p>
+</li>
+<li>
+<p id="_8a81a559-15da-4d0e-be5e-e1adcfff9633">Discard sensitive data after fulfilling the claimed data usage purpose (e.g., geo-location data).</p>
+</li>
+</ul>
+</clause></clause>
+<clause id="_testing_for_mobile_app_development" obligation="normative"><title depth="2">6.4.<tab/>Testing for Mobile App Development</title><p id="_06197d91-29ca-4670-9338-5c02a51ad52d">Testing mobile apps on mobile devices can be more challenging than testing web applications on personal computer due to wide varieties of mobile OS, hardware components and network environment, etc. The following areas should be considered in mobile app testing cycle.</p>
+<clause id="_testing_mobile_app_functionality" obligation="normative"><title depth="3">6.4.1.<tab/>Testing Mobile App Functionality</title><p id="_9e28916a-f5ea-4496-b07e-e882b4215067">To make sure the mobile app functions properly on supported device, functional testing should be conducted to verify the mobile app features specification. There are also different types of mobile app testing that need to be considered:</p>
+<ul id="_d0f34cd1-651a-4928-a8b8-10d9e15895c8">
+<li>
+<p id="_bc0d1b5f-7fb6-4bbc-9641-fb58b6fc1800">Compatibility testing: Ensure the mobile app functions properly on supported device with different mobile platform such as iOS and Android, and with different screen sizes and versions of operating systems.</p>
+</li>
+<li>
+<p id="_200a3f83-af57-4040-bdd6-79dc411e3862">Performance testing: Measure the app performance such as response speed, acceptable user load and app stability, etc.</p>
+</li>
+<li>
+<p id="_dd6b93d1-6e3c-48ba-afcc-bf48819833df">System testing: Ensure the mobile app handles possible exception and recovers properly from accidental termination.</p>
+</li>
+</ul></clause>
+<clause id="_testing_code_quality" obligation="normative">
+<title depth="3">6.4.2.<tab/>Testing Code Quality</title>
+<p id="_05fbd38d-8641-4082-82d8-cf6bf61113eb">Developers use a wide variety of programming languages and frameworks in mobile app development. Common vulnerabilities such as injection flaws, memory corruption, and cross-site scripting, may manifest in apps when failed to follow secure programming practices. For example, injection attacks against a mobile app are most likely to occur through inter-process communication (IPC) interfaces, where a malicious app attacks another app running on the device. Testing should be conducted to identify possible entry points for untrusted input or to identify known, dangerous library / application program interface (API) calls.</p>
+</clause>
+<clause id="_cryptography_in_mobile_apps" obligation="normative">
+<title depth="3">6.4.3.<tab/>Cryptography in Mobile Apps</title>
+<p id="_13a72c2f-cda7-4af4-891e-fc995b3383a8">Cryptography is crucial in securing the user&#8217;s data in a mobile environment, where attackers may have physical access to the user&#8217;s device. Proper encryption or use appropriate key storage APIs should be adopted for storing sensitive information. Avoid using any cryptographic algorithms or protocols that contain known weaknesses. Adopt the best practices and security configurations to ensure the cryptographic algorithms are up to date and in-line with industry standards. Outdated ciphers such as DES, or hashing function such as SHA1 must not be used. Other mis-configuration issues such as insufficient key length, hard-coded cryptographic keys and weak key generation functions should be handled properly.</p>
+</clause>
+<clause id="_mobile_app_authentication" obligation="normative"><title depth="3">6.4.4.<tab/>Mobile App Authentication</title><p id="_6053dc6a-f11b-4ddf-8d26-288b4354f063">Appropriate authentication methods should be integrated and performed by both front-end client and back-end service to protect against attacks such as password dictionary attack or brute force attack. In general, username/password authentication is considered for apps that are not sensitive; two-factor authentication is generally considered for protecting sensitive app (e.g., SMS and token). Testing should be conducted to ensure the authentication procedure is consistently enforced on both front-end client and back-end server.</p>
+<p id="_ce81d111-0403-4e83-9879-6a0863245516">The following steps should be tested on authentication and authorisation:</p>
+<ul id="_62fbb2f7-c183-49b6-af70-a8101d4c2d34">
+<li>
+<p id="_b10f8b96-feb2-4b72-9522-8934c26828ef">Identify the additional authentication factors the app uses.</p>
+</li>
+<li>
+<p id="_f7c08f7b-c8a9-401a-8bf8-37e088470f5d">Locate all endpoints that provide critical functionality.</p>
+</li>
+<li>
+<p id="_e6cf96a1-72eb-4e6a-be4a-30f9be6cab32">Verify that the additional factors are strictly enforced on all server-side endpoints.</p>
+</li>
+</ul></clause>
+<clause id="_testing_network_communication" obligation="normative">
+<title depth="3">6.4.5.<tab/>Testing Network Communication</title>
+<p id="_4a8f1220-a005-4fc9-9046-ff581e5992a9">Network communication between mobile device and server usually takes place over untrusted networks. It may put the mobile app at risk of network-based attacks such as packet sniffing or man-in-middle-attacks. Encrypted connection (e.g., HTTPS) should be used to ensure confidentiality and integrity of the network data while handling sensitive data. Intercept the tested app&#8217;s incoming and outgoing network traffic and make sure that the traffic is encrypted, such as capture the network traffic with packet analyser and display the captured traffic in a human-readable format with network protocol analyser. After all, verify that the server is configured according to best practices.</p>
+</clause></clause>
+<clause id="_points_to_note_for_securing_mobile_app_development" obligation="normative"><title depth="2">6.5.<tab/>Points to Note for Securing Mobile App Development</title><p id="_ae74a645-2889-43af-9786-78549869e69a">Mobile apps are subject to similar security considerations and risks as other applications, thus general best practices for application development are also relevant to mobile app development. Due to varying use cases, usage patterns and various mobile platforms, mobile app developers should also take note of the remote web services, platform integration issues and insecurity of mobile devices. Developer should consider the following areas to build a secure mobile app:</p>
+<ul id="_eae1657a-54c7-417c-8874-a4a80ddcdd5f">
+<li>
+<p id="_8734cd7a-acb7-4560-aee3-96ad7efc6e10">General Considerations</p>
+</li>
+<li>
+<p id="_f49ff70b-591e-448c-862e-b99bd1d2c248">System/Software</p>
+</li>
+<li>
+<p id="_3af22f1a-5066-4749-843c-ee01056ed71a">Data</p>
+</li>
+<li>
+<p id="_9011a796-ce44-4c89-ab59-f882304f0b20">Network Management</p>
+</li>
+</ul>
+<clause id="_general_considerations" obligation="normative">
+<title depth="3">6.5.1.<tab/>General Considerations</title>
+<ul id="_331dcad2-796c-4238-af77-a63064a31296">
+<li>
+<p id="_b2f7d745-675a-4a05-ac58-bb9c8f68b7b1">Adopt security-in-mind approach and apply adequate protection for sensitive data being handled.</p>
+</li>
+<li>
+<p id="_33de23c0-4300-45d5-b652-1347adb063c8">Inform users on what information the app would access or upload, and for what purpose.</p>
+</li>
+<li>
+<p id="_d6a8a9ab-53ef-4a22-b1f4-0aa363d68bbb">Provide a personal information collection statement if personal information will be collected.</p>
+</li>
+<li>
+<p id="_07534d18-ff10-4b15-9bd0-567228413ea5">Apply &#8220;least privilege&#8221; principle to run the app with the least amount of system privileges and access rights.</p>
+</li>
+<li>
+<p id="_3abe9460-3abc-447f-9c0f-5dfc95d2c871">Develop and implement the app according to best practices.</p>
+</li>
+<li>
+<p id="_d711f1f3-5304-4e83-b028-0a4d3707ee17">Design and provision an app to allow updates for security patches.</p>
+</li>
+<li>
+<p id="_a748cf53-a1e0-4e29-9c8f-056e2fd6e0c8">Refuse executing the app or alerting users in case jailbreaking or rooting is detected if the app would process critical/ sensitive data.</p>
+</li>
+<li>
+<p id="_feef2f64-cc64-4bff-b8b0-933e9174e588">Validate all client provided data before processing with expected whitelist of data types, data range, and data length.</p>
+</li>
+<li>
+<p id="_c5f23dd0-22e6-4d72-9a81-c3fd3d483a6b">Inform users and obtain consent for any large data consuming app activities.</p>
+</li>
+</ul>
+</clause>
+<clause id="_systemsoftware" obligation="normative"><title depth="3">6.5.2.<tab/>System/Software</title><clause id="_authentication_and_session_management" obligation="normative">
+<title depth="4">6.5.2.1.<tab/>Authentication and Session Management</title>
+<ul id="_f9521daf-1d82-4fbc-8048-ad878a5099ab">
+<li>
+<p id="_7507ade3-72e1-4100-b3eb-d4e8969a6bfe">Avoid solely using device-provided identifier (like UID or MAC address) to identify the device, but rather leverage identifiers specific to the app as well as the device.</p>
+</li>
+<li>
+<p id="_e50e4893-4ca7-4e64-bc54-57f3103fa5cd">Adopt appropriate authentication mechanism, consider two-factor authentication based on risk assessment of the mobile app, such as processing sensitive or financial transactions.</p>
+</li>
+<li>
+<p id="_d0ecd1d6-4990-41ec-b098-8d514f8aa879">Avoid storing passwords, wipe/clear memory locations holding passwords directly after their hashes are calculated.</p>
+</li>
+<li>
+<p id="_2ec130f7-2fa9-44fe-801b-f4a4b7386201">Always make use of the latest security mechanism provided by mobile platform to protect user credentials.</p>
+</li>
+<li>
+<p id="_aa123e6d-1d91-4cb0-8ee9-faee120cacff">Perform checking at the start of each activity/screen to see if the user is in a logged in state. If not, switch to the login state.</p>
+</li>
+<li>
+<p id="_108797f9-5b39-48c5-bb10-498cd6795ee8">Discard and clear all memory associated with the user data, and any master keys used to decrypt the data when an app&#8217;s session is timed out or user logout.</p>
+</li>
+</ul>
+</clause>
+<clause id="_server_controls" obligation="normative">
+<title depth="4">6.5.2.2.<tab/>Server Controls</title>
+<ul id="_4c0100ee-2281-4959-aded-da58eb542621">
+<li>
+<p id="_ad7a6b3a-a3d0-495a-b8ca-dee2c5765dcd">Assess backend services for mobile apps for vulnerabilities and ensure that the backend system is running with a hardened configuration with the latest security patches applied.</p>
+</li>
+<li>
+<p id="_ed1e9a73-514e-4a85-bceb-06ba93f835cc">Ensure sufficient logs or information are retained on the backend servers to detect and respond to incidents and perform investigation.</p>
+</li>
+<li>
+<p id="_bf449de6-47a3-4371-9aeb-144adcbf7d91">Review the code of the app to avoid unintentional data transfer between the mobile app and backend servers.</p>
+</li>
+</ul>
+</clause>
+<clause id="_code_obfuscation_reverse_engineering" obligation="normative">
+<title depth="4">6.5.2.3.<tab/>Code Obfuscation / Reverse Engineering</title>
+<ul id="_79154da1-1f05-4f6e-8b29-bd08f5787b3c">
+<li>
+<p id="_c2ebd9f3-40c6-49a8-91d8-37ba5f17f8f3">Verify the app signature on start-up to ensure that the code has not been altered or corrupted.</p>
+</li>
+<li>
+<p id="_142b35ae-3aef-4651-9199-47d4f9dbf5fe">Use obfuscation software to protect source code and hide the app details as far as possible if it is not compiled to machine code format to prevent reverse engineering.</p>
+</li>
+<li>
+<p id="_f309c20b-3893-40b6-8029-0b9d004dc1cd">Implement anti-debugging techniques (e.g., prevent a debugger from attaching to the process) for apps containing sensitive data.</p>
+</li>
+</ul>
+</clause>
+<clause id="_use_of_third_partyopen_source_libraries" obligation="normative">
+<title depth="4">6.5.2.4.<tab/>Use of Third-Party/Open Source Libraries</title>
+<ul id="_0cbd3a7f-5867-4145-a7e4-7ee5110deb2d">
+<li>
+<p id="_9614d07e-a983-4b2a-bfb8-a25cc21f14bf">Use reliable and/or official versions of software development tools (e.g., software development kits, software libraries) to avoid introducing Trojan Horses or backdoors unknowingly.</p>
+</li>
+<li>
+<p id="_bb3fa47b-44ac-473b-806b-f7373871f314">Track third-party frameworks/ APIs used in the mobile app for security patches and perform upgrades.</p>
+</li>
+<li>
+<p id="_1ec37498-d85a-4e67-9768-e208852d259b">Validate all data when received from and send to un-trusted third-party apps (e.g., ad network) before incorporating their use in the mobile app.</p>
+</li>
+</ul>
+</clause></clause>
+<clause id="_data" obligation="normative"><title depth="3">6.5.3.<tab/>Data</title><clause id="_data_storage_and_protection" obligation="normative">
+<title depth="4">6.5.3.1.<tab/>Data Storage and Protection</title>
+<ul id="_b99ebe59-9236-4c4b-b7e1-1a3c00eea968">
+<li>
+<p id="_32acbd5b-5788-40fa-af52-fe2b2a784038">Only collect and disclose data which is required for business use of the app.</p>
+</li>
+<li>
+<p id="_6b49c12e-c5da-4e48-b08d-6bebbda4cbbf">Classify data storage according to sensitivity and apply controls accordingly. Process, store and use data according to its classification.</p>
+</li>
+<li>
+<p id="_1ae9a14f-4dd8-44b5-8a65-d294227b4154">Application data should not be stored in external storage unless appropriate security measures (e.g., strong encryption) are applied.</p>
+</li>
+<li>
+<p id="_45170817-dc85-4a1d-846e-305e92d52007">Use encryption with appropriate algorithm and key length when storing or caching sensitive data to non-volatile memory and keep minimum necessary data for the use of mobile app for the sake of data protection.</p>
+</li>
+<li>
+<p id="_8148f09c-db47-4082-9303-ebb7e4e761c6">Perform input validation and perform checking on related areas that the app can receive data to prevent client-side code injection or screen hijack.</p>
+</li>
+<li>
+<p id="_ac9e2392-d5f2-4642-886e-e6dea5eadd3c">Discard and clear all sensitive data from memory when no longer needed.</p>
+</li>
+<li>
+<p id="_5a60a44c-15bb-4965-8e95-efd92a480d16">Adopt sandboxing technology to improve security by isolating an application to prevent other applications from interacting with the protected app.</p>
+</li>
+</ul>
+</clause>
+<clause id="_on_line_payment" obligation="normative">
+<title depth="4">6.5.3.2.<tab/>On-line Payment</title>
+<ul id="_da3a1650-21a1-4d35-bc70-6347e194a9c4">
+<li>
+<p id="_a074631e-4ad0-4dd0-b09f-ecf89283ab20">Warn users and obtain consent for any cost implications for app behaviour.</p>
+</li>
+<li>
+<p id="_97afe487-0777-4279-8ff5-0e752eab1ca5">If paid-for resources are involved, security controls such as a whitelist model or re-authentication for paid-for resources should be implemented to prevent unauthorised or accidental access.</p>
+</li>
+<li>
+<p id="_63f42d8e-b454-48f7-81f3-d05061b3072c">Use secure mobile payment services if online payment is required. Use application program interfaces (APIs)/templates provided by the official providers and follow closely their guidelines for implementation.</p>
+</li>
+<li>
+<p id="_2a6d717c-d9d8-46af-8c31-fc28eb51f2c2">Inform user the minimum technical specifications that a mobile device must support for the payment service (e.g., TLS supports).</p>
+</li>
+<li>
+<p id="_e6dd53bc-2ae2-4293-8891-e571af83e088">Adhere to the specific data security standard (e.g., PCI DSS) on developing a mobile app with on-line mobile payment.</p>
+</li>
+</ul>
+</clause></clause>
+<clause id="_network_management" obligation="normative">
+<title depth="3">6.5.4.<tab/>Network Management</title>
+<clause id="_communication_security" obligation="normative">
+<title depth="4">6.5.4.1.<tab/>Communication Security</title>
+<ul id="_aed90603-fc6e-445a-8a7e-df08928683a3">
+<li>
+<p id="_6ddeafc2-cc33-4359-8cc5-bad904e4977e">Transmission of any sensitive data such as personal data or credit card information should be protected with end-to-end encryption (e.g., TLS).</p>
+</li>
+<li>
+<p id="_8fa9b48c-76c9-476b-a174-76604e1f3126">Detect if the connection is not HTTPS with every request when it is known that the connection should be HTTPS.</p>
+</li>
+<li>
+<p id="_db6f4572-cdad-4301-abba-5155397f710a">When using TLS, the apps must enforce certificate validation functions and should not accept self-signed and/or un-trusted certificates.</p>
+</li>
+<li>
+<p id="_5f58529d-60f4-4397-ac2f-45172a3428ea">Enable per-app VPN to secure access internal network resources from anywhere and on any mobile devices.</p>
+</li>
+</ul>
+</clause>
+</clause></clause>
+<clause id="_best_practices_on_secure_mobile_development_for_android_and_ios" obligation="normative"><title depth="2">6.6.<tab/>Best Practices on Secure Mobile Development for Android and iOS</title><p id="_92c6ac35-3fa4-4279-8dab-912bd12fee24">Developers may also refer to the best practices guide jointly developed by the Hong Kong Wireless Technology Industry Association (WTIA)<fn reference="3"><p id="_cb04f4aa-63dc-4575-aeef-b1d01b5f43ac"><link target="http://wtiahk.org/"/></p></fn> and the Mobile Security Research Lab<fn reference="4"><p id="_07524154-4541-4fba-8e1e-77565ff8acf0"><link target="http://www.msr-lab.com/"/></p></fn> on recommendations and practical coding practices for developing secure mobile apps. The guide can be referenced at:</p>
+<p id="_56306cb6-96ba-4d6c-8640-3b0496d9da12">
+<link target="http://www.msr-lab.com/Secure_Mobile_Development_Best_Practices.pdf"/>
+</p></clause></clause>
+
+</sections><annex id="annex-sample-configurations" obligation="informative" displayorder="7"><title><strong>Annex A</strong><br/>(informative)<br/><strong>Sample Configurations for Security Hardening</strong></title><p id="_02bf42e0-fedf-4cc3-bf21-12219bcc5d5e">Security configurations for mobile device hardening as reference are recommended below. The configurations may be enhanced and modified based on B/Ds&#8217; business need. Some configurations require additional security solution such as MDM or DLP solution for enforcement purpose. B/Ds may seek advice from product vendors or third party consultants for best practices on security hardening if necessary.</p>
+<table id="_d66d4725-673c-4e6b-a051-fcce0423a8c7" unnumbered="true">
+<tbody>
+<tr>
+<th valign="top" align="left">Controls<fn reference="a"><p id="_a99349f6-1d1b-488e-9167-e094fed5b128">The control items are sample for controlling mobile devices, including portable computers, mobile phones and tablets. However, they are not exhaustive such that B/Ds should modify a best-fit requirement list based on business needs</p></fn></th>
+<th valign="top" align="left">Portable Computer</th>
+<th valign="top" align="left">Mobile Phones and Tablets</th>
+</tr>
+<tr>
+<td colspan="3" valign="top" align="left">
+<strong>Password</strong>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">Require password</td>
+<td valign="top" align="left">Yes</td>
+<td valign="top" align="left">Yes</td>
+</tr>
+<tr>
+<td valign="top" align="left">Require complex password (e.g. alphanumeric)</td>
+<td valign="top" align="left">Yes</td>
+<td valign="top" align="left">Yes</td>
+</tr>
+<tr>
+<td valign="top" align="left">Minimum password length</td>
+<td valign="top" align="left">8</td>
+<td valign="top" align="left">8</td>
+</tr>
+<tr>
+<td valign="top" align="left">Number of failed attempts allowed</td>
+<td valign="top" align="left">5</td>
+<td valign="top" align="left">5</td>
+</tr>
+<tr>
+<td valign="top" align="left">Maximum password age</td>
+<td valign="top" align="left">90 days</td>
+<td valign="top" align="left">90 days</td>
+</tr>
+<tr>
+<td valign="top" align="left">Password history</td>
+<td valign="top" align="left">8</td>
+<td valign="top" align="left">8</td>
+</tr>
+<tr>
+<td valign="top" align="left">Inactive device timeout</td>
+<td valign="top" align="left">5 minutes</td>
+<td valign="top" align="left">5 minutes</td>
+</tr>
+<tr>
+<td colspan="3" valign="top" align="left">
+<strong>Other Device Setting</strong>
+</td>
+</tr>
+<tr>
+<td valign="top" align="left">Detect and restrict jail-broken, rooted or software version violations</td>
+<td valign="top" align="left">Yes</td>
+<td valign="top" align="left">Yes</td>
+</tr>
+<tr>
+<td valign="top" align="left">Allow installing apps from trusted sources</td>
+<td valign="top" align="left">Yes</td>
+<td valign="top" align="left">Yes</td>
+</tr>
+<tr>
+<td valign="top" align="left">Allow installing apps from unknown sources</td>
+<td valign="top" align="left">No</td>
+<td valign="top" align="left">No</td>
+</tr>
+<tr>
+<td valign="top" align="left">Allow backup to vendor&#8217;s cloud service</td>
+<td valign="top" align="left">No</td>
+<td valign="top" align="left">No</td>
+</tr>
+<tr>
+<td valign="top" align="left">Allow keychain / key repository backup</td>
+<td valign="top" align="left">No</td>
+<td valign="top" align="left">No</td>
+</tr>
+<tr>
+<td valign="top" align="left">Allow photo sharing</td>
+<td valign="top" align="left">No</td>
+<td valign="top" align="left">No</td>
+</tr>
+<tr>
+<td valign="top" align="left">Allow USB file transfer</td>
+<td valign="top" align="left">Yes, if encrypted<fn reference="b"><p id="_5c45c074-2f25-4344-aad6-464cd6d35b42">All data should be encrypted when stored in mobile devices or removable media.</p></fn></td>
+<td valign="top" align="left">Yes, if encrypted<fn reference="b"><p id="_6e1d431a-fcd1-40db-a63c-fd1cf2ba3d47">All data should be encrypted when stored in mobile devices or removable media.</p></fn></td>
+</tr>
+<tr>
+<td valign="top" align="left">Allow users to accept untrusted TLS certificates</td>
+<td valign="top" align="left">No</td>
+<td valign="top" align="left">No</td>
+</tr>
+<tr>
+<td valign="top" align="left">Allow modifying account setting</td>
+<td valign="top" align="left">No</td>
+<td valign="top" align="left">No</td>
+</tr>
+<tr>
+<td valign="top" align="left">Allow tethering configuration</td>
+<td valign="top" align="left">No</td>
+<td valign="top" align="left">No</td>
+</tr>
+<tr>
+<td valign="top" align="left">Allow biometric to unlock device</td>
+<td valign="top" align="left">No</td>
+<td valign="top" align="left">No</td>
+</tr>
+<tr>
+<td valign="top" align="left">Show notification messages when the screen is locked</td>
+<td valign="top" align="left">No</td>
+<td valign="top" align="left">No</td>
+</tr>
+<tr>
+<td valign="top" align="left">Modify Bluetooth setting</td>
+<td valign="top" align="left">No</td>
+<td valign="top" align="left">No</td>
+</tr>
+<tr>
+<td valign="top" align="left">Allow sending diagnostic and usage data to mobile vendor</td>
+<td valign="top" align="left">No</td>
+<td valign="top" align="left">No</td>
+</tr>
+<tr>
+<td valign="top" align="left">Require encryption on device</td>
+<td valign="top" align="left">Yes</td>
+<td valign="top" align="left">Yes</td>
+</tr>
+<tr>
+<td valign="top" align="left">Enable audit trails</td>
+<td valign="top" align="left">Yes</td>
+<td valign="top" align="left">Yes</td>
+</tr>
+<tr>
+<td valign="top" align="left">Use auto time or synchronise with trusted time server</td>
+<td valign="top" align="left">Yes</td>
+<td valign="top" align="left">Yes</td>
+</tr>
+<tr>
+<td valign="top" align="left">Force encrypted backups</td>
+<td valign="top" align="left">Yes</td>
+<td valign="top" align="left">Yes</td>
+</tr>
+<tr>
+<td valign="top" align="left">Enable Remote Wipe</td>
+<td valign="top" align="left">Not available<fn reference="c"><p id="_d96b06d0-92cc-486a-961e-a4e23265d90c">Remote wipe and local wipe may not be available for major computer OS. Therefore, B/Ds should consider the risk of lost or stolen mobile device and apply encryption as one of the compensative controls.</p></fn></td>
+<td valign="top" align="left">Yes</td>
+</tr>
+<tr>
+<td valign="top" align="left">Enable local wipe when maximum of failed attempt reached</td>
+<td valign="top" align="left">Not available<fn reference="c"><p id="_0d29f075-39ed-49b9-a62e-510f15af4144">Remote wipe and local wipe may not be available for major computer OS. Therefore, B/Ds should consider the risk of lost or stolen mobile device and apply encryption as one of the compensative controls.</p></fn></td>
+<td valign="top" align="left">Yes</td>
+</tr>
+<tr>
+<td valign="top" align="left">Allow mail preview</td>
+<td valign="top" align="left">No</td>
+<td valign="top" align="left">No</td>
+</tr>
+<tr>
+<td valign="top" align="left">Allow message preview</td>
+<td valign="top" align="left">No</td>
+<td valign="top" align="left">No</td>
+</tr>
+</tbody>
+</table></annex><annex id="annex-containerisation-technology" obligation="normative" displayorder="8"><title><strong>Annex B</strong><br/>(normative)<br/><strong>Containerisation Technology</strong></title><p id="_f9d169d6-8e69-4fbb-99de-9ca3dfcedfba">The central aspect of a mobile management strategy is creating distinct lines of separation on privately-owned mobile devices between users&#8217; personal apps and business apps and their associated data. This has come to be known as containerisation, the securing of business apps and their associated data within digital containers (either physical or virtual) that govern app behaviour and prevent unauthorised interaction with personal apps.</p>
+<p id="_91a3d9bd-ecc9-4ebd-bf27-5fe34ff323eb">With the various container offerings from different vendors, there are three main types of containerisation, namely, physical container, virtual container and per-app container.</p>
+<clause id="_physical_container" obligation="normative"><title depth="2">B.1.<tab/>Physical Container</title><p id="_642ba831-91f2-4c12-bd72-f9799f547271">Working at the chipset or kernel level of a mobile device to separate business apps and their data from a user&#8217;s personal apps. Physical containers creates hardware level segmentation between a mobile user&#8217;s business environment and personal environment. Implying a separate OS stack at the kernel level just for business apps to reside and operate. This OS stack is completely distinct from the mobile device&#8217;s normal OS stack where the users&#8217; regular apps reside. As it is a separated domain, administrators can enforce organisation specific security requirements to that particular &#8220;Physical Container&#8221;. A key security aspect of physical containers is that the OS stack typically has to leverage processor-specific capabilities.</p>
+<p id="_187abb87-c27d-41c4-90d7-8912e59c4a83">One of the biggest benefits offered by physical containers is the top to bottom secure isolation that they offer between the separate OS stack and the device&#8217;s normal OS stack, ensuring that no interaction can occur between business and personal apps. Since it is a separated platform, the vulnerability will not inherit from mobile device.</p>
+<p id="_27e9ff56-8b67-48be-a96b-6c76088d6fb0">However, this stack-level isolation also creates one of the major drawbacks inherent to physical container solutions&#8212;disruption of the user experience. Whenever users are logged into the mobile devices&#8217; normal OS stack, they have to exit and enter into the separate OS stack anytime they want to use a corporate app. When they want to use a personal app, they have to reverse the process. The constant switching between physical containers not only creates user inconvenience, but also would affect user productivity over an extended period of time. Currently, this kind of solution is OS dependent; third-party and internal software developers have to customise the application to support the physical container.</p></clause>
+<clause id="_virtual_container" obligation="normative"><title depth="2">B.2.<tab/>Virtual Container</title><p id="_fb741f41-59bc-411b-9e8b-25b0a7572f2b">Business apps are segmented within an encrypted workspace inside the operating system comparable to a single sandbox with multiple apps running inside it. Policies are implemented to govern what types of interactions may occur among apps inside the virtual container. All interactions between business apps in the container stay within the container. Likewise, all of the data associated with the virtual container&#8217;s apps remains secure within the confines of the virtual sandbox.</p>
+<p id="_c1b6a0fa-43ae-4f76-ab7c-7a531c5591db">Mobile users is required to input a separated password for authenticating the container and perform business activities. With the adoption of virtual container, the logical separation between the business apps and personal apps is executed by the operating system and kernel. Since the container is run inside the mobile device, the vulnerabilities of the operating system and kernel may affect the security of container. Furthermore, the solution requires third-party and internal software developers to develop or modify their apps to support a vendor-specific container environment. Virtual container strategies also requires specific skills and additional administration effort in the on-going support activities.</p></clause>
+<clause id="_per_app_container" obligation="normative"><title depth="2">B.3.<tab/>Per-App Container</title><p id="_96f27d11-c899-4f24-ada3-098f7f47331d">Per-app container provides a secure self-contained sandbox to each individual app and its associated data, which can provide more granular control to its administrators in securing organisational data, while presenting users a more seamless user experiences. Under this model, administrators can choose to configure general policies that apply to all apps, specific policies for individual apps, or a combination of both. Administrators can also granularly control the directional flow of data for each app, such as inbound and outbound communications. Additionally, since each contained app&#8217;s data is individually encrypted and secured by policy, the business app will remain protected if a malicious app happens to infect the mobile device.</p>
+<p id="_81314980-934b-4228-9936-4d578da035d8">As enforcement is on per-app basis, users typically do not have to constantly enter and exit contained and non-contained environments to switch between personal apps and business apps. Users can easily see and access all the apps they are authorised to use whether they are personal or corporate apps. The combination of the per-app policy governance and application-level encryption gives B/Ds the additional level of security they need to keep their business apps and data safe.</p></clause></annex>
+</ogc-standard>

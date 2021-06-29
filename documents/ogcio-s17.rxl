@@ -1,0 +1,33 @@
+<bibdata type="standard">
+<title language="en" format="text/plain">Baseline IT Security Policy</title>
+<docidentifier type="ogc-internal">S17</docidentifier>
+<docnumber>S17</docnumber>
+<date type="published">
+<on>2016-12</on>
+</date>
+<contributor>
+<role type="publisher"/>
+<organization>
+<name>Open Geospatial Consortium</name>
+</organization>
+</contributor>
+<edition>6.0</edition>
+
+<language>en</language>
+<script>Latn</script>
+<status>
+<stage>approved</stage>
+</status>
+<copyright>
+<from>2016</from>
+<owner>
+<organization>
+<name>Open Geospatial Consortium</name>
+</organization>
+</owner>
+</copyright>
+<ext>
+<doctype>standard</doctype>
+<docsubtype>implementation</docsubtype>
+</ext>
+</bibdata>

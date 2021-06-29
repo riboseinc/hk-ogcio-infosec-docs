@@ -1,0 +1,161 @@
+/__w/hk-ogcio-infosec-docs/hk-ogcio-infosec-docs/site/documents/ogcio-ispg-sm03.err errors
+
+
+== Document Attributes
+
+(): '' is not a legal document type: reverting to 'standard'
+(): '' is not a permitted subtype of Standard: reverting to 'implementation'
+
+
+== Style
+
+(): Abstract is missing!
+(): Keywords are missing!
+(): Preface is missing!
+(): Submitting Organizations is missing!
+(): Submitters is missing!
+(): Prefatory material must be followed by (clause) Scope
+(): Scope must be followed by Conformance
+(): Normative References must be followed by Terms and Definitions
+(): Normative References are mandatory
+
+
+== Metanorma XML Style Warning
+
+(XML Line 000053): Table should have title
+	<table id="_d7a0e68d-f6f3-44d6-9ecc-b5aeaab1c369" unnumbered="true">
+	<tbody>
+	<tr>
+	<th colspan="5" valign="middle" align="center">Amendment History</th>
+	</tr>
+(XML Line 000074): Hanging paragraph in clause
+	<clause id="_introduction" obligation="normative"><title>Introduction</title><p id="_f76e79ba-0657-41eb-9f69-7b756780e5f3">Mobile devices are getting more common and allow users to access information from anywhere at any time. This changes the mode of Internet usage and also brings together new risks in daily operations. While mobile devices and mobile applications (apps) installed in the devices bring convenience and improve efficiency, insecure protection of mobile devices or insecurely written mobile apps pose risks to mobile users and may cause data loss or reputation damage to the app owner. In view of the extra risks introduced by mobile devices due to its high portability, wireless connection capabilities and diverse techniques in mobile app development, this practice guide is developed to provide guidance notes for Bureaux/Departments (B/Ds) to make reference in securing the use of mobile devices in their business and the development of mobile apps for business use.</p>
+	<clause id="_purpose" obligation="normative"><title>Purpose</title><p id="_46612688-5c7e-4feb-b678-e7c3224d62ae">The purpose of this document is to provide common security considerations and best practices to B/Ds on the management and use of mobile devices as well as secure development of mobile apps. The best practices on the use and management of mobile devices are described in <xref target="sec-mobile-device-security"/> and they are intended for staff who are involved in the use and adoption of mobile devices and related management solutions. The security best practices on mobile app development are described in <xref target="sec-mobile-app-development-security"/> and they are intended for developers who are involved in related development life cycle.</p>
+	<p id="_36eaec6a-ad29-4a0d-9ff0-529be883e1de">This document should be used in conjunction with established government requirements and documents including the Baseline IT Security Policy [S17], the IT Security Guidelines [G3] and other relevant procedures and guidelines, where applicable. In addition to government security requirements, B/Ds should also assess the security risks before adoption of mobile device solutions based on their business needs. B/Ds should consider the security measures and best practices recommended in this document and implement adequate security protection for their mobile solutions.</p>
+	<p id="_1906799b-119e-464d-9dc1-cb7b56bd37cd">The materials included in this document are general in nature and are prepared irrespective of the types or platforms of the mobile devices. According to the definition in government security documents, the term “mobile devices” means portable computing and communication devices with information storage and processing capability. Examples include portable computers, mobile phones, tablets, digital cameras, and digital audio or video recording devices. Readers should consider and select the security measures and best practices that are applicable to their own environment.</p></clause>
+	<clause id="_normative_references" obligation="normative"><title>Normative References</title><p id="_ff832c46-2f72-4bfe-80e1-1af2f68efe90">The following referenced documents are indispensable for the application of this document.</p>
+(XML Line 000100): Table should have title
+	<table id="_97308f33-106f-4d48-b417-648a7f12fd86" unnumbered="true">
+	<tbody>
+	<tr>
+	<th colspan="2" valign="top" align="left">Abbreviation and Terms</th>
+	</tr>
+(XML Line 000114): Hanging paragraph in clause
+	<clause id="_information_security_management" obligation="normative"><title>Information Security Management</title><p id="_21dcd414-4b15-4d12-990e-632cd164815c">Information security is about the planning, implementation and continuous enhancement of security controls and measures to protect the confidentiality, integrity and availability of information assets, whether in storage, processing, or transmission and its associated information systems. Information security management is a set of principles relating to the functions of planning, organising, directing, controlling, and the application of these principles in harnessing physical, financial, human and informational resources efficiently and effectively to assure the safety of information assets and information systems.
+	Information security management involves a series of activities that require continuous monitoring and control. These activities include but not limited to the following functional areas:</p>
+	<ul id="_a0eac853-3897-47cf-bf8b-b3820ee8b1ee">
+	<li>
+	<p id="_8f67a7a9-a9ea-4613-8e29-da2d114a75a7">Security Management Framework and the Organisation;</p>
+(XML Line 000166): Hanging paragraph in clause
+	<clause id="_introduction_to_mobile_security" obligation="normative"><title>Introduction to Mobile Security</title><p id="_170edd30-1df5-4f6f-807b-988330dff4e2">As technologies advance, the computational power of mobile devices continues to increase, and at the same time they become even smaller and lighter. While there are many obvious advantages with these devices, they also bring security concerns that need to be addressed. Also, while mobile apps bring much convenience to users, poorly written mobile apps increase risk of data loss. This section highlights the security measures and best practices to address the common security concerns and illustrates how they should be incorporated in the major stages of mobile device management life cycle and mobile app development life cycle. B/Ds may select and map the security measures and best practices to their own management and development life cycle model based on their business needs.</p>
+	<clause id="_security_concerns_of_mobile_technologies" obligation="normative"><title>Security Concerns of Mobile Technologies</title><p id="_40d90dc3-e9df-4b67-a440-5bf866e792f0">Security threats to mobile devices come from many directions. Mobile devices often need additional protection because their nature generally places them at higher exposure to threats than other client devices, such as a workstation in the office area. Major threats to mobile devices can come from the device itself, network (e.g. mobile, internet) or application (e.g. mobile app, mobile web app). The security concerns of mobile technologies are highlighted below:</p>
+	<p id="_c5b95b6a-7dff-4ba0-9068-94102ac1774a">
+	<strong>Device</strong>
+	</p>
+(XML Line 000258): Hanging paragraph in clause
+	<clause id="sec-mobile-device-security" obligation="normative"><title>Mobile Device Security</title><p id="_1c787916-b2a1-4e7f-99da-c3e1cf31a60d">This section is intended for users and administrators who are involved in the use and adoption of mobile devices and related management solutions. For developers who need to understand the details on protection measures for mobile app development, please refer to “<xref target="sec-mobile-app-development-security"/> — Mobile App Development Security” for details.</p>
+	<clause id="subsec-mobile-device-usage-lifecycle" obligation="normative"><title>Mobile Device Usage Lifecycle</title><p id="_99745fb3-d57d-4382-bc01-9b6c02f1b476">Similar to other information systems, mobile devices include three major stages throughout their usage lifecycle — Provision, Usage and Decommission. The paragraphs below discuss the best practices on how to protect the mobile devices in various stages of the lifecycle.</p>
+	<clause id="_provision_of_mobile_devices" obligation="normative"><title>Provision of Mobile Devices</title><p id="_efa03682-f9f6-4fb1-b7d2-a6a3d1dc9e2e">When considering adoption of mobile device technologies in business, B/Ds should identify the needs for mobile device and how mobile device solutions can support their business. A mobile device security policy should be established to specify the business and security requirements for the use of mobile device technologies with the following considerations:</p>
+	<ul id="_bf58df2c-86bb-429d-bb8d-9ce61c4e8632">
+	<li>
+(XML Line 000259): Hanging paragraph in clause
+	<clause id="subsec-mobile-device-usage-lifecycle" obligation="normative"><title>Mobile Device Usage Lifecycle</title><p id="_99745fb3-d57d-4382-bc01-9b6c02f1b476">Similar to other information systems, mobile devices include three major stages throughout their usage lifecycle — Provision, Usage and Decommission. The paragraphs below discuss the best practices on how to protect the mobile devices in various stages of the lifecycle.</p>
+	<clause id="_provision_of_mobile_devices" obligation="normative"><title>Provision of Mobile Devices</title><p id="_efa03682-f9f6-4fb1-b7d2-a6a3d1dc9e2e">When considering adoption of mobile device technologies in business, B/Ds should identify the needs for mobile device and how mobile device solutions can support their business. A mobile device security policy should be established to specify the business and security requirements for the use of mobile device technologies with the following considerations:</p>
+	<ul id="_bf58df2c-86bb-429d-bb8d-9ce61c4e8632">
+	<li>
+	<p id="_76bd95a6-bfb1-4973-b1f5-0b50a81c2474">The types of approved mobile devices and the approval mechanism.</p>
+(XML Line 000321): Hanging paragraph in clause
+	<clause id="_use_of_mobile_devices" obligation="normative"><title>Use of Mobile Devices</title><p id="_40f83640-14bb-4e16-b7ee-f4cd2788609c">Even if the security controls have been implemented in the provisioning stage, people and process are two important factors for keeping mobile devices in a safe environment. Therefore, this section focuses on the best practices related to the on-going operation process for the management and use of mobile devices.</p>
+	<clause id="_administrators" obligation="normative"><title>Administrators</title><p id="_0cf98687-255c-4256-b90f-4b65be0e6cb0">Administrators should follow the best practices as follows:</p>
+	<ul id="_4052354b-7d1c-47ca-9951-c5e404338c2c">
+	<li>
+	<p id="_62d324b1-23d2-41ef-b4db-eeedab89cd3d">Check available upgrades and/or patches for the mobile device OS and mobile applications with proper change management.</p>
+(XML Line 000442): Hanging paragraph in clause
+	<clause id="_decommissioning_of_mobile_devices" obligation="normative"><title>Decommissioning of Mobile Devices</title><p id="_efc540d8-a0e4-4aa2-8357-2c352ed17ceb">At the last stage of mobile device management, the devices may be decommissioned due to physical damage, end of support, re-issue to other staff or other B/Ds, etc. B/Ds should define device decommission procedures consisting of secure data deletion, mobile devices factory reset and disposal such that mobile device can be re-used or securely disposed without data leakage. Mobile users and administrators should follow the procedures in order to protect government data in safe custody and reduce the chance for data leakage to unauthorised parties.</p>
+	<p id="_86120282-689f-41ef-9e4f-c4bcb4e36d3b">For loss or theft of mobile devices, please refer to <xref target="subsec-loss-theft-and-security-incident"/> which provides best practices for handling this scenario in details that mobile users and administrators should follow.</p>
+	<clause id="_administrators_2" obligation="normative"><title>Administrators</title><p id="_e696c28f-869f-4916-9fd3-cf1aadc7f238">Administrators should follow the best practices as follows:</p>
+	<ul id="_425b6f4e-dda8-460e-a21b-c8b4e38fe8a2">
+	<li>
+(XML Line 000471): Hanging paragraph in clause
+	<clause id="subsec-mobile-device-management-solution" obligation="normative"><title>Mobile Device Management Solution</title><p id="_791c75b5-f371-478a-8157-544cf7a56084">Centralised Mobile Device Management (MDM) technologies are becoming popular as a solution for controlling the use of mobile devices issued by the organisation or owned by individual staff. MDM solution provides additional management capability such that B/Ds should consider using such solution to maintain proper management to their mobile devices.</p>
+	<clause id="subsec-capabilities-mobile-device-management" obligation="normative"><title>Capabilities of Mobile Device Management Solution</title><p id="_0be41889-9560-4ae0-b73f-091e797b56fa">MDM solution provides management capabilities in policy, inventory, security and service for mobile devices such as mobile phones and tablets. Generally speaking, the technical capabilities include:</p>
+	<ul id="_6962e8ab-dd6f-49ba-bb5d-7ed53bdfe2bb">
+	<li>
+	<p id="_99e31043-a499-4801-a747-9ae0fccb8ef7">Containerisation — provides an isolated environment for processing data via physical, virtual or per-app container (Please refer to <xref target="annex-containerisation-technology"/>).</p>
+(XML Line 000531): Hanging paragraph in clause
+	<clause id="_scenario_specific_security_guidance" obligation="normative"><title>Scenario Specific Security Guidance</title><p id="_77afdd74-87e3-422e-af09-b6a65daa6859">This section provides security guidance focusing on different scenarios of government staff in using mobile devices, including: handling sensitive information, sharing of mobile devices within B/Ds, and loss or theft and security incident relating to mobile device. Other than the best practices mentioned in <xref target="subsec-mobile-device-usage-lifecycle"/>, these scenarios may commonly occur in daily operation with noticeable impact to mobile device security. Example includes improper sensitive information handling, data leakage to other teams through device sharing or loss/theft of mobile devices, and attacks to mobile devices due to software vulnerabilities.</p>
+	<clause id="_handling_sensitive_information_with_mobile_devices" obligation="normative"><title>Handling Sensitive Information with Mobile Devices</title><p id="_007d0355-327e-405a-94dc-226b26c2ef7b">In compliance with the security requirements of the Government, B/Ds shall observe government security requirements and documents. In addition, B/Ds should adopt the following security practices to protect mobile devices and information against common security threats:</p>
+	<ul id="_5677b56f-4a21-449b-8b16-ea7854c452bd">
+	<li>
+	<p id="_e9891038-8ec2-4c01-9f2f-614949ec7d73">Do not process or store TOP SECRET or SECRET information on mobile devices.</p>
+(XML Line 000629): Hanging paragraph in clause
+	<clause id="sec-mobile-app-development-security" obligation="normative"><title>Mobile App Development Security</title><p id="_8c81b7b5-bdc4-4a89-8209-a048fd7a1947">This section is intended for developers who are involved in mobile app development life cycle. For users and administrators who are involved in the use and adoption of mobile devices and related management solutions, please refer to <xref target="sec-mobile-device-security"/> — Mobile Device Security.</p>
+	<clause id="_considerations_in_mobile_app_development" obligation="normative"><title>Considerations in Mobile App Development</title><p id="_901c14e5-105c-41bb-bce3-240d7fec726e">Mobile apps are also susceptible to different threats as the applications are now used to access sensitive information and perform business critical activities. As a best practice, to develop and maintain secure mobile apps, various security considerations and measures, both technical and administrative, need to be implemented during different stages of mobile app development.</p>
+	<p id="_a7cd9d71-529c-4564-920a-fa29351ceb0f">The methodology on software development is evolving with new development style such as agile software development, DevOps / DevSecOps (compounding “development”, “security” and “operations”) for continuous integration and continuous delivery to build mobile apps faster and/or more secured using an iterative development process. It focuses on continuous communication, integration, measurement and delivery to foster the processes between app development, testing and quality assurance. No matter what methodology is used, design for a secure mobile app should be embedded into every stage of development life cycle, in particular early stage, so as to minimise security risk and avoid re-work due to design deficiency.</p>
+	<p id="_e15a03a4-ac56-4973-8775-a92eeb36f589">The following are common stages and key security considerations to help identify potential security risks in mobile app development:</p>
+	<table id="_b98c4a02-065f-4b16-82d2-e58810b9dcfd" unnumbered="true">
+(XML Line 000633): Table should have title
+	<table id="_b98c4a02-065f-4b16-82d2-e58810b9dcfd" unnumbered="true">
+	<thead>
+	<tr>
+	<th valign="top" align="left">Development Life Cycle</th>
+	<th valign="top" align="left">Security Considerations</th>
+(XML Line 000671): Hanging paragraph in clause
+	<clause id="_mobile_app_development_lifecycle" obligation="normative"><title>Mobile App Development Lifecycle</title><clause id="_requirement_stage" obligation="normative"><title>Requirement Stage</title><p id="_42f77efe-3893-4399-bd85-8c6a1a1d4096">Security should be considered during the requirement phase so that security is included throughout the development life cycle. Security requirements should be defined along with functional requirements and further incorporate security during other phases of software development. If the requirements are defined properly, identified risks could be addressed in early stages, which can greatly reduce extra work in later stages and remediation effort. The following areas should be considered for security requirements:</p>
+	<ul id="_cf214a0c-334f-49ae-8d22-35b8f0280104">
+	<li>
+	<p id="_7616b92d-9aa1-42be-81f9-db32e9e59ec2">Architecture, Design and Threat Modelling Requirements</p>
+	<p id="_b4a01a46-eccb-4785-b491-b15a8ce49b0e">Process should be in place to ensure the security concern has been explicitly addressed when planning the architecture and design of the mobile app. The functional and security roles of each component should be well defined. Topics such as threat modelling, secure development and key management should be covered. For example, apply relevant and sufficient security controls to safeguard the data and transactions before implementation.</p>
+(XML Line 000744): Hanging paragraph in clause
+	<clause id="_security_by_design_and_data_privacy" obligation="normative"><title>Security by Design and Data Privacy</title><p id="_90004d8c-5805-4740-90dd-3bc7daee6722">Security by design and data privacy should be embedded into the whole app system design and development processes to protect the data and individual’s right to privacy. Developers should ensure that security issues are incorporated as part of the basic architectural design. Detailed designs for possible security issues should be reviewed, and mitigations for possible threats should be determined and developed. Related laws, regulations and ordinances (e.g., Personal Data (Privacy) Ordinance) should also be followed when defining the privacy requirements. Developers should pay attention to the following best practices during system design in order to protect users’ privacy.</p>
+	<clause id="_user_notification" obligation="normative">
+	<title>User Notification</title>
+	<ul id="_dbda5a21-9f2f-4946-8f20-f2652c2402f3">
+	<li>
+(XML Line 000776): Hanging paragraph in clause
+	<clause id="_testing_for_mobile_app_development" obligation="normative"><title>Testing for Mobile App Development</title><p id="_06197d91-29ca-4670-9338-5c02a51ad52d">Testing mobile apps on mobile devices can be more challenging than testing web applications on personal computer due to wide varieties of mobile OS, hardware components and network environment, etc. The following areas should be considered in mobile app testing cycle.</p>
+	<clause id="_testing_mobile_app_functionality" obligation="normative"><title>Testing Mobile App Functionality</title><p id="_9e28916a-f5ea-4496-b07e-e882b4215067">To make sure the mobile app functions properly on supported device, functional testing should be conducted to verify the mobile app features specification. There are also different types of mobile app testing that need to be considered:</p>
+	<ul id="_d0f34cd1-651a-4928-a8b8-10d9e15895c8">
+	<li>
+	<p id="_bc0d1b5f-7fb6-4bbc-9641-fb58b6fc1800">Compatibility testing: Ensure the mobile app functions properly on supported device with different mobile platform such as iOS and Android, and with different screen sizes and versions of operating systems.</p>
+(XML Line 000814): Hanging paragraph in clause
+	<clause id="_points_to_note_for_securing_mobile_app_development" obligation="normative"><title>Points to Note for Securing Mobile App Development</title><p id="_ae74a645-2889-43af-9786-78549869e69a">Mobile apps are subject to similar security considerations and risks as other applications, thus general best practices for application development are also relevant to mobile app development. Due to varying use cases, usage patterns and various mobile platforms, mobile app developers should also take note of the remote web services, platform integration issues and insecurity of mobile devices. Developer should consider the following areas to build a secure mobile app:</p>
+	<ul id="_eae1657a-54c7-417c-8874-a4a80ddcdd5f">
+	<li>
+	<p id="_8734cd7a-acb7-4560-aee3-96ad7efc6e10">General Considerations</p>
+	</li>
+(XML Line 000861): Hanging paragraph in clause
+	<clause id="_systemsoftware" obligation="normative"><title>System/Software</title><clause id="_authentication_and_session_management" obligation="normative">
+	<title>Authentication and Session Management</title>
+	<ul id="_f9521daf-1d82-4fbc-8048-ad878a5099ab">
+	<li>
+	<p id="_7507ade3-72e1-4100-b3eb-d4e8969a6bfe">Avoid solely using device-provided identifier (like UID or MAC address) to identify the device, but rather leverage identifiers specific to the app as well as the device.</p>
+(XML Line 000926): Hanging paragraph in clause
+	<clause id="_data" obligation="normative"><title>Data</title><clause id="_data_storage_and_protection" obligation="normative">
+	<title>Data Storage and Protection</title>
+	<ul id="_b99ebe59-9236-4c4b-b7e1-1a3c00eea968">
+	<li>
+	<p id="_32acbd5b-5788-40fa-af52-fe2b2a784038">Only collect and disclose data which is required for business use of the app.</p>
+(XML Line 000972): Hanging paragraph in clause
+	<clause id="_network_management" obligation="normative">
+	<title>Network Management</title>
+	<clause id="_communication_security" obligation="normative">
+	<title>Communication Security</title>
+	<ul id="_aed90603-fc6e-445a-8a7e-df08928683a3">
+(XML Line 000997): Table should have title
+	<table id="_d66d4725-673c-4e6b-a051-fcce0423a8c7" unnumbered="true">
+	<tbody>
+	<tr>
+	<th valign="top" align="left">Controls<fn reference="a"><p id="_a99349f6-1d1b-488e-9167-e094fed5b128">The control items are sample for controlling mobile devices, including portable computers, mobile phones and tablets. However, they are not exhaustive such that B/Ds should modify a best-fit requirement list based on business needs</p></fn></th>
+	<th valign="top" align="left">Portable Computer</th>
+(XML Line 001161): Hanging paragraph in clause
+	<annex id="annex-containerisation-technology" obligation="normative"><title>Containerisation Technology</title><p id="_f9d169d6-8e69-4fbb-99de-9ca3dfcedfba">The central aspect of a mobile management strategy is creating distinct lines of separation on privately-owned mobile devices between users’ personal apps and business apps and their associated data. This has come to be known as containerisation, the securing of business apps and their associated data within digital containers (either physical or virtual) that govern app behaviour and prevent unauthorised interaction with personal apps.</p>
+	<p id="_91a3d9bd-ecc9-4ebd-bf27-5fe34ff323eb">With the various container offerings from different vendors, there are three main types of containerisation, namely, physical container, virtual container and per-app container.</p>
+	<clause id="_physical_container" obligation="normative"><title>Physical Container</title><p id="_642ba831-91f2-4c12-bd72-f9799f547271">Working at the chipset or kernel level of a mobile device to separate business apps and their data from a user’s personal apps. Physical containers creates hardware level segmentation between a mobile user’s business environment and personal environment. Implying a separate OS stack at the kernel level just for business apps to reside and operate. This OS stack is completely distinct from the mobile device’s normal OS stack where the users’ regular apps reside. As it is a separated domain, administrators can enforce organisation specific security requirements to that particular “Physical Container”. A key security aspect of physical containers is that the OS stack typically has to leverage processor-specific capabilities.</p>
+	<p id="_187abb87-c27d-41c4-90d7-8912e59c4a83">One of the biggest benefits offered by physical containers is the top to bottom secure isolation that they offer between the separate OS stack and the device’s normal OS stack, ensuring that no interaction can occur between business and personal apps. Since it is a separated platform, the vulnerability will not inherit from mobile device.</p>
+	<p id="_27e9ff56-8b67-48be-a96b-6c76088d6fb0">However, this stack-level isolation also creates one of the major drawbacks inherent to physical container solutions—disruption of the user experience. Whenever users are logged into the mobile devices’ normal OS stack, they have to exit and enter into the separate OS stack anytime they want to use a corporate app. When they want to use a personal app, they have to reverse the process. The constant switching between physical containers not only creates user inconvenience, but also would affect user productivity over an extended period of time. Currently, this kind of solution is OS dependent; third-party and internal software developers have to customise the application to support the physical container.</p></clause>
+
+
+== Metanorma XML Syntax
+
+(XML Line 000082:34): multiple definitions of "DocumentSubtype" without "combine" attribute

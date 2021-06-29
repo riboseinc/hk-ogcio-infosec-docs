@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+<ogc-standard xmlns="https://www.metanorma.org/ns/ogc" type="semantic" version="1.3.5">
+<bibdata type="standard">
+<title language="en" format="text/plain">Practice Guide for Securing Network Printers in the Offices</title>
+<docidentifier type="ogc-internal">ISPG-SO01</docidentifier>
+<docnumber>ISPG-SO01</docnumber>
+<date type="published">
+<on>2018-08</on>
+</date>
+<contributor>
+<role type="publisher"/>
+<organization>
+<name>Open Geospatial Consortium</name>
+</organization>
+</contributor>
+<edition>1.0</edition>
+
+<language>en</language>
+<script>Latn</script>
+<status>
+<stage>approved</stage>
+</status>
+<copyright>
+<from>2018</from>
+<owner>
+<organization>
+<name>Open Geospatial Consortium</name>
+</organization>
+</owner>
+</copyright>
+<ext>
+<doctype>standard</doctype>
+<docsubtype>implementation</docsubtype>
+</ext>
+</bibdata>
+<boilerplate>
+  <copyright-statement>
+    <clause>
+      <title>Copyright notice</title>
+
+      <p align="center" id="_5e293adb-90d4-43bd-b33e-2ee122c5182b">Copyright
+        &#169; 2018 Open Geospatial Consortium<br/>
+        To obtain additional rights of use, visit 
+        <link target="http://www.ogc.org/legal/">http://www.ogc.org/legal/</link></p>
+    </clause>
+    <clause>
+      <title>Note</title>
+      <p align="left" id="_fe9cf81a-221f-489c-8d2c-8ec392e9f516">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+      <p align="left" id="_264cfc01-54dd-4228-bd33-8e3664c40270">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+    </clause>
+  </copyright-statement>
+  <license-statement>
+    <clause>
+      <title>License Agreement</title>
+
+      <p id="_dfbbf8f0-d89b-4aa1-9a5d-2b3520ba5fe1">Permission is hereby granted by the Open Geospatial
+        Consortium, (&#8220;Licensor&#8221;), free of charge and subject to the terms set
+        forth below, to any person obtaining a copy of this Intellectual Property and
+        any associated documentation, to deal in the Intellectual Property without
+        restriction (except as set forth below), including without limitation the
+        rights to implement, use, copy, modify, merge, publish, distribute, and/or
+        sublicense copies of the Intellectual Property, and to permit persons to whom
+        the Intellectual Property is furnished to do so, provided that all copyright notices
+        on the intellectual property are retained intact and that each person to whom
+        the Intellectual Property is furnished agrees to the terms of this Agreement.</p>
+
+      <p id="_3f9f42fa-86b1-4da6-adbd-c06eddcd60db">If you modify the Intellectual Property, all copies of
+        the modified Intellectual Property must include, in addition to the above
+        copyright notice, a notice that the Intellectual Property includes
+        modifications that have not been approved or adopted by LICENSOR.</p>
+
+      <p id="_059b1767-09ba-4b6b-86cf-ba324a029fbf">THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT
+        CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.
+        THE INTELLECTUAL PROPERTY IS PROVIDED &#8220;AS
+        IS&#8221;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+        LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+        AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THE COPYRIGHT HOLDER OR HOLDERS
+        INCLUDED IN THIS NOTICE DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE
+        INTELLECTUAL PROPERTY WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE
+        INTELLECTUAL PROPERTY WILL BE UNINTERRUPTED OR ERROR FREE. ANY USE OF THE
+        INTELLECTUAL PROPERTY SHALL BE MADE ENTIRELY AT THE USER&#8217;S OWN RISK. IN NO
+        EVENT SHALL THE COPYRIGHT HOLDER OR ANY CONTRIBUTOR OF INTELLECTUAL PROPERTY
+        RIGHTS TO THE INTELLECTUAL PROPERTY BE LIABLE FOR ANY CLAIM, OR ANY DIRECT,
+        SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING
+        FROM ANY ALLEGED INFRINGEMENT OR ANY LOSS OF USE, DATA OR PROFITS, WHETHER IN
+        AN ACTION OF CONTRACT, NEGLIGENCE OR UNDER ANY OTHER LEGAL THEORY, ARISING OUT
+        OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR
+        PERFORMANCE OF THIS INTELLECTUAL PROPERTY.</p>
+
+      <p id="_e14c19d7-b73b-4c0d-8df0-28c4e83ae028">This license is effective until terminated. You may
+        terminate it at any time by destroying the Intellectual Property together with
+        all copies in any form. The license will also terminate if you fail to comply
+        with any term or condition of this Agreement. Except as provided in the
+        following sentence, no such termination of this license shall require the
+        termination of any third party end-user sublicense to the Intellectual Property
+        which is in force as of the date of notice of such termination. In addition,
+        should the Intellectual Property, or the operation of the Intellectual
+        Property, infringe, or in LICENSOR&#8217;s sole opinion be
+        likely to infringe, any patent, copyright, trademark or other right of a third
+        party, you agree that LICENSOR, in its sole discretion, may terminate this
+        license without any compensation or liability to you, your licensees or any
+        other party. You agree upon termination of any kind to destroy or cause to be
+        destroyed the Intellectual Property together with all copies in any form,
+        whether held by you or by any third party.</p>
+
+      <p id="_1a179108-874f-4aa6-b347-50bb600c50ef">Except as contained in this notice, the name of
+        LICENSOR or of any other holder of a copyright in all or part of the Intellectual
+        Property shall not be used in advertising or otherwise to promote the sale, use
+        or other dealings in this Intellectual Property without prior written
+        authorization of LICENSOR or such copyright holder. LICENSOR is and shall at
+        all times be the sole entity that may authorize you or any third party to use
+        certification marks, trademarks or other special designations to indicate
+        compliance with any LICENSOR standards or specifications.
+        This Agreement is
+        governed by the laws of the Commonwealth of Massachusetts. The application to
+        this Agreement of the United Nations Convention on Contracts for the
+        International Sale of Goods is hereby expressly excluded. In the event any
+        provision of this Agreement shall be deemed unenforceable, void or invalid, such
+        provision shall be modified so as to make it valid and enforceable, and as so
+        modified the entire Agreement shall remain in full force and effect. No
+        decision, action or inaction by LICENSOR shall be construed to be a waiver of
+        any rights or remedies available to it.</p>
+
+      <p id="_a4fcd8b0-16a7-4f63-b10f-876e75a4943c">None of the Intellectual Property or underlying information or technology may be downloaded or otherwise exported or reexported in violation of U.S. export laws and regulations. In addition, you are responsible for complying with any local laws in your jurisdiction which may impact your right to import, export or use the Intellectual Property, and you represent that you have complied with any regulations or registration procedures required by applicable law to make this license enforceable.</p>
+    </clause>
+  </license-statement>
+
+  <legal-statement>
+    
+    
+    <clause>
+      <title>Warning</title>
+      <p id="_8b3ecef7-b40a-495b-acf5-90553f3bd0f4">This document is an OGC Member approved international standard. This document is available on a royalty free, non-discriminatory basis. Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.
+      </p>
+    </clause>
+    
+
+
+    
+
+  </legal-statement>
+
+
+
+
+  <feedback-statement>
+    
+    <clause id="boilerplate-standard-feedback">
+      <p id="_eb7a7138-9281-4922-ad2c-53a0e57c751b">Suggested additions, changes and comments on this standard are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <link target="http://portal.opengeospatial.org/public_ogc/change_request.php">http://portal.opengeospatial.org/public_ogc/change_request.php</link></p>
+    </clause>
+    
+  </feedback-statement>
+</boilerplate>
+<preface><clause type="security" id="_40853bd1-c5b2-480a-ba46-f206b8d1fa54" obligation="informative"><title>Security Considerations</title><p id="_b64573b2-10c9-40c9-a1b0-707c8d10e0ac">No security considerations have been made for this standard.</p></clause></preface><sections><clause id="_copyright_notice" obligation="normative"><title>COPYRIGHT NOTICE</title><p id="_e71710ff-f401-4028-b149-63223ab15231">&#169; 2018 by the Government of the Hong Kong Special Administrative Region</p>
+<p id="_0ea29ccc-d874-4caa-bfa8-f873c41c70cd">Unless otherwise indicated, the copyright in the works contained in this publication is owned by the Government of the Hong Kong Special Administrative Region. You may generally copy and distribute these materials in any format or medium provided the following conditions are met -</p>
+<ol id="_82bf4740-b232-4201-9b01-936fe745be68" type="arabic">
+<li>
+<p id="_88b9d2e1-9077-4634-80ac-321eb24125ab">the particular item has not been specifically indicated to be excluded and is therefore not to be copied or distributed;</p>
+</li>
+<li>
+<p id="_11ede038-2d9d-4606-a93f-e19edcc226ba">the copying is not done for the purpose of creating copies for sale;</p>
+</li>
+<li>
+<p id="_cb27656a-dc2c-4e3b-8c32-dc6e80f84056">the materials must be reproduced accurately and must not be used in a misleading context; and</p>
+</li>
+<li>
+<p id="_3885edea-764b-4671-9a3e-dfbd7921a8f9">the copies shall be accompanied by the words &#8220;copied/distributed with the permission of the Government of the Hong Kong Special Administrative Region. All rights reserved.&#8221;</p>
+</li>
+</ol>
+<p id="_1e01b6f4-226a-4640-ba53-f68f229ab762">If you wish to make copies for purposes other than that permitted above, you should seek permission by contacting the Office of the Government Chief Information Officer.</p></clause>
+<clause id="_amendment_history" obligation="normative">
+<title>Amendment History</title>
+<table id="_f4be3a55-ca70-474d-99f5-21257dda2a3e" unnumbered="true">
+<tbody>
+<tr>
+<th colspan="5" valign="middle" align="center">Amendment History</th>
+</tr>
+<tr>
+<th valign="middle" align="center">Change Number</th>
+<th valign="middle" align="center">Revision Description</th>
+<th valign="middle" align="center">Pages Affected</th>
+<th valign="middle" align="center">Revision Number</th>
+<th valign="middle" align="center">Date</th>
+</tr>
+</tbody>
+</table>
+</clause>
+<clause id="_introduction" obligation="normative"><title>Introduction</title><p id="_1fe439a8-9992-4238-967e-28134a6b30f5">Nowadays, new generation of network printers are &#8220;smart&#8221; machines that have central processing units, the capability of storing information they processed in their internal storage devices; and connecting to wired or wireless networks. With these capabilities, most of the current network printers can be used for more than just printing; they can also be used for copying, scanning, faxing and emailing documents. Some of the network printers even have internal servers or routers. Hence, network printers are similar to other computer equipment which could be suffered from various types of security threats (e.g. data leakage) if they are not properly protected / used.</p>
+<p id="_85eeebfe-0ef9-4dee-97b4-68d5579f71a5">This practice guide is developed to provide guidance notes for Bureaux/Departments (B/Ds) to make reference in securing the use of network printers in their offices.</p>
+<clause id="_purpose" obligation="normative"><title>Purpose</title><p id="_1d8b0193-0617-46e8-a071-62645fabf33f">This document provides guidance notes for the administration and other technical and operational staff who are involved in managing network printers. Common security considerations and best practices on major stages of network printer management life cycle for using network printers are provided in this document. B/Ds should consider the security measures and best practices recommended in this document and implement adequate security protection for their network printers. This document should be used in conjunction with the established government requirements and documents including Baseline IT Security Policy [S17], IT Security Guidelines [G3], relevant procedures and guidelines, where applicable. In addition to the government security requirements, B/Ds should assess the security risks before the adoption of network printers based on their business needs.</p>
+<p id="_c39919c1-250f-4e97-90b0-e2214ec2dc1d">This document is intended to provide practical guidance notes on and references for management and use of network printers in the offices. It is not intended to cover technical requirements of a specific network printer model. B/Ds should consult corresponding system administrators, technical support staff and product vendors for these technical details.</p></clause>
+<clause id="_normative_references" obligation="normative"><title>Normative References</title><p id="_fc3ec8fe-f48e-4b39-b67d-c6c5122e3857">The following referenced documents are indispensable for the application of this document.</p>
+<ul id="_a88987b8-0194-4caf-a8db-6178d31e67c1">
+<li>
+<p id="_07235888-4813-46f7-9389-28e43cf3d201">Baseline IT Security Policy [S17], the Government of the Hong Kong Special Administrative Region</p>
+</li>
+<li>
+<p id="_fbe0e6fa-b9b2-4f15-bc1f-fdf1549534aa">IT Security Guidelines [G3], the Government of the Hong Kong Special Administrative Region</p>
+</li>
+</ul></clause>
+<clause id="_terms_and_convention" obligation="normative"><title>Terms and Convention</title><p id="_91ce5a78-3331-4c23-9a45-9e46af7d9c80">For the purposes of this document, the terms and convention given in S17, G3, and the following shall apply</p>
+<table id="_11309f7d-247c-4901-a206-071c06cb8e89" unnumbered="true">
+<tbody>
+<tr>
+<th colspan="2" valign="top" align="left">Abbreviation and Terms</th>
+</tr>
+<tr>
+<td valign="top" align="left">N/A</td>
+<td valign="top" align="left">N/A</td>
+</tr>
+</tbody>
+</table></clause>
+<clause id="_contact" obligation="normative"><title>Contact</title><p id="_b99b930b-a88e-4343-a8f5-4460edc5be58">This document is produced and maintained by the Office of the Government Chief Information Office (OGCIO). For comments and suggestions, please send to:</p>
+<dl id="_68107a19-b541-4d5e-935b-de5451ba3dbb">
+<dt>Email</dt>
+<dd>
+<p id="_b697d936-08c3-43d4-a0e6-c1dba6e8608c">
+<link target="mailto:it_security@ogcio.gov.hk"/>
+</p>
+</dd>
+<dt>Lotus Notes mail</dt>
+<dd>
+<p id="_7e810241-d5ac-4364-adba-0502420afc32">IT Security Team/OGCIO/HKSARG</p>
+</dd>
+</dl></clause></clause>
+<clause id="_information_security_management" obligation="normative"><title>Information Security Management</title><p id="_cc085174-9904-4231-8d58-9d85ec463e30">Information security is about the planning, implementation and continuous enhancement of security controls and measures to protect the confidentiality, integrity and availability of information assets, whether in storage, processing, or transmission and its associated information systems. Information security management is a set of principles relating to the functions of planning, organising, directing, controlling, and the application of these principles in harnessing physical, financial, human and informational resources efficiently and effectively to assure the safety of information assets and information systems.</p>
+<p id="_72b22f65-495c-4fb2-9f50-87fdbae9636e">Information security management involves a series of activities that require continuous monitoring and control. These activities include but not limited to the following functional areas:</p>
+<ul id="_08cc56d4-a62a-4cc2-8a7b-f3389aa2ae9d">
+<li>
+<p id="_5fe52ae4-fecc-4541-a01b-6e14b998ad4f">Security Management Framework and the Organisation;</p>
+</li>
+<li>
+<p id="_0e274226-1a3a-4fa7-ba12-397408049781">Governance, Risk Management, and Compliance;</p>
+</li>
+<li>
+<p id="_ff247e16-226a-433c-a7f1-bee26d544c1b">Security Operations;</p>
+</li>
+<li>
+<p id="_a7179b70-161f-417e-b900-d4b0c003700b">Security Event and Incident Management;</p>
+</li>
+<li>
+<p id="_5fcd8f28-17fb-40b9-b7f4-2e3dd3a3d66a">Awareness Training and Capability Building; and</p>
+</li>
+<li>
+<p id="_b13bb886-e1df-43b2-9a1f-a0e8da42050f">Situational Awareness and Information Sharing.</p>
+</li>
+</ul>
+<clause id="_security_management_framework_and_organisation" obligation="normative"><title>Security Management Framework and Organisation</title><p id="_edc788ad-fd64-4315-ba31-c38e4873b544">B/Ds shall establish and enforce departmental information security policies, standards, guidelines and procedures in accordance with the business needs and the government security requirements.</p>
+<p id="_c58d662a-0149-42b0-9f95-ee21b791dedf">B/Ds shall also define the organisation structure on information security and provide clear definitions and proper assignment of security accountability and responsibility to involved parties.</p></clause>
+<clause id="_governance_risk_management_and_compliance" obligation="normative"><title>Governance, Risk Management and Compliance</title><p id="_fca502e7-cd10-41bf-89da-438290d45a55">B/Ds shall adopt a risk based approach to identify, prioritise and address the security risks of information systems in a consistent and effective manner.</p>
+<p id="_ec378e01-b370-48cf-a96a-00a13b1227d2">B/Ds shall perform security risk assessments for information systems and production applications periodically and when necessary so as to identify risks and consequences associated with vulnerabilities, and to provide a basis to establish a cost-effective security program and implement appropriate security protection and safeguards.</p>
+<p id="_bae0f46c-a626-42a7-b1e5-b00232518b7c">B/Ds shall also perform security audit on information systems regularly to ensure that current security measures comply with departmental information security policies, standards, and other contractual or legal requirements.</p></clause>
+<clause id="_security_operations" obligation="normative"><title>Security Operations</title><p id="_86669647-fd5e-48d1-bf85-9c53f3b6919d">To protect information assets and information systems, B/Ds should implement comprehensive security measures based on their business needs, covering different technological areas in their business, and adopt the principle of &#8220;Prevent, Detect, Respond and Recover&#8221; in their daily operations.</p>
+<ul id="_54abf91d-1e63-4227-995f-1b9ee94bb8e3">
+<li>
+<p id="_8b0744b3-8b18-47af-bf42-0863a4fe84b8">Preventive measures avoid or deter the occurrence of an undesirable event;</p>
+</li>
+<li>
+<p id="_36cdbd3b-45bc-4533-b8a2-67828c7fd08a">Detective measures identify the occurrence of an undesirable event;</p>
+</li>
+<li>
+<p id="_4b140f10-9953-431f-842b-002a03cbabac">Response measures refer to coordinated actions to contain damage when an undesirable event or incident occurs; and</p>
+</li>
+<li>
+<p id="_bf6b0d30-173a-4970-b1dc-7ea7dbda90c2">Recovery measures are for restoring the confidentiality, integrity and availability of information systems to their expected state.</p>
+</li>
+</ul></clause>
+<clause id="_security_event_and_incident_management" obligation="normative">
+<title>Security Event and Incident Management</title>
+<p id="_fafa89c9-8bb2-4e6e-af00-f9bbd10dbb68">In reality, security incidents might still occur due to unforeseeable, disruptive events. In cases where security events compromise business continuity or give rise to risk of data security, B/Ds shall activate their standing incident management plan to identifying, managing, recording, and analysing security threats, attacks, or incidents in real-time. B/Ds should also prepare to communicate appropriately with relevant parties by sharing information on response for security risks to subdue distrust or unnecessary speculation. When developing an incident management plan, B/Ds should plan and prepare the right resources as well as develop the procedures to address necessary follow-up investigations.</p>
+</clause>
+<clause id="_awareness_training_and_capability_building" obligation="normative">
+<title>Awareness Training and Capability Building</title>
+<p id="_304186f8-c7b9-4276-b6b3-fc98725a596d">As information security is everyone&#8217;s business, B/Ds should continuously promote information security awareness throughout the organisations and arrange training and education to ensure that all related parties understand the risks, observe the security regulations and requirements, and conform to security best practices.</p>
+</clause>
+<clause id="_situational_awareness_and_information_sharing" obligation="normative"><title>Situational Awareness and Information Sharing</title><p id="_78bfc441-8347-4aa2-b14f-8e26c5e88d2f">As cyber threat landscape is constantly changing, B/Ds should also constantly attend to current vulnerabilities information, threat alerts, and important notices disseminated by the security industry and the GovCERT.HK. The security alerts on impending and actual threats should be disseminated to and shared with those responsible colleagues within B/Ds so that timely mitigation measures could be taken.</p>
+<p id="_88a4eb46-e909-433c-890b-28d1cdd1bca9">B/Ds could make use of the cyber risk information sharing platform to receive and share information regarding security issues, vulnerabilities, and cyber threat intelligence.</p></clause></clause>
+<clause id="_network_printer_security" obligation="normative"><title>Network Printer Security</title><p id="_dcfa06dc-04a0-44b4-bace-5282001d70e8">In information security management, the &#8220;Security Operations&#8221; functional area includes the deployment of proper security protection and safeguards to reduce the risk of successful attacks. In light of the ever-increasing abilities of network printers which have the similar capabilities of networked computer equipment, network printers are also facing similar security threats that need to be properly managed. Network printer security is, therefore, a major area under the &#8220;Security Operations&#8221; functional area of information security management.</p>
+<p id="_2dce7260-3b81-4c32-8a7c-71b99aa90d43">This section highlights the security measures and best practices to address the common security concerns and illustrates how they should be incorporated in the major stages of network printer management life cycle including provision, use and decommission. B/Ds may select and map the security measures and best practices to their own management life cycle model based on their business needs.</p>
+<clause id="_security_concerns_of_network_printers" obligation="normative"><title>Security Concerns of Network Printers</title><p id="_97c59f65-2b9a-4674-a67d-854f74389116">Network printers have the capabilities of storing data in their storage devices and connecting to wired or wireless networks for printing, copying, scanning, faxing and emailing documents. They can also use network protocols commonly available in computer equipment, such as File Transfer Protocol (FTP), Hyper Text Transport Protocol (HTTP), Hyper Text Transport Protocol Secure (HTTPS), Internet Printing Protocol (IPP), Server Message Block (SMB), Simple Network Management Protocol (SNMP) and telnet. Hence, network printers expose similar security threats faced by other connected computing devices. Major threats applicable to network printers are highlighted below. B/Ds should take reference of these common security threats and avoid them in using network printers.</p>
+<clause id="_general_threats_and_vulnerabilities" obligation="normative"><title>General Threats and Vulnerabilities</title><p id="_847fc8ec-8007-4eeb-bad0-a82b68ebefb8">General threats, vulnerabilities, and related exploits that may affect network printers:</p>
+<ul id="_52135a99-53c9-41f9-8345-c84dcd6211e8">
+<li>
+<p id="_eab0eea5-f997-4185-a63b-11a1d8c92a4c"><strong>Default administrator account name and password</strong>&#8201;&#8212;&#8201;Attackers easily gain access and control of network printers if default administrator account name and password is left unchanged or weak password is used.</p>
+</li>
+<li>
+<p id="_42f6fdbf-8429-420d-8168-87347f5b5160"><strong>Outdated and/or unpatched operating systems and firmware</strong>&#8201;&#8212;&#8201;Network printers run embedded commercial operating systems which render them subject to the same threats and vulnerabilities as any other computing devices running the same operating system. Attackers may exploit vulnerabilities to gain access and control of network printers if the operating system and firmware are unpatched or outdated.</p>
+</li>
+<li>
+<p id="_c02d4d16-9772-4dc2-ae19-fc2e303f47a2"><strong>Lack of physical security controls</strong>&#8201;&#8212;&#8201;Network printers and their built-in storage devices have the risk of lost or stolen if the printers are installed in uncontrolled places.</p>
+</li>
+<li>
+<p id="_84cacb86-56f6-4a89-9e3e-0500cc059b97"><strong>Document theft</strong>&#8201;&#8212;&#8201;The printouts could be seen or taken by unintended parties.</p>
+</li>
+</ul></clause>
+<clause id="_network_connectivity_threats_and_vulnerabilities" obligation="normative"><title>Network Connectivity Threats and Vulnerabilities</title><p id="_0849dbac-e36e-4d5d-aa6f-7a0ab9e20977">Although using network printers is convenient and may be more cost-effective than using separate local printers, scanners and fax machines; network connectivity comes with greater risk of exposing the device and information to threats. Some potential threats, vulnerabilities, and related exploits associated with network connectivity include:</p>
+<ul id="_9730c9c7-4c38-4735-af2e-8519fe71ea55">
+<li>
+<p id="_ee0b2cdf-9b43-4b76-8515-f40b9d0ffa8c">Unencrypted information&#8201;&#8212;&#8201;Any information, including configuration data or passwords, sent unencrypted to network printers could be intercepted, exposed and/or altered.</p>
+</li>
+<li>
+<p id="_573e2166-8a55-46c7-b110-d8d9d1f95699">Wireless connectivity&#8201;&#8212;&#8201;Wireless networks, such as Wi-Fi network, are inherently unsafe and susceptible to eavesdropping, which place information transmitted at risk of compromise and may lead to a security breach.</p>
+</li>
+<li>
+<p id="_12b951dc-3d86-475a-90a4-d9db7e4f189f">Network protocols&#8201;&#8212;&#8201;Most network printers provide services via variety of network protocols such as FTP, HTTP, IPP, SMB, SNMP and telnet. Yet each protocol has its own threats and vulnerabilities to be managed. Therefore, unused services / protocols shall be disabled to minimise the associated risks.</p>
+</li>
+</ul></clause>
+<clause id="_data_storage_threats_and_vulnerabilities" obligation="normative"><title>Data Storage Threats and Vulnerabilities</title><p id="_1f7dabba-44e6-49e6-acd2-942aa7e26c75">Data storage in network printers is most often in the form of hard disk drive (HDD) or solid-state drive (SSD). Information stored in network printers may leave organisational information vulnerable to numerous exploits and leakage in the following conditions:</p>
+<ul id="_882e17bc-f290-4ed7-bc53-019f998a3ecb">
+<li>
+<p id="_c4939899-bfd5-4e72-ad4d-fa62ce38188d"><strong>Unencrypted information</strong>&#8201;&#8212;&#8201;Any information stored unencrypted on network printers could be exposed and/or modified by anyone with access or in the event of a successful network-based attack.</p>
+</li>
+<li>
+<p id="_99d8639d-6a4e-4bd6-9f26-92bdf24b98a3"><strong>Sanitisation</strong>&#8201;&#8212;&#8201;If network printers are disposed without properly data erasure, unauthorised personnel may recover the information left inside the storage device.</p>
+</li>
+<li>
+<p id="_a4aa3b79-3f43-43d7-a6b0-fb3f4f7e435a"><strong>Unauthorised access</strong>&#8201;&#8212;&#8201;External maintenance or personnel with physical or remote access to network printers could download or copy the stored information.</p>
+</li>
+</ul></clause></clause>
+<clause id="_provision_of_network_printers" obligation="normative"><title>Provision of Network Printers</title><p id="_cb8f43ab-1315-4aa4-9a26-20e2de179e5f">When considering security adoption of network printers, B/Ds should identify the needs for network printers and how the network printers would support B/Ds&#8217; businesses. A network printer security policy should be established to specify the business and security requirements for the use of network printers with the following considerations:</p>
+<ul id="_390072c7-d76c-44e2-8604-434f08307e6c">
+<li>
+<p id="_4a9e467b-c3f6-49c8-a669-ee34f32cb0be">The types of approved network printers and the approval mechanism.</p>
+</li>
+<li>
+<p id="_93e61b53-275e-473a-a513-5c606d8ccedd">The data classification permitted on each type of network printer. Classified information shall be encrypted when stored in network printers.</p>
+</li>
+<li>
+<p id="_9d02bbf1-77f7-45de-a889-b0ffe030f668">The control mechanism to ensure the compliance with the government security requirements based on the data classification.</p>
+</li>
+<li>
+<p id="_92065db6-60a6-4c66-ad38-a44ddc855633">The procedures to ensure complete erasure of government data stored in network printers when they are disposed.</p>
+</li>
+</ul>
+<p id="_2e7e0c7e-860f-471c-8c02-9a9352a0d084">Based on the business and security requirements, B/Ds should develop adequate processes and procedures for the provision of network printers. In particular, security configuration procedures of network printers should be developed to enforce security configurations in accordance with government security requirements and the network printer security policy. Network printers should be configured according to the security configuration procedures before deployment. For sample checklist regarding security configuration of a network printer, please refer to <xref target="annex-sample-checklist"/>.</p>
+<p id="_d8e0f0a0-9868-4cea-9605-424e524f9db5">The following best practices should be included in the provisioning stage:</p>
+<ol id="_cf84da30-5c33-4c04-85b6-32961e965b23" type="arabic">
+<li>
+<p id="_8e1d36b0-c21b-49a7-83df-5285d08383a5">Identify the list of supported model that fulfils B/Ds&#8217; operations and security requirements.</p>
+</li>
+<li>
+<p id="_c060ba49-e123-4f26-8467-7587818c5ea8">Perform risk assessments prior to deployment of new network printers, and implement a continuous risk monitoring mechanism for evaluating changes in or new risks associated with the network printers.</p>
+</li>
+<li>
+<p id="_dddff9cb-c191-4b18-9c62-df265de1d83a">Disseminate the acceptable use policy and security reminders; as well as provide security awareness trainings to users to remind them to use network printers in a secure manner.</p>
+</li>
+<li>
+<p id="_54366429-b4e6-4944-b76a-dd5e3c3277ca">Maintain asset-tracking information such as serial number and keep track of them for audit and development of B/Ds&#8217; technology replacement strategy for network printers.</p>
+</li>
+<li>
+<p id="_1f7b563b-8713-42b1-9334-e38a1b2c2c6d">Apply secure configuration</p>
+<ul id="_7e85d4ab-b8ef-4172-a452-c3743f6e2525">
+<li>
+<p id="_8997737b-f4ab-4d45-a81c-4a8341e352eb">Isolate network printers from other systems until the secure configuration is completed;</p>
+</li>
+<li>
+<p id="_53788157-1092-4ac9-9e11-8f7bc521426f">Remove unused applications from network printers, e.g. Internet browsers;</p>
+</li>
+<li>
+<p id="_c38abb47-8ead-448f-99d0-579d4e3354fe">Enable all applicable security features of network printers according to the security configuration procedures of the network printers, including strong password for administrators of network printers and encryption of data stored on storage devices;</p>
+</li>
+<li>
+<p id="_fcebba7e-e847-4006-8a3c-15d489a3e538">Enable immediate file overwrite to delete temporary file of each job<fn reference="1"><p id="_61358d92-a441-40f3-b0f9-58e3fc8fee7d">Some printers do not support file overwrite when SSD is used as storage device. B/D could select HDD if the file overwrite feature is necessary.</p></fn>;</p>
+</li>
+<li>
+<p id="_c222e410-a618-471b-bd30-f7aca53d2d9e">Enable regular off-hours overwrite, if applicable;</p>
+</li>
+<li>
+<p id="_72bfed54-cd2f-44f8-bc28-1c76454b5b84">Enable pull / private printing solutions which allow setting password for a print job and users can release this print job only when the password is entered;</p>
+</li>
+<li>
+<p id="_9e67f5b5-f027-4d55-9e11-78f01d947b3b">Enable removal of print jobs for pull / private printing from the printer&#8217;s storage devices after predefined timeout period; and</p>
+</li>
+<li>
+<p id="_461b5ad0-d550-4d76-94e8-5f8835ed4041">Change default administrator account names / passwords and use strong passwords for network printers.</p>
+</li>
+</ul>
+</li>
+<li>
+<p id="_de9def74-393b-481f-95b5-d9ce6415e69d">Enable network security</p>
+<ul id="_6ed4e784-56cf-482b-8ca0-a995cf9ac017">
+<li>
+<p id="_5a20f315-5507-407f-ba30-f1f957369c74">Restrict network printers from accessing the Internet and configure the network printers to work within B/Ds&#8217; internal trusted networks;</p>
+</li>
+<li>
+<p id="_642260b0-a3c1-46f0-b01e-5a820493e987">Protect printers with firewall, if available, to only allow authorised traffic from/to the printers;</p>
+</li>
+<li>
+<p id="_ada9ce78-f5f1-4d64-b09b-d3599e2374a7">Enable HTTPS for web interface, if available, to access the printers&#8217; admin functions; and</p>
+</li>
+<li>
+<p id="_1c6903b8-ddf7-4ac6-83aa-a4d037499736">Enable network encryption protocols (e.g. SSL/TLS, IPsec), if available, to ensure that messages sent between computers and the printers are kept secure.</p>
+</li>
+</ul>
+</li>
+<li>
+<p id="_787dd8c5-b3b5-45d9-8258-0591aad5fa37">Limit/restrict access</p>
+<ul id="_ce1d6dbf-04dd-40a0-b965-3c44ea938ef0">
+<li>
+<p id="_6821b34e-8159-4a8d-8743-23cb34687fe5">Enable identification and authentication for privileged access (e.g. change the configuration settings);</p>
+</li>
+<li>
+<p id="_ea577e0e-db05-4cf0-bd62-d97a4aff4bb6">Disable unauthorised remote access of network printers;</p>
+</li>
+<li>
+<p id="_53b60007-cdd0-4c06-916c-d12ff2773fd4">Disable unneeded management services, ports and protocols;</p>
+</li>
+<li>
+<p id="_9a8c65f4-fdb3-455e-b6d5-65d4552dd9a2">Disable wireless network connection for handling classified information;</p>
+</li>
+<li>
+<p id="_cc4bf27d-3175-4f31-ab44-7e32780f3cb0">Whitelist or blacklist specific Media Access Control (MAC) addresses and/or IP addresses; and</p>
+</li>
+<li>
+<p id="_813450f9-e528-4a37-acc8-fb4bff754d42">Implement appropriate physical security.</p>
+</li>
+</ul>
+</li>
+</ol></clause>
+<clause id="_management_of_network_printers" obligation="normative"><title>Management of Network Printers</title><p id="_0bd12eb7-2ad1-4850-8fb3-2ae0548687be">Even if the security requirements have been fully considered in the provisioning stage, people and process are two main factors for keeping network printers in a safe environment. Therefore, this section focuses on the best practices related to on-going operation process for the management of network printers whereas best practices for using network printers by end-users are provided at <xref target="annex-use-network"/>.</p>
+<clause id="_on_going_operation_of_network_printers" obligation="normative"><title>On-going Operation of Network Printers</title><p id="_bebef0e4-72be-45c2-b4ac-3e6f2e32fdd4">Administrators should follow the best practices as follows:</p>
+<ol id="_f2d746f5-a9b4-42a5-815d-3fee2ab49d9f" type="arabic">
+<li>
+<p id="_10327628-a880-4844-b346-83335f58ca79">Check the status of network printers regularly to ensure security measures are in place;</p>
+</li>
+<li>
+<p id="_c2f8fbdc-fd2a-43d3-abae-8d47185c0796">Change password for administrators of network printers regularly;</p>
+</li>
+<li>
+<p id="_4e03468c-841b-4d45-aa7d-84447c9a9345">Review user accounts and privileges regularly to prevent unauthorised access of network printers;</p>
+</li>
+<li>
+<p id="_8c3170ce-3aa9-4838-a5a9-4f8ca05b629c">Update the operating system / firmware regularly to patch security vulnerabilities and improve security features;</p>
+</li>
+<li>
+<p id="_3c51648c-6990-4329-94e3-7dcf57203292">Make sure after any system / firmware updates or cold resets, all the established security controls are reinstated; and</p>
+</li>
+<li>
+<p id="_78652ebf-75c9-4dda-a285-8182477920a0">Review the print logs regularly, if applicable, to identify any suspicious activity such as the volume of print jobs or time of printing.</p>
+</li>
+</ol></clause>
+<clause id="_handling_classified_information" obligation="normative"><title>Handling Classified Information</title><p id="_2f68fe7c-5b43-43e3-8e82-3a2a0197d3d8">In compliance with the security requirements of the Government, B/Ds shall observe government security requirements and documents. In addition, B/Ds should adopt the following security practices for handling classified information:</p>
+<ol id="_0e98c4e7-0176-4b4c-9843-e0acde471906" type="arabic">
+<li>
+<p id="_6cae8a7e-3b63-4365-8e25-7a875bcc9625">Do not print/copy/scan/fax/email TOP SECRET or SECRET information with network printers.</p>
+</li>
+<li>
+<p id="_226462ec-2125-4311-bffd-10363a01fe43">Wireless network is very vulnerable and must not be used to transmit classified information without any control. If transmission of CONFIDENTIAL information to/from network printers via wireless networks is required, approval from Head of B/D must be sought for both the transmission of CONFIDENTIAL information through the wireless networks and the devices used for the transmission.</p>
+</li>
+<li>
+<p id="_e25da53a-872e-4a9f-934a-be18c00cd27c">Encrypt all CONFIDENTIAL or RESTRICTED information when transmitted from/to or stored in network printers (e.g. printer&#8217;s hard disk drive), either temporarily or permanently for printing, copying, scanning, faxing or emailing documents. B/Ds should check with product vendors to ensure the network printers can meet the encryption requirements for handling classified documents.</p>
+</li>
+<li><p id="_4ede02e8-1fc1-44c4-8238-861d936567c9">Detailed encryption requirements for these two types of classified information are given below.</p><p id="_c7cab38b-ac4e-4123-aa74-f023339f02ce">
+<em>Encryption requirements on CONFIDENTIAL information</em>
+</p>
+<ul id="_27b7d1f2-5aea-45d3-bb54-81c904bc9db8">
+<li>
+<p id="_81640312-f11f-461a-972b-c48a05668d1d">CONFIDENTIAL information must be encrypted during storage and transmission over an un-trusted communication network, e.g. wireless network. If symmetric encryption is selected, the key length shall be at least 128-bit for the Advanced Encryption Standard (AES) encryption or equivalent. If asymmetric encryption is selected, the key length shall be at least 2048-bit for the RSA encryption. Alternatively, the requirement can be met by Elliptic Curve Cryptography (ECC) encryption with key length of at least 224-bit or equivalent.</p>
+</li>
+<li>
+<p id="_ccef4f13-6035-4273-b89c-b6594b5377e0">For keys that are used for decrypting CONFIDENTIAL information, they shall be stored separately from the corresponding encrypted information.</p>
+</li>
+</ul>
+<p id="_95332dee-95c7-425c-bf0a-b41e014352e0">
+<em>Encryption requirements on RESTRICTED information</em>
+</p>
+<ul id="_345483b9-f9d2-4371-bad9-ffa45bb09eac">
+<li>
+<p id="_e796f9a5-0d68-42a5-afc2-96ea39f849c5">RESTRICTED information must be encrypted during storage and transmission over an un-trusted communication network, e.g. wireless network. If symmetric encryption is selected, the key length shall be at least 128-bit for the Advanced Encryption Standard (AES) encryption or equivalent. If asymmetric encryption is selected, the key length shall be at least 2048-bit for the RSA encryption. Alternatively, the requirement can be met by Elliptic Curve Cryptography (ECC) encryption with key length of at least 224-bit or equivalent.</p>
+</li>
+</ul></li>
+<li>
+<p id="_f7c3d0eb-9bd8-4117-a3f2-c07e8de7fc60">If network printers with storage devices do not meet the above encryption requirements, B/Ds should consider using network printers without built-in storage device and connecting the printers to a trusted network. Alternatively, local printers without built-in storage devices may be used.</p>
+</li>
+<li>
+<p id="_6e1d734b-d8fb-4610-b6ed-6a606462071e">If classified information is stored in network printers&#8217; storage devices, the network printers shall be installed in a physically secure environment. Security measures preventing any possible interfering of the printers shall be put in place.</p>
+</li>
+<li>
+<p id="_52a2a89b-7c72-44ad-a035-1693340357c7">Completely clear or destroy all classified information stored in network printers when they are no longer required.</p>
+</li>
+</ol></clause>
+<clause id="_awareness_training" obligation="normative"><title>Awareness Training</title><p id="_99165830-9491-4123-9a37-492969163926">Awareness training is an important activity to promote both administrators and users security awareness in using network printers. Awareness training to administrators should be arranged to enable them to fully understand the potential security threats encountered, the security requirements of network printers and possible security measures. For general users, trainings may be via user guide, circular or email to raise their awareness of best practices of using network printers.</p>
+<p id="_d664f8df-4488-4c43-8466-b9bad3b9cb0a">Generally speaking, awareness training should include but not limited to:</p>
+<ol id="_13eebb7e-111d-470b-9f5d-cbf5f3dc01b0" type="arabic">
+<li>
+<p id="_015a5d16-a372-4eae-ae0b-0e73ca2f4aa4">Information classification and corresponding security requirements for handling information with network printers.</p>
+</li>
+<li>
+<p id="_0de90c07-5de9-4645-b264-cc14e631cdf0">Protection of printouts.</p>
+</li>
+<li>
+<p id="_497e03eb-7ed9-46da-b30a-51d14cd5f9b3">Security requirements for network printers in provision, using and decommissioning stages.</p>
+</li>
+</ol></clause></clause>
+<clause id="_decommissioning_of_network_printers" obligation="normative"><title>Decommissioning of Network Printers</title><p id="_7e999a6b-a634-4420-a5e2-abb652d591a9">At the last stage of network printer management life cycle, network printers may be decommissioned due to physical damage, end of support, re-use by other staff or other B/Ds, etc. B/Ds should define device decommission procedures covering secure data deletion and network printers factory reset and disposal such that network printers can be re-used or securely disposed without data leakage.</p>
+<ol id="_ebe252c0-db40-44a3-96cf-bf44c2d5fe8d" type="arabic">
+<li>
+<p id="_20419947-8cbd-4c7d-98ef-b657434f710f">Secure Data Deletion</p>
+<ul id="_1e88fb8e-2d5d-44ce-a60f-2eea24084339">
+<li>
+<p id="_92b4b273-4fb8-4fdf-a0f0-c1813b21d9a6">Clear all the logs and data from network printers. Some network printers provide features to remove information from both non-volatile random-access memory (NVRAM) and hard drive. If no such feature, the NVRAM and hard drive should be wiped manually using data removal software solution or physical destruction.</p>
+</li>
+</ul>
+</li>
+<li>
+<p id="_89e58394-e488-4970-88d6-7e22a67a3b24">Factory Reset</p>
+<ul id="_1a04b872-7fef-497a-a9ca-cd18c659b11b">
+<li>
+<p id="_6963a122-71f0-4d81-9a2e-16492d9f01bd">Restore network printers to default factory setting. It could be done by using the &#8220;Restore Factory Settings&#8221; function, if available. B/Ds may seek advice from the corresponding product vendors, if necessary.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p id="_19e39432-aab1-48a3-81e5-74aac090815d">All classified information stored in network printers shall be completely cleared from the storage media before disposal, re-use or repair in accordance with government security requirements. If for any reason this is not feasible, the storage media must be physically destroyed to prevent the recovery of the classified information.</p></clause></clause>
+
+</sections><annex id="annex-sample-checklist" obligation="informative"><title>Sample Checklist on Security Configuration for Network Printers</title><p id="_293ab6f9-555c-409d-966b-ef7bc46a530d">The following list of configuration is recommended for securing network printers used in the offices. B/Ds may adjust the checklist based on their specific business requirements and advice from product vendors or third party consultants, if applicable.</p>
+<table id="_ae00abce-c675-4a31-a0b8-d0ba7636439d" unnumbered="true">
+<tbody>
+<tr>
+<th colspan="2" valign="middle" align="center">Configurations</th>
+</tr>
+<tr>
+<th colspan="2" valign="top" align="left">Preparation and Installation</th>
+</tr>
+<tr>
+<td valign="top" align="left">1.</td>
+<td valign="top" align="left">Isolate the network printer from other systems until the secure configuration is installed and hardened.</td>
+</tr>
+<tr>
+<td valign="top" align="left">2.</td>
+<td valign="top" align="left">Install the network printer in physically secure environment.</td>
+</tr>
+<tr>
+<th colspan="2" valign="top" align="left">Network Control</th>
+</tr>
+<tr>
+<td valign="top" align="left">3.</td>
+<td valign="top" align="left">Disable all protocols<fn reference="a"><p id="_b221a410-af6b-4e99-b320-470a6856de46">For examples: i) IPP: If the Internet Printing Protocol is not used, then disable it. ii) FTP: This feature is not used in most environments and should be disabled. iii) SMB: Most printers do not provide status report when using SMB printing and should be disabled.</p></fn> if they are not being utilised (e.g. AppleTalk, IPX/SPX).</td>
+</tr>
+<tr>
+<td valign="top" align="left">4.</td>
+<td valign="top" align="left">Assign the network printer with a static IP address<fn reference="b"><p id="_eb262ce2-71ab-4649-9ad8-f2594aba1e68">Giving static IP addresses or DHCP reservations makes it easier to monitor the printers and apply access lists on hardware-based firewalls. Consider placing sensitive printers on their own subnet, which may make them easier to identify and secure.</p></fn> or limit network access to the printer as possible such as access control lists in the printer configuration.</td>
+</tr>
+<tr>
+<td valign="top" align="left">5.</td>
+<td valign="top" align="left">Use secure communications (e.g. enable HTTPS for web-based management).</td>
+</tr>
+<tr>
+<td valign="top" align="left">6.</td>
+<td valign="top" align="left">Encrypt network traffic (e.g. IPsec or SSL/TLS).</td>
+</tr>
+<tr>
+<td valign="top" align="left">7.</td>
+<td valign="top" align="left">Disable wireless network connection for handling classified information.</td>
+</tr>
+<tr>
+<th colspan="2" valign="top" align="left">Data Protection Control</th>
+</tr>
+<tr>
+<td valign="top" align="left">8.</td>
+<td valign="top" align="left">Encrypt data stored in the printer&#8217;s storage devices, if applicable.</td>
+</tr>
+<tr>
+<td valign="top" align="left">9.</td>
+<td valign="top" align="left">Ensure that data stored in printer&#8217;s storage devices is erased completely before decommission.</td>
+</tr>
+<tr>
+<td valign="top" align="left">10.</td>
+<td valign="top" align="left">If printer&#8217;s storage devices are used for printing, copying, scanning, faxing or emailing documents, configure the network printer to remove any spooled files, images, and other temporary data from the storage devices using a secure overwrite between jobs.</td>
+</tr>
+<tr>
+<td valign="top" align="left">11.</td>
+<td valign="top" align="left">Enable authenticated retrieval of print jobs for users, e.g. pull / private printing.</td>
+</tr>
+<tr>
+<td valign="top" align="left">12.</td>
+<td valign="top" align="left">Enable Secure Multipurpose Internet Mail Extensions (S/MIME) for email transmission of documents, if applicable.
+Administration Control</td>
+</tr>
+<tr>
+<td valign="top" align="left">13.</td>
+<td valign="top" align="left">Disable all services not used (e.g. FAX, scanner). If the web interface is not required, consider disabling the web server.</td>
+</tr>
+<tr>
+<td valign="top" align="left">14.</td>
+<td valign="top" align="left">Change the default administrator account name / password, if applicable.</td>
+</tr>
+<tr>
+<td valign="top" align="left">15.</td>
+<td valign="top" align="left">Set strong passwords for administrator accounts according to password policy.</td>
+</tr>
+<tr>
+<td valign="top" align="left">16.</td>
+<td valign="top" align="left">Restrict access to management console.</td>
+</tr>
+<tr>
+<td valign="top" align="left">17.</td>
+<td valign="top" align="left">Disable unneeded services and management protocols<fn reference="c"><p id="_64c80784-6868-4028-a870-104f76e8e6ce">For examples: i) Disable web interface if possible; otherwise, enable HTTPS and disable HTTP at least. ii) Disable telnet management interface. iii) Disable SNMP if not used for printing management in your office; otherwise, choose SNMPv3 for its authentication and encryption features if possible.</p></fn>.</td>
+</tr>
+<tr>
+<td valign="top" align="left">18.</td>
+<td valign="top" align="left">Apply latest patches for printer&#8217;s operating system and/or firmware.</td>
+</tr>
+<tr>
+<td valign="top" align="left">19.</td>
+<td valign="top" align="left">Disable unused communication ports (e.g. Bluetooth, Wi-Fi, NFC, USB).</td>
+</tr>
+<tr>
+<td valign="top" align="left">20.</td>
+<td valign="top" align="left">Disable unauthorised remote access.</td>
+</tr>
+<tr>
+<th colspan="2" valign="top" align="left">User Authentication / Authorisation Control</th>
+</tr>
+<tr>
+<td valign="top" align="left">21.</td>
+<td valign="top" align="left">Enable user identification and authentication for privileged access.</td>
+</tr>
+<tr>
+<td valign="top" align="left">22.</td>
+<td valign="top" align="left">Restrict users to change the configuration settings.</td>
+</tr>
+<tr>
+<td valign="top" align="left">23.</td>
+<td valign="top" align="left">Ensure that only authorised users can modify the global configuration from the console by requiring a password.</td>
+</tr>
+<tr>
+<th colspan="2" valign="top" align="left">Logging</th>
+</tr>
+<tr>
+<td valign="top" align="left">24.</td>
+<td valign="top" align="left">Enable logging (e.g. access log) and review the logs regularly, if applicable.</td>
+</tr>
+</tbody>
+</table>
+<p id="_60c5631d-ea3a-4564-8619-6c2302987b86">The above checklist is NOT exhaustive and only includes some of the most common practices on printer configuration.</p></annex><annex id="annex-use-network" obligation="informative"><title>Use of Network Printers</title><p id="_2a10d6f8-1e04-42e8-a65b-346c5bed52db">Even the network printers have been prepared for secure operation, users should follow the best practices as follows:</p>
+<ol id="_605139d2-ed6c-4c63-ba17-da0c3032e949" type="arabic">
+<li>
+<p id="_2682a2f2-c598-49f8-904d-c42bc0e6e833">Use authorised network printers.</p>
+</li>
+<li>
+<p id="_3c837856-6e27-4f23-9319-080f739b8451">Do not use printer&#8217;s wireless connection functionality to handle classified information.</p>
+</li>
+<li>
+<p id="_25c9db69-dc5d-4621-af13-b287f2a36244">Observe the security requirements of printing, copying, scanning, faxing and emailing classified documents.</p>
+</li>
+<li>
+<p id="_9ef0379f-802b-4ab5-85a1-9e730006bf79">Use pull / private printing feature so that printouts are only released upon user authentication (e.g. PIN, smart cards) to prevent unintended disclosure of printouts containing classified information.</p>
+</li>
+<li>
+<p id="_c2655ed6-8dd4-4d5d-acd8-7fe884209242">Collect the printouts as soon as possible.</p>
+</li>
+<li>
+<p id="_7c80bca3-fd3b-46a6-ba71-ed7a7fa91d03">Do not collect or copy printouts which belong to others and put them back if they are collected unintentionally.</p>
+</li>
+<li>
+<p id="_b2199f06-9ced-465e-b03d-a64214748985">Set user passwords and select strong encryption method for scanning documents, if applicable.</p>
+</li>
+</ol></annex>
+</ogc-standard>

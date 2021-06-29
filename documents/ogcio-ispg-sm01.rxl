@@ -1,0 +1,33 @@
+<bibdata type="standard">
+<title language="en" format="text/plain">Practice Guide for Security Risk Assessment &amp; Audit</title>
+<docidentifier type="ogc-internal">ISPG-SM01</docidentifier>
+<docnumber>ISPG-SM01</docnumber>
+<date type="published">
+<on>2017-11</on>
+</date>
+<contributor>
+<role type="publisher"/>
+<organization>
+<name>Open Geospatial Consortium</name>
+</organization>
+</contributor>
+<edition>1.1</edition>
+
+<language>en</language>
+<script>Latn</script>
+<status>
+<stage>approved</stage>
+</status>
+<copyright>
+<from>2017</from>
+<owner>
+<organization>
+<name>Open Geospatial Consortium</name>
+</organization>
+</owner>
+</copyright>
+<ext>
+<doctype>standard</doctype>
+<docsubtype>implementation</docsubtype>
+</ext>
+</bibdata>

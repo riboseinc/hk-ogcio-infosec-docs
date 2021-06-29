@@ -1,0 +1,33 @@
+<bibdata type="standard">
+<title language="en" format="text/plain">Practice Guide for Cloud Computing Security [ISPG-SM04]</title>
+<docidentifier type="ogc-internal">ISPG-SM04</docidentifier>
+<docnumber>ISPG-SM04</docnumber>
+<date type="published">
+<on>2018-07</on>
+</date>
+<contributor>
+<role type="publisher"/>
+<organization>
+<name>Open Geospatial Consortium</name>
+</organization>
+</contributor>
+<edition>1.1</edition>
+
+<language>en</language>
+<script>Latn</script>
+<status>
+<stage>approved</stage>
+</status>
+<copyright>
+<from>2018</from>
+<owner>
+<organization>
+<name>Open Geospatial Consortium</name>
+</organization>
+</owner>
+</copyright>
+<ext>
+<doctype>standard</doctype>
+<docsubtype>implementation</docsubtype>
+</ext>
+</bibdata>

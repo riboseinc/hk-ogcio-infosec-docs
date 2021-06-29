@@ -1,0 +1,2710 @@
+
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><style>
+  <!--
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-size: 100%; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  vertical-align: baseline; }
+
+html, body, div, span, applet, object, iframe,
+p, blockquote,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, img, ins, q, s,
+small, strike, strong, sub, sup, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  font-family: "Overpass",sans-serif; }
+
+code, pre, tt, kbd, samp {
+  font-family: "Space Mono",monospace;
+  font-variant-ligatures: none; }
+
+code *, pre *, tt *, kbd *, samp * {
+  font-family: "Space Mono",monospace !important;
+  font-variant-ligatures: none; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Overpass",sans-serif; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+.h2Annex {
+  font-family: "Overpass",sans-serif; }
+
+dl {
+  display: grid;
+  grid-template-columns: max-content auto; }
+  dl dt p, dl dd p {
+    margin-top: 0; }
+  dl dt {
+    grid-column-start: 1; }
+  dl dd {
+    grid-column-start: 2; }
+
+b, strong {
+  font-weight: bold; }
+
+div.document-stage-band, div.document-type-band {
+  background-color: #333333; }
+
+a.FootnoteRef + a.FootnoteRef:before {
+  content: ", ";
+  vertical-align: super; }
+
+.addition {
+  color: blue; }
+
+.deletion {
+  color: red;
+  text-decoration: line-through; }
+
+#standard-band {
+  background-color: #3D9970; }
+
+#standard {
+  border-bottom: solid 3px #3D9970; }
+
+#abstract-specification-topic-band {
+  background-color: #3D9970; }
+
+#abstract-specification-topic {
+  border-bottom: solid 3px #3D9970; }
+
+#reference-model-band {
+  background-color: #3D9970; }
+
+#reference-model {
+  border-bottom: solid 3px #3D9970; }
+
+#best-practice-band {
+  background-color: #39CCCC; }
+
+#best-practice {
+  border-bottom: solid 3px #39CCCC; }
+
+#discussion-paper-band {
+  background-color: #39CCCC; }
+
+#discussion-paper {
+  border-bottom: solid 3px #39CCCC; }
+
+#white-paper-band {
+  background-color: #39CCCC; }
+
+#white-paper {
+  border-bottom: solid 3px #39CCCC; }
+
+#engineering-report-band {
+  background-color: #39CCCC; }
+
+#engineering-report {
+  border-bottom: solid 3px #39CCCC; }
+
+#release-notes-band {
+  background-color: #FFDC00; }
+
+#release-notes {
+  border-bottom: solid 3px #FFDC00; }
+
+#user-guide-band {
+  background-color: #FFDC00; }
+
+#user-guide {
+  border-bottom: solid 3px #FFDC00; }
+
+#community-practice-band {
+  background-color: #FF851B; }
+
+#community-practice {
+  border-bottom: solid 3px #FF851B; }
+
+#community-standard-band {
+  background-color: #FF851B; }
+
+#community-standard {
+  border-bottom: solid 3px #FF851B; }
+
+#other-band {
+  background-color: #0074D9; }
+
+#other {
+  border-bottom: solid 3px #0074D9; }
+
+#policy-band {
+  background-color: #0074D9; }
+
+#policy {
+  border-bottom: solid 3px #0074D9; }
+
+#change-request-supporting-document-band {
+  background-color: #0074D9; }
+
+#change-request-supporting-document {
+  border-bottom: solid 3px #0074D9; }
+
+#test-suite-band {
+  background-color: #001F3F; }
+
+#test-suite {
+  border-bottom: solid 3px #001F3F; }
+
+#candidate-band {
+  background-color: #8B9EB7; }
+
+#candidate {
+  border-bottom: solid 3px #8B9EB7; }
+
+#working-draft-band {
+  background-color: #8B9EB7; }
+
+#working-draft {
+  border-bottom: solid 3px #8B9EB7; }
+
+#proposal-band {
+  background-color: #8B9EB7; }
+
+#proposal {
+  border-bottom: solid 3px #8B9EB7; }
+
+#oab-review-band {
+  background-color: #8B9EB7; }
+
+#oab-review {
+  border-bottom: solid 3px #8B9EB7; }
+
+#committee-draft-band {
+  background-color: #8B9EB7; }
+
+#committee-draft {
+  border-bottom: solid 3px #8B9EB7; }
+
+#swg-draft-band {
+  background-color: #8B9EB7; }
+
+#swg-draft {
+  border-bottom: solid 3px #8B9EB7; }
+
+#public-rfc-band {
+  background-color: #48a0e7; }
+
+#public-rfc {
+  border-bottom: solid 3px #48a0e7; }
+
+#tc-vote-band {
+  background-color: #fd06fd; }
+
+#tc-vote {
+  border-bottom: solid 3px #fd06fd; }
+
+#published-band {
+  background-color: #9abd48; }
+
+#published {
+  border-bottom: solid 3px #9abd48; }
+
+#deprecated-band {
+  background-color: #7e0d13; }
+
+#deprecated {
+  border-bottom: solid 3px #7e0d13; }
+
+#retired-band {
+  background-color: #7e0d13; }
+
+#retired {
+  border-bottom: solid 3px #7e0d13; }
+
+.coverpage-maturity, .coverpage-stage {
+  font-family: "Overpass",sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  margin: 0 0 2em 0;
+  text-transform: uppercase; }
+
+.icon-svg {
+  width: 100%;
+  color: #5ecf86; }
+
+.wrapper-top {
+  background: #00335b;
+  background: linear-gradient(130deg, #00335b 45%, #f1f8ff 100%);
+  color: #ffffff;
+  padding: 5em 0;
+  width: 100%; }
+
+.wrapper-top-bottom {
+  width: 0;
+  height: 0;
+  border-top: 100px solid #00335b;
+  border-right: 100px solid transparent;
+  position: absolute; }
+
+.document-type-band {
+  top: 260px; }
+
+.document-stage-band > :first-child {
+  height: 240px; }
+
+.coverpage-metadata {
+  margin-top: 35px;
+  padding-top: 15px;
+  margin-right: 25px;
+  border-top: solid 1px white; }
+
+.coverpage-metadata,
+.coverpage-alt-formats {
+  font-size: 12px;
+  font-family: "Overpass",sans-serif;
+  margin-left: 1em;
+  text-align: left; }
+  .coverpage-metadata span,
+  .coverpage-alt-formats span {
+    display: block;
+    text-align: left; }
+    .coverpage-metadata span a,
+    .coverpage-alt-formats span a {
+      color: white; }
+      .coverpage-metadata span a:hover,
+      .coverpage-alt-formats span a:hover {
+        text-decoration: underline;
+        background: none;
+        box-shadow: none !important;
+        font-weight: 400; }
+  .coverpage-metadata .value,
+  .coverpage-alt-formats .value {
+    font-size: 15px;
+    margin-bottom: 15px; }
+  .coverpage-metadata .label,
+  .coverpage-alt-formats .label {
+    font-size: 12px;
+    padding: 0; }
+
+.coverpage-alt-formats span {
+  display: inline;
+  text-align: left; }
+  .coverpage-alt-formats span a {
+    padding-right: 5px; }
+
+.coverpage-title {
+  padding-bottom: 0.5em;
+  font-family: "Overpass",sans-serif;
+  font-weight: 100;
+  padding-left: 1em;
+  padding-right: 1em; }
+  .coverpage-title span {
+    font-family: "Overpass",sans-serif;
+    font-size: 1.8em;
+    line-height: 1; }
+
+.docstage-box table {
+  width: auto; }
+
+.docstage-box th {
+  background-color: #93c0d6; }
+
+.docstage-box td {
+  vertical-align: top;
+  background-color: #daeef3;
+  padding: 0.5em;
+  border: 0; }
+
+.docstage-box th:first-child {
+  border-radius: 1em 0 0 0; }
+
+.docstage-box th:last-child {
+  border-radius: 0 1em 0 0; }
+
+.docstage-box tr:first-child {
+  border-radius: 0 0 0 1em; }
+
+.docstage-box tr:last-child {
+  border-radius: 0 1em 0 0; }
+
+.docstage-box tr:last-child > td:first-child {
+  border-radius: 0 0 0 1em; }
+
+.docstage-box tr:last-child > td:last-child {
+  border-radius: 0 0 1em 0; }
+
+.WordSection11 {
+  padding: 0 2em 0 3em; }
+
+.info-section {
+  padding: 0 2em 0 5em; }
+
+.prefatory-section {
+  padding: 0 3em 0 6em; }
+
+.zzSTDTitle1, .MsoCommentText {
+  display: none; }
+
+.coverpage {
+  text-align: center;
+  padding-left: 1.5em; }
+
+.coverpage-logo span, .coverpage-tc-name span {
+  font-family: "Overpass",sans-serif;
+  text-transform: none;
+  font-weight: 300;
+  margin-left: 1em; }
+
+.coverpage-tc-name {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin: 0.25em 0; }
+
+.copyright {
+  padding: 1em;
+  font-size: 0.9em;
+  text-align: left; }
+
+/* Document Identity */
+.coverpage-doc-identity {
+  font-size: 2em;
+  line-height: 2em; }
+
+.coverpage-title .title-second {
+  display: none; }
+
+.coverpage-stage-block {
+  font-family: "Overpass",sans-serif;
+  font-weight: 600;
+  font-size: 1.25em;
+  margin: 2em 0em 2em 0em;
+  text-transform: uppercase; }
+
+.authors {
+  margin-top: 2em; }
+  .authors span {
+    display: block;
+    line-height: 2; }
+  .authors span.roletag {
+    display: inline-block;
+    font-size: 12px;
+    color: #00335b;
+    background-color: white;
+    padding: 2px 5px;
+    margin-left: 7px;
+    border-radius: 5px; }
+
+/* Draft Warning */
+.coverpage-warning {
+  border: #f36f36 solid 2px;
+  color: #f36f36 !important;
+  margin: 1em 2em;
+  color: #2e81c2;
+  padding: 2em 1em 1em 1em;
+  border-radius: 25px; }
+  .coverpage-warning h1 {
+    font-family: "Overpass",sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2em; }
+
+@media print {
+  .document-info, .copyright {
+    page-break-before: always; }
+  .coverpage {
+    height: 23cm; }
+  .info-section {
+    display: none; }
+  .wrapper-top {
+    top: 0;
+    padding-top: 4cm;
+    padding-bottom: 4cm; }
+  .wrapper-top-bottom {
+    margin-top: -5px;
+    display: none; } }
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #00335b;
+  background-color: #f6f8fa; }
+  body main {
+    margin: 0 3em 0 6em; }
+  @media screen and (min-width: 768px) {
+    body {
+      padding-left: 360px; } }
+  @media print {
+    body {
+      padding-left: 0; } }
+dl {
+  grid-template-columns: minmax(0, 1fr) 93%; }
+  dl pre {
+    overflow-x: scroll; }
+
+#toc ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  #toc ul li a {
+    padding: 5px 10px; }
+  #toc ul a {
+    color: #00335b;
+    text-decoration: none;
+    display: block; }
+    #toc ul a:hover {
+      box-shadow: none;
+      color: white; }
+
+#toc .h2 {
+  padding-left: 30px; }
+
+#toc .h3 {
+  padding-left: 50px; }
+
+#toc .toc-active, #toc li:hover {
+  background: #00335b;
+  box-shadow: inset -5px 0px 10px -5px #00335b !important; }
+  #toc .toc-active a, #toc li:hover a {
+    color: white; }
+
+@media print {
+  #toc .toc-active, #toc li:hover {
+    background: white;
+    box-shadow: none !important; }
+  #toc .toc-active a {
+    color: #00335b; }
+  #toc li:hover a {
+    color: black; } }
+
+#toc li a {
+  font-size: 14px; }
+
+#toc li:before {
+  content: " ";
+  display: none; }
+
+#toc .toc-active, #toc li:hover {
+  font-weight: 600; }
+
+#toc li:hover a {
+  background: none;
+  box-shadow: none; }
+
+@media screen and (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 323px;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0 0 0 45px;
+    background-color: #f1f8ff; } }
+
+@media print {
+  nav {
+    position: relative;
+    width: auto;
+    font-size: 0.9em;
+    overflow: auto;
+    padding: 0;
+    margin-right: 0;
+    background-color: white; } }
+
+@media screen and (min-width: 768px) {
+  nav {
+    marign-right: 30px; } }
+
+@media screen and (min-width: 768px) {
+  #toggle {
+    position: fixed;
+    height: 100%;
+    width: 30px;
+    background-color: #00335b;
+    color: white !important;
+    cursor: pointer;
+    z-index: 100; }
+    #toggle span {
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translate(0, -50%); } }
+
+@media screen and (max-width: 768px) {
+  #toggle {
+    display: none; } }
+
+@media print {
+  #toggle {
+    display: none; } }
+
+.rule {
+  width: 100%;
+  height: 1px;
+  background-color: #00335b;
+  margin: 2em 0; }
+  @media screen and (min-width: 768px) {
+    .rule.toc {
+      display: none; } }
+@media screen and (min-width: 768px) {
+  h1.toc-contents {
+    margin-top: 1em; }
+  ul#toc-list {
+    padding: 0;
+    margin: 0; } }
+
+#toc-list ul {
+  margin-bottom: 0.25em; }
+
+#toc-list li {
+  list-style-type: none; }
+
+.figure {
+  line-height: 1.6em;
+  padding: 1.5em;
+  margin: 2em 0 1em 0;
+  overflow: auto; }
+  .figure .FigureTitle, .figure .figure-title {
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center; }
+  .figure > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 100%;
+    height: auto; }
+
+.document-stage-band {
+  left: 0;
+  top: 0;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 101;
+  box-shadow: -5px 0px 10px #1d1d1d; }
+  .document-stage-band > :first-child {
+    position: relative;
+    width: 25px;
+    font-weight: 300;
+    height: 160px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 0;
+    margin-left: 6px;
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    white-space: nowrap;
+    display: block;
+    bottom: 0; }
+  @media print {
+    .document-stage-band {
+      display: none; } }
+.document-type-band {
+  left: 0;
+  top: 180px;
+  height: 100%;
+  position: fixed;
+  display: block;
+  z-index: 102; }
+  .document-type-band > :first-child {
+    position: relative;
+    width: 25px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 0;
+    margin-left: 6px;
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    white-space: nowrap;
+    display: block;
+    bottom: 0; }
+  @media print {
+    .document-type-band {
+      display: none; } }
+  .document-type-band .document-type {
+    top: 20px; }
+
+#governance-band p.document-type {
+  font-weight: 400;
+  height: 230px !important; }
+
+#standard-band p {
+  height: 135px; }
+
+#proposal-band p {
+  height: 150px; }
+
+#standard-band,
+#published-band {
+  color: #7ba812; }
+
+#standard,
+#published {
+  color: #9ABD48; }
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #00335b;
+  font-weight: 400;
+  margin-top: 1.6em;
+  margin-bottom: 0.3em; }
+
+h1 {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  margin-top: 2em; }
+  h1 #content {
+    margin-top: 2em; }
+
+h2 {
+  margin-top: 1.3em;
+  font-size: 1.7em;
+  font-weight: 300; }
+  h2 p {
+    display: inline; }
+
+h3 {
+  margin-top: 1.3em;
+  font-size: 1.5em;
+  font-weight: 100; }
+
+h4 {
+  font-size: 1.4em; }
+
+.contact-info {
+  padding: 2em;
+  margin-top: 5em;
+  width: 280px;
+  text-align: left;
+  border: #00335b solid 2px;
+  color: #00335b !important;
+  border-radius: 25px; }
+  .contact-info a:hover {
+    text-decoration: underline;
+    background: none;
+    box-shadow: 0 0 0 0; }
+  .contact-info a, .contact-info a:hover {
+    color: #00335b; }
+  .contact-info p, .contact-info a {
+    font-family: "Space Mono",monospace;
+    font-variant-ligatures: none;
+    font-weight: 400; }
+  .contact-info #boilerplate-name {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 0; }
+  .contact-info #boilerplate-address {
+    font-size: 1em;
+    line-height: 1.3em;
+    margin-top: 0; }
+
+ul, ol {
+  margin-left: 1.2em; }
+
+ul > li {
+  list-style: none; }
+  ul > li:before {
+    content: "\2014";
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; }
+  ul > li p:first-child {
+    display: inline; }
+  ul > li:first-child {
+    margin-top: 1em; }
+
+span.keyword {
+  font-weight: 600; }
+
+/* Tables */
+table {
+  width: 100%;
+  font-weight: 300;
+  margin: 1em 0 2em 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2em;
+  /*color: #010d16;*/ }
+  table, table th, table td {
+    border: 1px solid black;
+    font-size: 0.95em; }
+  table th, table td {
+    padding: 1em; }
+  table td.header {
+    font-weigth: 400; }
+  table thead tr th {
+    background-color: #5d99d6; }
+  table td, table th {
+    padding: 1em; }
+  table td.header {
+    font-weight: 400; }
+
+.docstage-box table,
+.docstage-box table th,
+.docstage-box table td {
+  border: none; }
+
+table.recommendtest {
+  width: 100%;
+  font-weight: 300;
+  margin: 1em 0 2em 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2em;
+  color: #010d16; }
+  table.recommendtest, table.recommendtest th, table.recommendtest td {
+    border: none !important;
+    font-size: 0.95em; }
+  table.recommendtest th, table.recommendtest td {
+    padding: 1em; }
+  table.recommendtest td.header {
+    font-weigth: 400; }
+  table.recommendtest tr:nth-child(even) {
+    background: #ffffff; }
+  table.recommendtest tr:nth-child(odd) {
+    background: #ffffff; }
+  table.recommendtest thead tr th {
+    background-color: #5d99d6; }
+  table.recommendtest td, table.recommendtest th {
+    padding: 1em; }
+  table.recommendtest td.header {
+    font-weight: 400; }
+
+td > p:first-child, th > p:first-child {
+  margin-top: 0em; }
+
+td > p:last-child, th > p:last-child {
+  margin-bottom: 0em; }
+
+p.TableTitle {
+  text-align: center;
+  margin-top: 2.5em;
+  font-weight: 400; }
+
+/* Terms */
+.TermNum, .Terms, .AltTerms {
+  color: #00335b;
+  font-weight: 300;
+  font-family: "Overpass",sans-serif; }
+
+h2.TermNum {
+  margin-bottom: 0; }
+
+p.AltTerms {
+  font-size: 24px;
+  margin-top: 1em; }
+
+/* Links, selection */
+a, a:visited {
+  text-decoration: none;
+  color: #2e81c2; }
+
+a:hover {
+  color: #00335b;
+  background: white;
+  box-shadow: 3px 0 0 white, -3px 0 0 white; }
+
+::selection,
+::-moz-selection {
+  background: white;
+  color: #00335b; }
+
+/* Bibliograhy */
+p.Biblio, p.NormRef {
+  margin-top: 1em;
+  margin-left: 2em; }
+
+/* Blocks */
+.SourceTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+pre {
+  font-family: "Space Mono",monospace;
+  font-variant-ligatures: none;
+  background-color: #f7f7f7;
+  font-size: 0.8em;
+  line-height: 1.6em;
+  padding: 1.5em;
+  margin: 2em 0 1em 0;
+  overflow-y: auto;
+  overflow-x: scroll;
+  font-family: "Space Mono",monospace;
+  font-variant-ligatures: none; }
+
+.Admonition {
+  padding: 1em 1.2em 1.2em 1.2em;
+  margin: 1em 0 1em 0;
+  background-color: #fcad88;
+  border-top: 10px solid #eb5a06;
+  color: #290404; }
+  .Admonition .AdmonitionTitle {
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center; }
+  .Admonition.Important {
+    background-color: #f58cff;
+    color: #5d1364;
+    border-top: 10px solid #9503a8; }
+  .Admonition.Warning {
+    background-color: #ff989d;
+    color: #270204;
+    border-top: 10px solid #e4010c; }
+  .Admonition p, .Admonition.Important p, .Admonition.Warning p {
+    margin: 0; }
+
+.figure, pre, .pseudocode {
+  background-color: #e1eef1;
+  color: #424242;
+  font-size: 0.8em; }
+
+.Note {
+  background-color: #fff8bb;
+  color: #7d760b;
+  padding: 1.2em;
+  margin: 1em 0 1em 0; }
+  .Note p {
+    margin: 0; }
+
+.example {
+  background-color: #e1eef1;
+  color: #424242;
+  padding: 1.2em;
+  margin: 2em 0 1em 0;
+  padding-left: 2em; }
+  .example .example-title {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-left: -1.5em; }
+  .example pre, .example .pseudocode {
+    background: none; }
+
+.Quote {
+  background-color: #e1eef1;
+  font-style: italic;
+  width: 80%;
+  padding: 1.5em;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.formula {
+  background-color: #f6f6f6;
+  padding: 1.5em;
+  margin-top: 2em;
+  text-align: center; }
+
+.recommend .RecommendationTitle, .recommendtest .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.require .RecommendationTitle, .requiretest .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.permission .RecommendationTitle, .permissiontest .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.RecommendationTestTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+/*
+.recommend {
+  &, .example_label {
+    background-color: #f8ffbd;
+  }
+  .example_label {
+    font-weight: bold;
+  }
+}
+
+.permission {
+  &, .example_label {
+    background-color: #cdfdbe;
+  }
+  .example_label {
+    font-weight: bold;
+  }
+}
+
+.require {
+  &, .example_label {
+    background-color: #d3e6ff;
+  }
+  .example_label {
+    font-weight: bold;
+  }
+}
+*/
+.recommend .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.require .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+.permission .RecommendationTitle {
+  font-weight: 700;
+  font-size: 1em;
+  text-align: center; }
+
+tbody td.recommend p.RecommendationTitle, tbody td.recommend p.RecommendationTitle, tbody td.recommend p.RecommendationTitle {
+  font-weight: normal;
+  text-align: left; }
+
+#myBtn {
+  font-family: "Space Mono",monospace;
+  font-variant-ligatures: none;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #00335b;
+  opacity: 0.15;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  border-radius: 4px; }
+  #myBtn:hover {
+    opacity: 1; }
+  @media print {
+    #myBtn {
+      display: none; } }
+a.anchorjs-link:hover {
+  background: none;
+  color: #2e81c2;
+  box-shadow: none; }
+
+@page {
+  margin: 2cm 1cm; }
+
+@media print {
+  h1, h2, h3, h4 {
+    page-break-after: avoid;
+    margin-top: 1.2em; }
+  h1 {
+    font-size: 1.5em;
+    line-height: 1.5; }
+    h1.content {
+      margin-top: 2em;
+      line-height: 2.5em; }
+  h2 {
+    font-size: 1.2em; }
+  h3 {
+    font-size: 1em; }
+  .prefatory-section {
+    page-break-before: always; }
+  .note, .pseudocode {
+    page-break-inside: avoid; }
+  .Note {
+    background-color: #fff495;
+    color: #47430c;
+    padding: 5px;
+    margin: 2em 0 1em 0; }
+    .Note p {
+      padding: 0 5px 0 5px; }
+  nav {
+    line-height: 1; } }
+
+/* Footnotes */
+a.footnote-number {
+  vertical-align: super;
+  font-size: 0.8em; }
+
+.footnote {
+  font-size: 0.9em; }
+
+span.hi {
+  background-color: yellow; }
+
+-->
+</style><title>Practice Guide for Mobile Security</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--TOC script import-->
+<script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+<script type="text/javascript">function toclevel() { return "h1:not(:empty):not(.TermNum):not(.noTOC),h2:not(:empty):not(.TermNum):not(.noTOC)";}
+</script>
+
+<!--Google fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com" /> 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,600,900" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Teko:300,400,500" rel="stylesheet" />
+
+<!--Font awesome import for the link icon-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
+<style class="anchorjs"></style>
+</head>
+  <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
+    <div class="title-section"><div class="document-stage-band" id="approved-band">
+    <p class="document-stage">Approved</p>
+</div>
+
+<div class="document-type-band" id="standard-band">
+    <p class="document-type">OGC Standard</p>
+</div>
+
+
+
+  <div id="toggle"> <span>&#x2022;</span> </div>
+
+  <header>
+
+<!--<div class="WordSection1">-->
+  <div class="coverpage">
+    <div class="wrapper-top">
+
+  <div class="coverpage-doc-identity">
+
+    <div class="coverpage-title">
+      <span class="title-first">Practice Guide for Mobile Security</span>
+      <!--<span class="title-second"></span>-->
+    </div>
+  </div>
+
+  <div class="coverpage-logo">
+    <span>Open Geospatial Consortium</span>
+  </div>
+
+  <!--
+  <div class="coverpage-tc-name">
+    <span></span>
+  </div>
+  -->
+
+  <div class="authors">
+    
+    
+    
+  </div>
+
+    <div class="coverpage-metadata">
+      <span class="label">Submission Date: </span> <span class="value">XXX</span>
+      <span class="label">Approval Date: </span> <span class="value">XXX</span>
+      <span class="label">Publication Date: </span> <span class="value">2018-07</span>
+      <span class="label">External identifier of this OGC&#xAE; document: <span class="docnumber value"></span></span>
+      <span class="label">Internal identifier of this OGC&#xAE; document: <span class="docnumber value">ISPG-SM03</span></span>
+      
+      
+    </div>
+
+    <div class="coverpage-alt-formats">
+      
+      <span class="label">Version: </span> <span class="value">1.1</span><br />
+      
+    
+    </div>
+
+  </div>
+
+    <div class="wrapper-top-bottom"></div>
+
+  <div class="WordSection11">
+  <div class="coverpage-stage-block">
+    <span class="coverpage-stage" id="standard">OGC Standard</span>
+  </div>
+
+  <div class="coverpage-stage-block">
+    <p><span class="coverpage-maturity" id="approved">Approved</span></p>
+  </div>
+</div>
+
+  <div class="coverpage-warning">
+    <div class="boilerplate-legal">
+
+
+    <div><h1 class="IntroTitle">Warning</h1>
+
+      <p id="_c0d356f2-3cd3-43a5-872b-9b3d3ce7d8dd">This document is an OGC Member approved international standard. This document is available on a royalty free, non-discriminatory basis. Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.
+      </p>
+    </div>
+
+
+
+
+
+  </div>
+ </div>
+
+<div class="docstage-box">
+  <table>
+    <tr><td>Document number:</td><td>ISPG-SM03</td></tr>
+    <tr><td>Document type:</td><td>OGC Standard</td></tr>
+    <tr><td align="right">Document subtype:</td><td align="right">Implementation</td></tr>
+    <tr><td align="right">Document stage:</td><td align="right">Approved</td></tr>
+    <tr><td align="right">Document language:</td><td align="right">English</td></tr>
+  </table>
+</div>
+
+<div class="info-section">
+<div class="copyright">
+  <div class="boilerplate-copyright">
+    <div><h1 class="IntroTitle">Copyright notice</h1>
+
+
+      <p id="_a4a04562-aa9e-4af4-b36e-75a6b98c6693" style="text-align:center;">Copyright
+        &#xA9; 2018 Open Geospatial Consortium<br />
+        To obtain additional rights of use, visit
+        <a href="http://www.ogc.org/legal/">http://www.ogc.org/legal/</a></p>
+    </div>
+    <div><h1 class="IntroTitle">Note</h1>
+
+      <p id="_514bc198-043e-4b9f-b1ff-07faaf2a46e2" style="text-align:left;">Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.</p>
+
+      <p id="_c19a5be0-7840-4c35-bcac-cbb16a058bc5" style="text-align:left;">Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</p>
+    </div>
+  </div>
+</div>
+
+<div class="rule"></div>
+</div>
+  </div>
+
+
+</header>
+
+      <p>&#xA0;</p>
+    </div>
+    <br />
+    <div class="prefatory-section"><div class="license">
+  <div class="boilerplate-license">
+    <div><h1 class="IntroTitle">License Agreement</h1>
+
+
+      <p id="_b9d5c3b3-2836-47fa-88e1-81f64f41d48b">Permission is hereby granted by the Open Geospatial
+        Consortium, (&#x201C;Licensor&#x201D;), free of charge and subject to the terms set
+        forth below, to any person obtaining a copy of this Intellectual Property and
+        any associated documentation, to deal in the Intellectual Property without
+        restriction (except as set forth below), including without limitation the
+        rights to implement, use, copy, modify, merge, publish, distribute, and/or
+        sublicense copies of the Intellectual Property, and to permit persons to whom
+        the Intellectual Property is furnished to do so, provided that all copyright notices
+        on the intellectual property are retained intact and that each person to whom
+        the Intellectual Property is furnished agrees to the terms of this Agreement.</p>
+
+      <p id="_1af6e1ed-b0a6-4d84-95dc-e944644edcee">If you modify the Intellectual Property, all copies of
+        the modified Intellectual Property must include, in addition to the above
+        copyright notice, a notice that the Intellectual Property includes
+        modifications that have not been approved or adopted by LICENSOR.</p>
+
+      <p id="_8f8e36d3-3153-477e-a063-de7d1508ca9d">THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT
+        CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.
+        THE INTELLECTUAL PROPERTY IS PROVIDED &#x201C;AS
+        IS&#x201D;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+        LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+        AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THE COPYRIGHT HOLDER OR HOLDERS
+        INCLUDED IN THIS NOTICE DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE
+        INTELLECTUAL PROPERTY WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE
+        INTELLECTUAL PROPERTY WILL BE UNINTERRUPTED OR ERROR FREE. ANY USE OF THE
+        INTELLECTUAL PROPERTY SHALL BE MADE ENTIRELY AT THE USER&#x2019;S OWN RISK. IN NO
+        EVENT SHALL THE COPYRIGHT HOLDER OR ANY CONTRIBUTOR OF INTELLECTUAL PROPERTY
+        RIGHTS TO THE INTELLECTUAL PROPERTY BE LIABLE FOR ANY CLAIM, OR ANY DIRECT,
+        SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING
+        FROM ANY ALLEGED INFRINGEMENT OR ANY LOSS OF USE, DATA OR PROFITS, WHETHER IN
+        AN ACTION OF CONTRACT, NEGLIGENCE OR UNDER ANY OTHER LEGAL THEORY, ARISING OUT
+        OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR
+        PERFORMANCE OF THIS INTELLECTUAL PROPERTY.</p>
+
+      <p id="_2652c1e2-cd56-4db3-a048-c6353cd43565">This license is effective until terminated. You may
+        terminate it at any time by destroying the Intellectual Property together with
+        all copies in any form. The license will also terminate if you fail to comply
+        with any term or condition of this Agreement. Except as provided in the
+        following sentence, no such termination of this license shall require the
+        termination of any third party end-user sublicense to the Intellectual Property
+        which is in force as of the date of notice of such termination. In addition,
+        should the Intellectual Property, or the operation of the Intellectual
+        Property, infringe, or in LICENSOR&#x2019;s sole opinion be
+        likely to infringe, any patent, copyright, trademark or other right of a third
+        party, you agree that LICENSOR, in its sole discretion, may terminate this
+        license without any compensation or liability to you, your licensees or any
+        other party. You agree upon termination of any kind to destroy or cause to be
+        destroyed the Intellectual Property together with all copies in any form,
+        whether held by you or by any third party.</p>
+
+      <p id="_98f6d459-325d-4a12-b321-1d4653913611">Except as contained in this notice, the name of
+        LICENSOR or of any other holder of a copyright in all or part of the Intellectual
+        Property shall not be used in advertising or otherwise to promote the sale, use
+        or other dealings in this Intellectual Property without prior written
+        authorization of LICENSOR or such copyright holder. LICENSOR is and shall at
+        all times be the sole entity that may authorize you or any third party to use
+        certification marks, trademarks or other special designations to indicate
+        compliance with any LICENSOR standards or specifications.
+        This Agreement is
+        governed by the laws of the Commonwealth of Massachusetts. The application to
+        this Agreement of the United Nations Convention on Contracts for the
+        International Sale of Goods is hereby expressly excluded. In the event any
+        provision of this Agreement shall be deemed unenforceable, void or invalid, such
+        provision shall be modified so as to make it valid and enforceable, and as so
+        modified the entire Agreement shall remain in full force and effect. No
+        decision, action or inaction by LICENSOR shall be construed to be a waiver of
+        any rights or remedies available to it.</p>
+
+      <p id="_442c8bb3-5318-41dc-b8ba-2540f8fcbd89">None of the Intellectual Property or underlying information or technology may be downloaded or otherwise exported or reexported in violation of U.S. export laws and regulations. In addition, you are responsible for complying with any local laws in your jurisdiction which may impact your right to import, export or use the Intellectual Property, and you represent that you have complied with any regulations or registration procedures required by applicable law to make this license enforceable.</p>
+    </div>
+  </div>
+
+
+<div class="boilerplate-feedback">
+
+    <div id="boilerplate-standard-feedback">
+      <p id="_08ca339d-0f96-4a51-b239-7c102d9efb54">Suggested additions, changes and comments on this standard are welcome and encouraged. Such suggestions may be submitted using the online change request form on OGC web site: <a href="http://portal.opengeospatial.org/public_ogc/change_request.php">http://portal.opengeospatial.org/public_ogc/change_request.php</a></p>
+    </div>
+
+  </div>
+
+
+</div>
+
+<nav>
+  <h1 id="content">Contents</h1>
+  <div id="toc"><ul><li class="h1"><a href="#toc0">      1.&#xA0; COPYRIGHT NOTICE</a></li><li class="h1"><a href="#toc1">      2.&#xA0; Introduction</a></li><li class="h2"><a href="#toc2">      2.1.&#xA0; Purpose</a></li><li class="h2"><a href="#toc3">      2.2.&#xA0; Normative References</a></li><li class="h2"><a href="#toc4">      2.3.&#xA0; Terms and Convention</a></li><li class="h2"><a href="#toc5">      2.4.&#xA0; Contact</a></li><li class="h1"><a href="#toc6">      3.&#xA0; Information Security Management</a></li><li class="h2"><a href="#toc7">      3.1.&#xA0; Security Management Framework and Organisation</a></li><li class="h2"><a href="#toc8">      3.2.&#xA0; Governance, Risk Management and Compliance</a></li><li class="h2"><a href="#toc9">      3.3.&#xA0; Security Operations</a></li><li class="h2"><a href="#toc10">      3.4.&#xA0; Security Event and Incident Management</a></li><li class="h2"><a href="#toc11">      3.5.&#xA0; Awareness Training and Capability Building</a></li><li class="h2"><a href="#toc12">      3.6.&#xA0; Situational Awareness and Information Sharing</a></li><li class="h1"><a href="#toc13">      4.&#xA0; Introduction to Mobile Security</a></li><li class="h2"><a href="#toc14">      4.1.&#xA0; Security Concerns of Mobile Technologies</a></li><li class="h1"><a href="#toc15">      5.&#xA0; Mobile Device Security</a></li><li class="h2"><a href="#toc16">      5.1.&#xA0; Mobile Device Usage Lifecycle</a></li><li class="h2"><a href="#toc17">      5.2.&#xA0; Mobile Device Management Solution</a></li><li class="h2"><a href="#toc18">      5.3.&#xA0; Scenario Specific Security Guidance</a></li><li class="h2"><a href="#toc19">      5.4.&#xA0; Security Guidance On Privately-Owned Mobile Devices</a></li><li class="h2"><a href="#toc20">      5.5.&#xA0; Restrictions on Mobile Devices and Access Levels</a></li><li class="h1"><a href="#toc21">      6.&#xA0; Mobile App Development Security</a></li><li class="h2"><a href="#toc22">      6.1.&#xA0; Considerations in Mobile App Development</a></li><li class="h2"><a href="#toc23">      6.2.&#xA0; Mobile App Development Lifecycle</a></li><li class="h2"><a href="#toc24">      6.3.&#xA0; Security by Design and Data Privacy</a></li><li class="h2"><a href="#toc25">      6.4.&#xA0; Testing for Mobile App Development</a></li><li class="h2"><a href="#toc26">      6.5.&#xA0; Points to Note for Securing Mobile App Development</a></li><li class="h2"><a href="#toc27">      6.6.&#xA0; Best Practices on Secure Mobile Development for Android and iOS</a></li><li class="h1"><a href="#toc28">      Annex A (informative) Sample Configurations for Security Hardening</a></li><li class="h1"><a href="#toc29">      Annex B (normative) Containerisation Technology</a></li><li class="h2"><a href="#toc30">      B.1.&#xA0; Physical Container</a></li><li class="h2"><a href="#toc31">      B.2.&#xA0; Virtual Container</a></li><li class="h2"><a href="#toc32">      B.3.&#xA0; Per-App Container</a></li></ul></div>
+
+</nav>
+
+
+<div class="rule toc"></div>
+
+      <p>&#xA0;</p>
+    </div>
+    <br />
+    <main class="main-section"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <div class="authority">
+  
+  
+
+  
+
+
+
+
+  
+</div>
+      <p class="zzSTDTitle1">Practice Guide for Mobile Security</p>
+      <div id="_copyright_notice">
+        <h1 id="toc0">1.&#xA0; COPYRIGHT NOTICE</h1>
+        <p id="_dddb9273-f405-4928-b2da-d90ff3d45543">&#xA9; 2018 by the Government of the Hong Kong Special Administrative Region</p>
+        <p id="_f979deda-ae8c-4576-8071-95b7bbc5f4c6">Unless otherwise indicated, the copyright in the works contained in this publication is owned by the Government of the Hong Kong Special Administrative Region. You may generally copy and distribute these materials in any format or medium provided the following conditions are met -</p>
+        <ol type="1" id="_0b894a01-aec1-4e27-a0a8-ff38cee0782e">
+<li>
+<p id="_863bf04d-d991-4f45-b2a8-52c66e143095">the particular item has not been specifically indicated to be excluded and is therefore not to be copied or distributed;</p>
+</li>
+<li>
+<p id="_1f6b6d17-a2b4-4010-8003-099db0dc08dc">the copying is not done for the purpose of creating copies for sale;</p>
+</li>
+<li>
+<p id="_b512b5ca-7bf4-4ad1-b022-4f050c64e1fc">the materials must be reproduced accurately and must not be used in a misleading context; and</p>
+</li>
+<li>
+<p id="_bdc5744d-2496-4ac4-ab82-6962a33460b8">the copies shall be accompanied by the words &#x201C;copied/distributed with the permission of the Government of the Hong Kong Special Administrative Region. All rights reserved.&#x201D;</p>
+</li>
+</ol>
+        <p id="_088700f6-5c37-41ac-888f-27cb7534d533">If you wish to make copies for purposes other than that permitted above, you should seek permission by contacting the Office of the Government Chief Information Officer.</p>
+        <table id="_d7a0e68d-f6f3-44d6-9ecc-b5aeaab1c369" class="MsoISOTable" style="border-width:1px;border-spacing:0;">
+          <tbody>
+            <tr>
+              <th colspan="5" style="font-weight:bold;text-align:center;vertical-align:middle;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Amendment History</th>
+            </tr>
+            <tr>
+              <th style="font-weight:bold;text-align:center;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;" scope="row">Change Number</th>
+              <th style="font-weight:bold;text-align:center;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;" scope="row">Revision Description</th>
+              <th style="font-weight:bold;text-align:center;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;" scope="row">Pages Affected</th>
+              <th style="font-weight:bold;text-align:center;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;" scope="row">Revision Number</th>
+              <th style="font-weight:bold;text-align:center;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;" scope="row">Date</th>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">1</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">Renamed the document from &#x201C;Practice Guide for Mobile Device Security 1.0&#x201D; to &#x201C;Practice Guide for Mobile Security 1.1&#x201D;, added new chapters on information security management and mobile app development, and aligned references with other practice guides.</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">Whole document</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">1.1</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">July 2018</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="_introduction">
+        <h1 id="toc1">2.&#xA0; Introduction</h1>
+        <p id="_f76e79ba-0657-41eb-9f69-7b756780e5f3">Mobile devices are getting more common and allow users to access information from anywhere at any time. This changes the mode of Internet usage and also brings together new risks in daily operations. While mobile devices and mobile applications (apps) installed in the devices bring convenience and improve efficiency, insecure protection of mobile devices or insecurely written mobile apps pose risks to mobile users and may cause data loss or reputation damage to the app owner. In view of the extra risks introduced by mobile devices due to its high portability, wireless connection capabilities and diverse techniques in mobile app development, this practice guide is developed to provide guidance notes for Bureaux/Departments (B/Ds) to make reference in securing the use of mobile devices in their business and the development of mobile apps for business use.</p>
+        <div id="_purpose"><h2 id="toc2">2.1.&#xA0; Purpose</h2><p id="_46612688-5c7e-4feb-b678-e7c3224d62ae">The purpose of this document is to provide common security considerations and best practices to B/Ds on the management and use of mobile devices as well as secure development of mobile apps. The best practices on the use and management of mobile devices are described in <a href="#sec-mobile-device-security">Clause 5</a> and they are intended for staff who are involved in the use and adoption of mobile devices and related management solutions. The security best practices on mobile app development are described in <a href="#sec-mobile-app-development-security">Clause 6</a> and they are intended for developers who are involved in related development life cycle.</p>
+<p id="_36eaec6a-ad29-4a0d-9ff0-529be883e1de">This document should be used in conjunction with established government requirements and documents including the Baseline IT Security Policy [S17], the IT Security Guidelines [G3] and other relevant procedures and guidelines, where applicable. In addition to government security requirements, B/Ds should also assess the security risks before adoption of mobile device solutions based on their business needs. B/Ds should consider the security measures and best practices recommended in this document and implement adequate security protection for their mobile solutions.</p>
+<p id="_1906799b-119e-464d-9dc1-cb7b56bd37cd">The materials included in this document are general in nature and are prepared irrespective of the types or platforms of the mobile devices. According to the definition in government security documents, the term &#x201C;mobile devices&#x201D; means portable computing and communication devices with information storage and processing capability. Examples include portable computers, mobile phones, tablets, digital cameras, and digital audio or video recording devices. Readers should consider and select the security measures and best practices that are applicable to their own environment.</p></div>
+        <div id="_normative_references"><h2 id="toc3">2.2.&#xA0; Normative References</h2><p id="_ff832c46-2f72-4bfe-80e1-1af2f68efe90">The following referenced documents are indispensable for the application of this document.</p>
+<ul id="_0164739a-c619-4960-b710-9264fcd1d049">
+<li>
+<p id="_1320584c-33ab-4c7b-ac70-6a0af048da1a">Baseline IT Security Policy [S17], the Government of Hong Kong Special Administrative Region</p>
+</li>
+<li>
+<p id="_318d1da1-2987-4f42-bef9-5832de8991a2">IT Security Guidelines [G3], the Government of Hong Kong Special Administrative Region</p>
+</li>
+<li>
+<p id="_5e97dcfe-19e5-465c-aa0e-ddab582c2733">Information technology&#x2009;&#x2014;&#x2009;Security techniques&#x2009;&#x2014;&#x2009;Information security management systems&#x2009;&#x2014;&#x2009;Requirements (second edition), ISO/IEC 27001:2013</p>
+</li>
+<li>
+<p id="_e43e6abc-f73a-4bcb-89af-1579936b5869">Information technology&#x2009;&#x2014;&#x2009;Security techniques&#x2009;&#x2014;&#x2009;Code of practice for information security controls (second edition), ISO/IEC 27002:2013</p>
+</li>
+<li>
+<p id="_15f1def6-9013-4f5c-913c-7549ccbcf8ed">Information technology&#x2009;&#x2014;&#x2009;Security techniques&#x2009;&#x2014;&#x2009;Governance of information security, ISO/IEC 27014:2013</p>
+</li>
+<li>
+<p id="_9b55ce50-512d-455a-8e7d-fa8eabd597e4">Information technology&#x2009;&#x2014;&#x2009;Security techniques&#x2009;&#x2014;&#x2009;Storage security, ISO/IEC 27040:2015</p>
+</li>
+</ul></div>
+        <div id="_terms_and_convention"><h2 id="toc4">2.3.&#xA0; Terms and Convention</h2><p id="_1a120796-d025-418c-a43d-1b85b3f46f11">For the purposes of this document, the terms and convention given in S17, G3, and the following apply.</p>
+<table id="_97308f33-106f-4d48-b417-648a7f12fd86" class="MsoISOTable" style="border-width:1px;border-spacing:0;"><tbody><tr><th colspan="2" style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Abbreviation and Terms</th></tr><tr><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">NA</td><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">NA</td></tr></tbody></table></div>
+        <div id="_contact"><h2 id="toc5">2.4.&#xA0; Contact</h2><p id="_037085e9-ef84-4ea5-84ed-ee4ccff6a928">This document is produced and maintained by the Office of the Government Chief Information Officer (OGCIO). For comments or suggestions, please send to:</p>
+<p id="_4e61d40c-e7cc-4f25-a6b1-ff21199c314e">Email: <a href="mailto:it_security@ogcio.gov.hk">it_security@ogcio.gov.hk</a></p>
+<p id="_84f1c9b7-dbe9-4d0e-abcc-5b2e74ddc745">Lotus Notes mail: IT Security Team/OGCIO/HKSARG@OGCIO</p></div>
+      </div>
+      <div id="_information_security_management">
+        <h1 id="toc6">3.&#xA0; Information Security Management</h1>
+        <p id="_21dcd414-4b15-4d12-990e-632cd164815c">Information security is about the planning, implementation and continuous enhancement of security controls and measures to protect the confidentiality, integrity and availability of information assets, whether in storage, processing, or transmission and its associated information systems. Information security management is a set of principles relating to the functions of planning, organising, directing, controlling, and the application of these principles in harnessing physical, financial, human and informational resources efficiently and effectively to assure the safety of information assets and information systems.
+Information security management involves a series of activities that require continuous monitoring and control. These activities include but not limited to the following functional areas:</p>
+        <ul id="_a0eac853-3897-47cf-bf8b-b3820ee8b1ee">
+<li>
+<p id="_8f67a7a9-a9ea-4613-8e29-da2d114a75a7">Security Management Framework and the Organisation;</p>
+</li>
+<li>
+<p id="_c52a6ade-8564-428a-acde-0524008f2922">Governance, Risk Management, and Compliance;</p>
+</li>
+<li>
+<p id="_8b50eb8a-3602-40a5-a7c6-50df0b0f20a8">Security Operations;</p>
+</li>
+<li>
+<p id="_57cb5293-dd3e-4176-9351-311c760874fe">Security Event and Incident Management;</p>
+</li>
+<li>
+<p id="_447fe030-8a5b-460d-b614-0fd61dac9cbc">Awareness Training and Capability Building; and</p>
+</li>
+<li>
+<p id="_e76760fe-3381-4244-bc58-f6aa5c1fb89c">Situational Awareness and Information Sharing.</p>
+</li>
+</ul>
+        <div id="_security_management_framework_and_organisation"><h2 id="toc7">3.1.&#xA0; Security Management Framework and Organisation</h2><p id="_3e05828c-26f7-46a0-bf44-b22f67ceaba9">B/Ds shall establish and enforce departmental information security policies, standards, guidelines and procedures in accordance with the business needs and the government security requirements.</p>
+<p id="_04428332-553d-4dec-8545-3f720d641090">B/Ds shall also define the organisation structure on information security and provide clear definitions and proper assignment of security accountability and responsibility to involved parties.</p></div>
+        <div id="_governance_risk_management_and_compliance"><h2 id="toc8">3.2.&#xA0; Governance, Risk Management and Compliance</h2><p id="_60a9e06c-6d8c-4fa8-af01-654543ff9983">B/Ds shall adopt a risk-based approach to identify, prioritise and address the security risks of information systems in a consistent and effective manner.</p>
+<p id="_e21c0407-65e8-46bd-bb2f-f775290d4fc9">B/Ds shall perform security risk assessments for information systems and production applications periodically and when necessary so as to identify risks and consequences associated with vulnerabilities, and to provide a basis to establish a cost-effective security program and implement appropriate security protection and safeguards.</p>
+<p id="_d0c9f62f-b649-448c-adca-f99159e297a6">B/Ds shall also perform security audit on information systems regularly to ensure that current security measures comply with departmental information security policies, standards, and other contractual or legal requirements.</p></div>
+        <div id="_security_operations"><h2 id="toc9">3.3.&#xA0; Security Operations</h2><p id="_cbaec54d-ebd5-4db2-b74f-f53d4c18b4f0">To protect information assets and information systems, B/Ds should implement comprehensive security measures based on their business needs, covering different technological areas in their business, and adopt the principle of &#x201C;Prevent, Detect, Respond and Recover&#x201D; in their daily operations.</p>
+<ul id="_28a01ca4-b825-42ae-bcf2-c3546a5f965c">
+<li>
+<p id="_8f55ca6f-ceb1-42b1-b4c2-257374b968f8">Preventive measures avoid or deter the occurrence of an undesirable event;</p>
+</li>
+<li>
+<p id="_41c47277-45e7-40d4-a880-b8ea80157e9f">Detective measures identify the occurrence of an undesirable event;</p>
+</li>
+<li>
+<p id="_fe82ba95-f481-4793-bf93-68790a7ed90c">Response measures refer to coordinated actions to contain damage when an undesirable event or incident occurs; and</p>
+</li>
+<li>
+<p id="_67618889-cda4-4cbb-8476-f1168a77a56e">Recovery measures are for restoring the confidentiality, integrity and availability of information systems to their expected state.</p>
+</li>
+</ul></div>
+        <div id="_security_event_and_incident_management"><h2 id="toc10">3.4.&#xA0; Security Event and Incident Management</h2>
+
+<p id="_e28d9365-cd9a-4e4e-84b6-5202f99e2a81">In reality, security incidents might still occur due to unforeseeable, disruptive events. In cases where security events compromise business continuity or give rise to risk of data security, B/Ds shall activate their standing incident management plan to identifying, managing, recording, and analysing security threats, attacks, or incidents in real-time. B/Ds should also prepare to communicate appropriately with relevant parties by sharing information on response for security risks to subdue distrust or unnecessary speculation. When developing an incident management plan, B/Ds should plan and prepare the right resources as well as develop the procedures to address necessary follow-up investigations.</p>
+</div>
+        <div id="_awareness_training_and_capability_building"><h2 id="toc11">3.5.&#xA0; Awareness Training and Capability Building</h2>
+
+<p id="_af9b7dc0-9371-4b44-91d2-b787d209887e">As information security is everyone&#x2019;s business, B/Ds should continuously promote information security awareness throughout the organisations and arrange training and education to ensure that all related parties understand the risks, observe the security regulations and requirements, and conform to security best practices.</p>
+</div>
+        <div id="_situational_awareness_and_information_sharing"><h2 id="toc12">3.6.&#xA0; Situational Awareness and Information Sharing</h2><p id="_8710bd42-4680-40de-be13-09cd848f7d44">As cyber threat landscape is constantly changing, B/Ds should also constantly attend to current vulnerabilities information, threat alerts, and important notices disseminated by the security industry and the GovCERT.HK. The security alerts on impending and actual threats should be disseminated to and shared with those responsible colleagues within B/Ds so that timely mitigation measures could be taken.</p>
+<p id="_8753b986-c33a-4768-82e9-8b29fd168a80">B/Ds could make use of the cyber risk information sharing platform to receive and share information regarding security issues, vulnerabilities, and cyber threat intelligence.</p></div>
+      </div>
+      <div id="_introduction_to_mobile_security">
+        <h1 id="toc13">4.&#xA0; Introduction to Mobile Security</h1>
+        <p id="_170edd30-1df5-4f6f-807b-988330dff4e2">As technologies advance, the computational power of mobile devices continues to increase, and at the same time they become even smaller and lighter. While there are many obvious advantages with these devices, they also bring security concerns that need to be addressed. Also, while mobile apps bring much convenience to users, poorly written mobile apps increase risk of data loss. This section highlights the security measures and best practices to address the common security concerns and illustrates how they should be incorporated in the major stages of mobile device management life cycle and mobile app development life cycle. B/Ds may select and map the security measures and best practices to their own management and development life cycle model based on their business needs.</p>
+        <div id="_security_concerns_of_mobile_technologies"><h2 id="toc14">4.1.&#xA0; Security Concerns of Mobile Technologies</h2><p id="_40d90dc3-e9df-4b67-a440-5bf866e792f0">Security threats to mobile devices come from many directions. Mobile devices often need additional protection because their nature generally places them at higher exposure to threats than other client devices, such as a workstation in the office area. Major threats to mobile devices can come from the device itself, network (e.g. mobile, internet) or application (e.g. mobile app, mobile web app). The security concerns of mobile technologies are highlighted below:</p>
+<p id="_c5b95b6a-7dff-4ba0-9068-94102ac1774a">
+<b>Device</b>
+</p>
+<ul id="_76b451b7-139a-46ed-9da3-6e419d118542">
+<li>
+<p id="_f7963e88-1c7e-435c-861f-851b939af108">Lack of physical security controls</p>
+<p id="_e321a498-e855-4de0-9e57-f3f74b9f0b08">Mobile devices are typically used in a variety of locations outside the B/Ds&#x2019; control, such as employees&#x2019; homes, coffee shops, hotels, and conferences. The devices&#x2019; mobile nature makes them much more likely to be lost or stolen than other devices, so their data is at increased risk of compromise.</p>
+</li>
+<li>
+<p id="_dcb98711-ef9b-450d-b88b-a8ca1c42e88c">Insufficient control to accessories in mobile devices</p>
+<p id="_60801eff-125f-4892-ac68-4a582b702025">Mobile devices are usually equipped with cameras and microphones. Inappropriate video capturing, audio recording and photo taking may cause a security concern. Moreover, sensitive information in video/audio records or photos might be retrieved by unauthorised persons if the mobile device is not properly protected.</p>
+</li>
+<li>
+<p id="_0a4ddd84-5c9a-407a-a162-9f10a98f4532">Use of untrusted mobile devices</p>
+<p id="_543b060b-29db-482c-9645-0577ae4f7b8c">Many mobile devices, particularly those that are privately owned, are not necessarily trustworthy. The use of mobile devices that have been jailbroken or rooted can pose additional security risks because the built-in restrictions on security have been bypassed in such devices.</p>
+</li>
+</ul>
+<p id="_cd03f862-11e7-45d5-9c1b-25bf0e158c61">
+<b>Network</b>
+</p>
+<ul id="_d3021f9d-faf4-4aad-82a4-5446a2b6f8f2">
+<li>
+<p id="_6dc6eab8-9d1b-4973-ad78-0b51755c4797">Use of untrusted networks</p>
+<p id="_ba9b1606-6124-4b6f-949e-1265277420f0">Mobile devices primarily use non-organisational networks, such as external Wi-Fi or cellular networks, for Internet access. These networks are susceptible to eavesdropping, which place sensitive information transmitted at risk of compromise.</p>
+</li>
+<li>
+<p id="_e05ec4c8-f01b-477a-b013-5ea1fc700826">Use of unsecure communication technologies</p>
+<p id="_b41ce860-4f35-48fa-86a1-11c05c125643">In contrast to workstations in the office area which mainly rely on Local Area Network (LAN) or office Wi-Fi for communication, mobile users can deploy a wide variety of communication technologies such as Bluetooth, Near Field Communication (NFC) for data connection. Every communication technology has its own security risk. If sensitive information is intercepted over an unsecure communication media, it would lead to a security breach.</p>
+</li>
+</ul>
+<p id="_503aa4d1-0844-48c8-92d9-0f1e7d3d0b9b">
+<b>Application</b>
+</p>
+<ul id="_bd28371d-39a1-45d4-a5a1-5ec2d7f29978">
+<li>
+<p id="_bd3aa07c-ece1-4247-b6a9-c791d197ae0a">Use of untrusted apps</p>
+<p id="_10bd74c2-8887-406e-bb29-ed06d9cf60b5">Mobile devices are designed to make them easy to find, acquire, install, and use third-party applications from mobile app stores. This poses obvious security risks, especially when mobile device platforms and mobile app stores do not place security restrictions or other limitations on the published applications developed by third-party.</p>
+</li>
+<li>
+<p id="_cae84f39-7a1d-4b79-9ff0-267995ddcf55">Use of location services</p>
+<p id="_42fda97b-69af-4990-b262-e49e3eb5059b">Location services are commonly used by social media, navigation, web browsers, and other mobile-centric applications to identify the locations of mobile devices and its owner. Mobile devices with location services enabled are at increased risk of targeted attacks because it is easier for potential attackers to determine where the user and the mobile device are, and to correlate that information with other sources to launch attacks such as spear phishing.</p>
+</li>
+<li>
+<p id="_e9c233af-6bbd-434e-a287-f12fb6c46829">Use of untrusted source</p>
+<p id="_4b3978e3-2d90-4f1a-a3ac-c5a83e633db5">Mobile apps may induce untrusted input from malicious source that are not common to other types of devices. An example is the 2D barcode, which are now commonly used because camera is a built-in component in today&#x2019;s smartphones and tablets. This could induce targeted attacks, such as placing malicious 2D barcodes at a public location.</p>
+</li>
+</ul>
+<p id="_98601253-b903-4398-b9ca-30e7ff37acb9">The above paragraphs discuss on the general security concerns on mobile technology and its application. When developing mobile apps, further security risks need to be addressed. The developer can refer to Open Web Application Security Project (OWASP) Mobile Top 10 to understand those critical risks that mobile app development faces. B/Ds should take reference of these common security risks and avoid such problems in their codes. B/Ds should also review and define the security requirements of their applications to mitigate risks so as to avoid vulnerabilities originated from security design. The risks as mentioned by OWASP are highlighted below:</p>
+<ul id="_efa47a1b-0b15-43a3-b15d-c6f4ff3c4ea8">
+<li>
+<p id="_0c0f33a5-16b3-4f05-9b32-7c0df5eea7e4">Improper Platform Usage</p>
+<p id="_74584d64-c70a-4434-8ca2-22964e1fbb6c">The potential threat comes from the misuse of a platform feature and failure to use platform security controls, e.g., Android intents, platform permissions, misuse of biometric recognition features or other security controls of the mobile operating system. Misusing platform features may put the system under risk (e.g., cross-site scripting).</p>
+</li>
+<li>
+<p id="_61c07c78-a073-4a16-bbaf-69f2ea914e74">Insecure Data Storage</p>
+<p id="_e689a1eb-8926-4173-96f0-989792810faa">Insecure data storage vulnerabilities occur when development teams assume that users or malware will not have access to a mobile device&#x2019;s filesystem and subsequent sensitive information on the device. This can result in data loss or extraction of the app&#x2019;s sensitive information via mobile malware, modified apps or forensic tools.</p>
+</li>
+<li>
+<p id="_22a89364-8214-45d3-8b33-8673eaaf27e5">Insecure Communication</p>
+<p id="_004dd0cd-d6af-4efd-af32-082502e2cdda">Insecure communications from one point to another put the app data at risk of exposure, which may cause possible leakage of sensitive information over the network communication. The issue could be caused by poor handshaking, incorrect SSL versions, weak negotiation and plain text communication of sensitive assets.</p>
+</li>
+<li>
+<p id="_6b74e589-fe95-461e-afa5-1af7d7e8a12a">Insecure Authentication</p>
+<p id="_6a6678ed-c442-4936-b48c-fa81e0bbea25">Attackers may compromise passwords, keys, or authentication tokens to impersonate the identity of other users. The issue could be caused by the absence or improper implementation of authentication mechanisms and bad session management.</p>
+</li>
+<li>
+<p id="_0c5a1e5c-210a-471e-a1e2-34d2791dfea4">Insufficient Cryptography</p>
+<p id="_cedee73e-efd7-4fbf-a477-57af65401bf7">Attackers may steal or access poorly protected data resulting from missing or improper use of cryptographic functions to encrypt sensitive information assets.</p>
+</li>
+<li>
+<p id="_b0b4be54-615f-4f3d-8613-58d9e5e2a109">Insecure Authorisation</p>
+<p id="_5925eda5-d1e6-4bf9-a0a9-2a18a56e335b">Attackers may bypass the authorisation mechanism and execute over-privileged functionality. The issue could be caused by the failure of a server to correctly enforce identity and permissions as defined by the mobile app, if the mobile app only trusts the client-side authorisation but fails to perform server-side authorisation.</p>
+</li>
+<li>
+<p id="_c8c3c1d9-a8e5-4935-ac72-462c872fe30c">Client Code Quality</p>
+<p id="_03a14aa9-8280-4324-a3b9-ebb42b4ffa0a">Poor client codes may lead to vulnerabilities such as buffer overflows and memory leaks by passing malicious input to the mobile app. This may result in foreign code execution or denial of service on remote server.</p>
+</li>
+<li>
+<p id="_235f95d6-20fe-49a4-92a8-fc27789cdf74">Code Tampering</p>
+<p id="_3009afd3-b86d-4aca-aa30-302cc121f8a5">Attackers may modify a mobile app via creating malicious forms of the app hosted in third-party locations. The attacker may also use phishing attacks to induce user for installation.</p>
+</li>
+<li>
+<p id="_1256bcb4-342f-4384-b5a3-0c2431e2e20b">Reverse Engineering</p>
+<p id="_11a62fd2-498a-466d-94bb-4b78e3ad7cf0">Attackers may analyse the core binary of the mobile app and perform reverse engineering to obtain its source code, libraries, algorithms and other assets with the aim of exploiting vulnerabilities, harvesting sensitive data or stealing intellectual property.</p>
+</li>
+<li>
+<p id="_7fd74b4a-adfd-488a-b818-3c0128b821eb">Extraneous Functionality</p>
+<p id="_af95edfa-98d1-429f-b078-b0ed98fcae33">Developers may add hidden backdoors or functions during application debugging. If the developer forgets to remove such backdoors before production, attacker can make use of them to perform malicious attacks.</p>
+</li>
+</ul></div>
+      </div>
+      <div id="sec-mobile-device-security">
+        <h1 id="toc15">5.&#xA0; Mobile Device Security</h1>
+        <p id="_1c787916-b2a1-4e7f-99da-c3e1cf31a60d">This section is intended for users and administrators who are involved in the use and adoption of mobile devices and related management solutions. For developers who need to understand the details on protection measures for mobile app development, please refer to &#x201C;<a href="#sec-mobile-app-development-security">Clause 6</a>&#x2009;&#x2014;&#x2009;Mobile App Development Security&#x201D; for details.</p>
+        <div id="subsec-mobile-device-usage-lifecycle"><h2 id="toc16">5.1.&#xA0; Mobile Device Usage Lifecycle</h2><p id="_99745fb3-d57d-4382-bc01-9b6c02f1b476">Similar to other information systems, mobile devices include three major stages throughout their usage lifecycle&#x2009;&#x2014;&#x2009;Provision, Usage and Decommission. The paragraphs below discuss the best practices on how to protect the mobile devices in various stages of the lifecycle.</p>
+<div id="_provision_of_mobile_devices"><h3>5.1.1.&#xA0; Provision of Mobile Devices</h3><p id="_efa03682-f9f6-4fb1-b7d2-a6a3d1dc9e2e">When considering adoption of mobile device technologies in business, B/Ds should identify the needs for mobile device and how mobile device solutions can support their business. A mobile device security policy should be established to specify the business and security requirements for the use of mobile device technologies with the following considerations:</p>
+<ul id="_bf58df2c-86bb-429d-bb8d-9ce61c4e8632">
+<li>
+<p id="_76bd95a6-bfb1-4973-b1f5-0b50a81c2474">The types of approved mobile devices and the approval mechanism.</p>
+</li>
+<li>
+<p id="_c72b58f9-0dba-42b9-84bb-f3b91e1c4e72">The data classification permitted on each type of mobile device. Sensitive information shall not be stored in privately-owned mobile devices.</p>
+</li>
+<li>
+<p id="_45c8d941-61e7-4e65-9f32-299a9c13ab18">The control mechanism to ensure the compliance with government security requirements based on the data classification.</p>
+</li>
+<li>
+<p id="_14c48268-cec7-4f6c-a323-42510edc7918">The procedures to ensure timely sanitisation of government data stored in the mobile devices when staff is posted out or ceases to provide services.</p>
+</li>
+</ul>
+<p id="_d79abcd3-fab3-44a8-8570-b99f40bc1ca1">Based on the business and security requirements, B/Ds should develop adequate processes and procedures for provision of mobile device. In particular, security hardening procedures of mobile devices should be developed to enforce security configurations in accordance with government security requirements and the mobile device security policy. All mobile devices should be hardened according to the security hardening procedures before transferring to users. For sample configurations regarding security hardening, please refer to <a href="#annex-sample-configurations">Annex A</a>.</p>
+<p id="_666f4857-d61e-4dd8-baa6-e604f2c85bbd">B/Ds should review and modify their processes and procedures with necessary adjustments to include the following best practices in the provisioning stage:</p>
+<ul id="_96acf928-6dd0-4aac-b400-3fe8ee546fbd">
+<li>
+<p id="_e70a5c9d-8d11-4975-ab3b-e2c9bd939f11">Identify the list of supported models that fulfils the operation and security requirements.</p>
+</li>
+<li>
+<p id="_42dd8bf3-591d-4a9e-bc28-3b3fc4c0b71a">Perform risk assessments prior to deployment of new mobile device models, and implement a continuous risk monitoring mechanism for evaluating changes in or new risks associated with the mobile devices.</p>
+</li>
+<li>
+<p id="_3cd38c08-1b5d-4939-a91d-50ae4a6573b6">Install security control tools, such as Mobile Device Management (MDM)<a class="FootnoteRef" href="#fn:1" id="fnref:1"><sup>1</sup></a>, Data Loss Prevention (DLP), personal firewall software and anti-malware solution whenever feasible. The tools should be mentioned in B/Ds&#x2019; hardening procedures.</p>
+</li>
+<li>
+<p id="_f524c388-88b3-408a-b1ac-bc4d82bdc683">Deploy ONLY authorised applications into government mobile devices. Users may install third-party applications if they are authorised by an officer as designated by the B/D. B/Ds shall define and maintain a list of authorised software including freeware, open source software and programming libraries based on operational needs.</p>
+</li>
+<li>
+<p id="_aa1e2b41-e855-43f3-8e6c-9178cabd5605">Perform security hardening and deliver hardened mobile devices to users.</p>
+</li>
+<li>
+<p id="_43cb202f-41ad-4c92-b04f-926c4eadc497">Disseminate the acceptable use policy and security reminders to users to remind them to apply security best practices.</p>
+</li>
+<li>
+<p id="_117dcb04-7cf0-4a03-ad54-e3daa2392a96">Obtain users&#x2019; acknowledgement on receiving the acceptable use policy, security reminders and the mobile devices in good condition. The acknowledgement can be a signed agreement or email.</p>
+</li>
+<li>
+<p id="_5b071c35-df7e-43b4-b8ee-a918fb3e5abe">Enable a power-on password.</p>
+</li>
+<li>
+<p id="_787d433e-cbf9-4a87-9634-225081ce1808">Deploy minimal password length and complexity requirements according to B/Ds&#x2019; departmental security requirements.</p>
+</li>
+<li>
+<p id="_48527043-6bed-4c61-b2f4-0d8d7c0af12e">Configure the mobile device in such a way that it locks automatically after a period of inactivity.</p>
+</li>
+<li>
+<p id="_d806b5ea-ea98-42de-a51d-08d068031636">Enable data erasing feature when there is consecutive incorrect attempts to enter the password if available. The actual number of consecutive incorrect attempts should be defined according to B/Ds operational needs. Remote wipe functionality should also be enabled to protect data from device lost or stolen. Moreover, selection of wiping solution should be carefully made such that sensitive data should not be recovered after the wipe.</p>
+</li>
+<li>
+<p id="_04f046cf-68bd-400d-a934-6dad8287a251">Enable device level, full disk or file based encryption feature for all storages of mobile devices, where possible.</p>
+</li>
+<li>
+<p id="_8c9fc599-e2c1-4d50-9a56-c7fb1ecdc97b">Consider using multiple factors authentication such as digital certification together with password for VPN connections.</p>
+</li>
+<li>
+<p id="_76bd2f0c-024d-461c-a886-d825c11f5f55">Maintain asset-tracking information such as serial number, inspect applications on devices, and keep track of them for audit.</p>
+</li>
+</ul></div>
+<div id="_use_of_mobile_devices"><h3>5.1.2.&#xA0; Use of Mobile Devices</h3><p id="_40f83640-14bb-4e16-b7ee-f4cd2788609c">Even if the security controls have been implemented in the provisioning stage, people and process are two important factors for keeping mobile devices in a safe environment. Therefore, this section focuses on the best practices related to the on-going operation process for the management and use of mobile devices.</p>
+<div id="_administrators"><h4>5.1.2.1.&#xA0; Administrators</h4><p id="_0cf98687-255c-4256-b90f-4b65be0e6cb0">Administrators should follow the best practices as follows:</p>
+<ul id="_4052354b-7d1c-47ca-9951-c5e404338c2c">
+<li>
+<p id="_62d324b1-23d2-41ef-b4db-eeedab89cd3d">Check available upgrades and/or patches for the mobile device OS and mobile applications with proper change management.</p>
+</li>
+<li>
+<p id="_27b22a2a-1a7f-4710-b1f0-0b962e090ec2">Apply the verified update and/or patches to mobile devices.</p>
+</li>
+<li>
+<p id="_184ad487-11e0-4780-92dd-f6d274ce8797">Check the status of mobile devices regularly to ensure security measures are in place. Use of jail-broken, rooted and compromised devices should be detected and restricted.</p>
+</li>
+<li>
+<p id="_1414a31b-38d8-4a30-a444-2b2faf39aaba">Maintain an inventory record for government mobile devices with user information and a list of installed mobile applications.</p>
+</li>
+<li>
+<p id="_28b10f15-a8b1-4284-98ac-48a1458b19ce">Maintain a list of approved desktop or mobile applications for mobile devices which are defined by officer as designated by the B/D.</p>
+</li>
+<li>
+<p id="_7b37bb7f-509c-4624-b4be-9998423c4b7d">Enforce hardware encryption of a mobile device whenever possible.</p>
+</li>
+</ul></div>
+<div id="_mobile_users"><h4>5.1.2.2.&#xA0; Mobile Users</h4><p id="_03c72444-b8c7-4324-9ff9-db87a6986a17">Users should follow the acceptable use policy and security reminders including but not limited to:</p>
+<p id="_e858eb6b-17ec-499b-bdb9-4c8399d08087">
+<b>DON&#x2019;Ts:</b>
+</p>
+<ul id="_a49c0a38-de44-4ba1-b541-8a44f5f76f43">
+<li>
+<p id="_2ad50d3c-5b04-465c-b16a-eac3abc1f93d">Do not modify mobile device setting unless approval is obtained.</p>
+</li>
+<li>
+<p id="_54a3e22b-4227-4f53-bfa7-519dfa1f8e14">Do not try to perform jailbreaking / rooting or exploit the OS of a mobile device by using unauthorised tool. Such manipulation may introduce unexpected security risk and void the warranty.</p>
+</li>
+<li>
+<p id="_2d086701-3ffc-4f43-8409-939e741d8ff6">Do not allow wireless connections from unknown or un-trusted sources on your device.</p>
+</li>
+<li>
+<p id="_96fe9a28-1fc3-42c8-9b7f-7fec19ba15e5">Do not open or access links in social media, instant message, Short Message Service (SMS), Multimedia Messaging Service (MMS), or email from misleading, suspicious or un-trusted sources.</p>
+</li>
+<li>
+<p id="_7c565fdd-6015-4423-9f93-4751fbe11979">Do not download programs and contents from unknown or un-trusted sources.</p>
+</li>
+<li>
+<p id="_ac9275d9-b159-4264-8d3f-7cf7d8c5593a">Do not install illegal or unauthorised software on the mobile device.</p>
+</li>
+<li>
+<p id="_d0408d43-ffd8-4cc3-b8dc-76613556699b">Do not connect to external data network directly (e.g. via cellular network) when the mobile device is connected to government internal network.</p>
+</li>
+<li>
+<p id="_46a445b0-dbe3-4567-bbc8-4f4379ddffd8">Do not use public printers.</p>
+</li>
+<li>
+<p id="_1dfeebeb-31d3-4fc8-aa09-9d80798609eb">Do not allow any mobile applications to automatically upload or synchronise information from a mobile device to other unauthorised devices. Example includes the public cloud storage vendor, photo sharing social media and mobile vendor backup solutions by cloud technology.</p>
+</li>
+<li>
+<p id="_df90f5e2-c8e2-4f1d-b0ee-33021a53ea88">Do not store password of any other systems (e.g. email, ATM card and network login) on mobile device. The password auto-save function should be disabled.</p>
+</li>
+<li>
+<p id="_cf69afc6-8351-4b6a-b5bb-fccf1609c17e">Do not use government provided mobile device extensively for private or personal activities.</p>
+</li>
+</ul>
+<p id="_c5437c5b-17ef-4ced-9cea-decb7d5365ca">
+<b>DOs:</b>
+</p>
+<ul id="_530f292b-1c51-44f5-b286-20548a672b12">
+<li>
+<p id="_08f0bc58-0f74-458e-bd8d-980927957984">Follow security procedures defined by B/D.</p>
+</li>
+<li>
+<p id="_00c115d2-4df2-4c93-9fc3-4c0903857ca2">Install only approved applications as provided by B/Ds.</p>
+</li>
+<li>
+<p id="_c46e07cf-36e0-4dd0-ad91-4ac16baff553">Ensure the security features of the OS and installed applications are enabled as specified in the hardening procedures.</p>
+</li>
+<li>
+<p id="_5b1e83fb-106b-4efe-a036-df62dda32670">Apply latest malware signatures and definitions, if available.</p>
+</li>
+<li>
+<p id="_54788745-cca6-4381-8f9c-4d813737fce8">Stay alert on security vulnerabilities on mobile devices, and follow the instructions to apply the relevant patches according to the affected systems and versions list.</p>
+</li>
+<li>
+<p id="_c9f4fd05-0745-4155-ab72-9a15c9c95d2f">Perform full data backup with encryption regularly to authorised computers or storage. If the device contains sensitive information, the protection of backup copies shall follow prevailing government security requirements.</p>
+</li>
+<li>
+<p id="_4808dffe-893e-4efe-96b3-e165210338c3">Turn off wireless connections such as Wi-Fi, Near Field Communication (NFC), Bluetooth and/or infrared connectivity when not in use.</p>
+</li>
+<li>
+<p id="_e36922f7-d628-48f5-91a1-a585d8a2356e">Disable the Wi-Fi auto-connect option to avoid connecting to un-trusted/rogue network automatically.</p>
+</li>
+<li>
+<p id="_13ff0d90-f5e9-4a61-9c32-de7283350dee">Turn off location services setting in your mobile device if it is not necessary to run location-based application.</p>
+</li>
+<li>
+<p id="_b6cbb5ea-282e-4d45-84da-47be74fdb50b">Be cautious when connecting to publicly available Wi-Fi hotspots, and do not access government data unless with adequate security protection.</p>
+</li>
+<li>
+<p id="_ef45a534-e2d8-45cd-a65d-b3c88ad9fbd3">Establish a VPN connection to your B/D&#x2019;s government internal network. This can ensure that all data transmission would be subject to the corresponding security controls.</p>
+</li>
+<li>
+<p id="_dfe0fd13-1244-4765-ab8f-c65877ed2a3b">Safeguard a mobile device in your possession and do not leave the device unattended without proper security measures.</p>
+</li>
+<li>
+<p id="_654f934a-bcbf-409f-90de-a2d10bda763e">Be aware of surrounding environment when handling sensitive information to mitigate the risks of overhearing and peeping.</p>
+</li>
+</ul></div>
+<div id="_awareness_training"><h4>5.1.2.3.&#xA0; Awareness Training</h4><p id="_5046e63f-4a77-43e8-b38e-034b3caab4e7">User training is an important activity to promote user security awareness in using mobile devices. Government staff should understand security requirements from mobile user&#x2019;s point of view such that human error can be minimised. Training to mobile users should be arranged such that a certain level of understanding of security requirement in mobile devices, the security measure and security threats can be delivered to users.</p>
+<p id="_3affd2e9-7b4d-4d2b-a45c-44aef3778171">General speaking, the awareness training to mobile users should include:</p>
+<ul id="_ff29a3ad-97fb-47ec-9a23-9b8713615f4e">
+<li>
+<p id="_73b8df6c-517c-463d-9c02-3dc2a35492f0">Security requirements for mobile devices in using and decommissioning stage.</p>
+</li>
+<li>
+<p id="_c6065f64-358d-4656-b0bb-3b821b56501e">Reporting mechanism of lost or stolen mobile device.</p>
+</li>
+<li>
+<p id="_4a387541-4f98-4a39-9fe7-554aeee1a938">Information classification and corresponding security requirements for sensitive information in mobile devices.</p>
+</li>
+<li>
+<p id="_5178695a-80aa-4c64-9f9c-092ac7d2b725">Recent mobile devices security news and trends as time goes by.</p>
+</li>
+</ul></div></div>
+<div id="_decommissioning_of_mobile_devices"><h3>5.1.3.&#xA0; Decommissioning of Mobile Devices</h3><p id="_efc540d8-a0e4-4aa2-8357-2c352ed17ceb">At the last stage of mobile device management, the devices may be decommissioned due to physical damage, end of support, re-issue to other staff or other B/Ds, etc. B/Ds should define device decommission procedures consisting of secure data deletion, mobile devices factory reset and disposal such that mobile device can be re-used or securely disposed without data leakage. Mobile users and administrators should follow the procedures in order to protect government data in safe custody and reduce the chance for data leakage to unauthorised parties.</p>
+<p id="_86120282-689f-41ef-9e4f-c4bcb4e36d3b">For loss or theft of mobile devices, please refer to <a href="#subsec-loss-theft-and-security-incident">Clause 5.3.3</a> which provides best practices for handling this scenario in details that mobile users and administrators should follow.</p>
+<div id="_administrators_2"><h4>5.1.3.1.&#xA0; Administrators</h4><p id="_e696c28f-869f-4916-9fd3-cf1aadc7f238">Administrators should follow the best practices as follows:</p>
+<ul id="_425b6f4e-dda8-460e-a21b-c8b4e38fe8a2">
+<li>
+<p id="_edad9498-e753-4a01-858e-fbf57f3baa26">Verify the condition of the returned device.</p>
+</li>
+<li>
+<p id="_66692c3b-0555-4323-8bd9-c4010f9213cc">Check whether sensitive information has been processed and/or kept in the device. If in doubt, it should be assumed that it has.</p>
+</li>
+<li>
+<p id="_91d38f50-65f6-4326-b42c-9c9bab4b4b3c">Clear or destroy government data securely before disposal, reuse or repair. If the device contains sensitive information, administrators shall follow government security requirements. For physical damage, mobile users should inform administrators the classification of information stored within the damaged mobile device.</p>
+</li>
+<li>
+<p id="_a02c04b5-3928-450a-bb89-d17a2ad3f132">Perform vendor factory reset, if available.</p>
+</li>
+</ul></div>
+<div id="_mobile_users_2"><h4>5.1.3.2.&#xA0; Mobile Users</h4><p id="_aa4aeb2b-6d04-4ef9-92ae-7b042605eac3">Users should follow the best practices as follows:</p>
+<ul id="_34273a2f-f6fb-4aae-a53a-675a504dda00">
+<li>
+<p id="_206ac124-4963-4b0b-ad76-41db2db889f1">Perform necessary data backup for B/Ds&#x2019; operations.</p>
+</li>
+<li>
+<p id="_91557835-9c65-4e84-995e-410ff0187324">Clear or destroy information securely before returning the mobile devices to administrators who may not be legitimate to access that information. For information erasure, please refer to the corresponding section in IT Security Guidelines and the Practice Guide for Destruction and Disposal of Storage Media.</p>
+</li>
+<li>
+<p id="_6b3bb5cd-6f53-4319-b578-1db50d593de5">Return the mobile device as soon as possible.</p>
+</li>
+</ul></div></div></div>
+        <div id="subsec-mobile-device-management-solution"><h2 id="toc17">5.2.&#xA0; Mobile Device Management Solution</h2><p id="_791c75b5-f371-478a-8157-544cf7a56084">Centralised Mobile Device Management (MDM) technologies are becoming popular as a solution for controlling the use of mobile devices issued by the organisation or owned by individual staff. MDM solution provides additional management capability such that B/Ds should consider using such solution to maintain proper management to their mobile devices.</p>
+<div id="subsec-capabilities-mobile-device-management"><h3>5.2.1.&#xA0; Capabilities of Mobile Device Management Solution</h3><p id="_0be41889-9560-4ae0-b73f-091e797b56fa">MDM solution provides management capabilities in policy, inventory, security and service for mobile devices such as mobile phones and tablets. Generally speaking, the technical capabilities include:</p>
+<ul id="_6962e8ab-dd6f-49ba-bb5d-7ed53bdfe2bb">
+<li>
+<p id="_99e31043-a499-4801-a747-9ae0fccb8ef7">Containerisation&#x2009;&#x2014;&#x2009;provides an isolated environment for processing data via physical, virtual or per-app container (Please refer to <a href="#annex-containerisation-technology">Annex B</a>).</p>
+</li>
+<li>
+<p id="_800c369d-f0e9-475b-a4bb-3965acfc4ad5">Wipe remotely when mobile device is lost or stolen, if available.</p>
+</li>
+<li>
+<p id="_09e838c4-c13a-4038-b6ea-fdad91af5373">Data wipe after repeated logon attempt failure.</p>
+</li>
+<li>
+<p id="_e4f48755-56b0-4936-81e9-b70606c69caf">Deploy and configure mobile devices with pre-configured setting.</p>
+</li>
+<li>
+<p id="_8763116b-280c-4200-8c74-1bbf2ca5906c">Enforce security controls such as using VPN for encrypting information transmission over wireless network.</p>
+</li>
+<li>
+<p id="_4da2ab8e-41e8-4dd7-8572-0cd60eb61f3a">Provide audit trailing details on data accessing.</p>
+</li>
+<li>
+<p id="_ee596da1-291c-4850-aeed-23f1dc839ae0">Monitor abnormal activities.</p>
+</li>
+<li>
+<p id="_562b1ea8-e225-4ec3-b7ea-4f7261152c36">Control mobile application installation and removal.</p>
+</li>
+</ul>
+<p id="_09bbe6fc-dcc5-4d17-adbe-8f35437ac153">The above capabilities are examples only and not indicated as mandatory requirements for B/Ds when selecting their MDM solution. B/Ds should consider the needs to enforce security controls with alternative solutions where applicable with regard to their own business and operation environment.</p></div>
+<div id="_best_practices_on_mobile_device_management_solution"><h3>5.2.2.&#xA0; Best Practices on Mobile Device Management Solution</h3><p id="_a93a7f2d-3e26-4627-acec-4288509cdbcc">The following are some best practices commonly enforced through MDM solution for security management of mobile devices.</p>
+<ul id="_3d01c4e0-01d9-444b-9612-70e9d2f78eb9">
+<li>
+<p id="_09732509-4909-4fae-98eb-25a6fc178bba">Enforcement of Security Policy</p>
+<p id="_1b9929da-4429-4789-9d40-d8cb3f42a492">With the help of MDM technologies, technical measures could be uniformly enforced on all departmental mobile devices in accordance with the departmental IT security policy and other relevant policies, procedures and guidelines. The configured MDM security policies should be documented and reviewed regularly.</p>
+</li>
+<li>
+<p id="_805582e3-6841-43c3-a4e7-8275ac9f16e2">Secure Data Communication and Storage</p>
+<p id="_bfe535b3-8435-4d7f-9a27-917a04f12a01">Data communications between the managed mobile devices and B/Ds&#x2019; backend services should be protected by strong encryption, such as Virtual Private Network (VPN) technologies. Data stored on both built-in storage and removable media storage should also be protected by strong encryption. Data within the containers should be also encrypted. No copy/paste and cut/paste are permitted outside the MDM realm. Remote wipe functionality should be enabled in case the device has been lost or stolen. After a certain number of incorrect authentication attempts, the device should wipe itself automatically.</p>
+</li>
+<li>
+<p id="_2fa3c709-1153-4960-9e4e-d2dcf692d8c9">User and Device Authentication</p>
+<p id="_55585e91-9b45-44ce-87bb-f76b8d23291a">To access internal resources, the user and the device itself should be authenticated via various means, for example, network-based device authentication, password authentication, and token-based authentication. After idled for a predefined period, the device should be locked automatically. Remote lock functionality should be enabled such that administrators could lock the device remotely in case the device is believed to be lost, stolen, or left in an unsecured location.</p>
+</li>
+<li>
+<p id="_8bca9e01-b538-4de7-bb4c-4dc655973919">Enterprise Mobile Application Management</p>
+<p id="_5425964b-c03e-49c1-98d6-1b3c8e11ae02">B/D&#x2019;s mobile applications should be distributed from a single, trusted mobile app store. The digital signatures should be verified to ensure that only applications from trusted sources could be installed on the device. Whitelisting should be used to further restrict which applications may be installed on B/Ds&#x2019; mobile devices. An up-to-date inventory of all applications installed on each device should be maintained. Last but not least, the synchronisation services of mobile application should be disabled if not needed.</p>
+</li>
+</ul></div>
+<div id="_other_considerations_of_mobile_device_management_solutions"><h3>5.2.3.&#xA0; Other Considerations of Mobile Device Management Solutions</h3><p id="_2f059ebe-6437-4c20-8bae-b1f9231b4466">Some other considerations of MDM solutions for mobile devices are depicted as follows:</p>
+<ul id="_17c0e3cc-fe2d-4f1f-be2c-82a149a7d9f3">
+<li>
+<p id="_23082a5e-7397-45ac-b5a8-4d99270641c1">MDM solution may not be available for portable computer OS as MDM software is primarily designed for mobile phones and tablets OS instead of computer OS.</p>
+</li>
+<li>
+<p id="_7ee94a1b-e763-4b43-b472-2618e5323572">Data erasing feature after consecutive incorrect attempts for portable computer OS is yet to be a common feature while data erasing is commonly available for major mobile OS.</p>
+</li>
+<li>
+<p id="_77ef5dca-6e00-49d0-9c58-62660e049be8">Some OSs of mobile devices are customised by manufacturers, administrators or mobile users may not be able to apply security patches for known vulnerabilities in a timely manner.</p>
+</li>
+</ul></div></div>
+        <div id="_scenario_specific_security_guidance"><h2 id="toc18">5.3.&#xA0; Scenario Specific Security Guidance</h2><p id="_77afdd74-87e3-422e-af09-b6a65daa6859">This section provides security guidance focusing on different scenarios of government staff in using mobile devices, including: handling sensitive information, sharing of mobile devices within B/Ds, and loss or theft and security incident relating to mobile device. Other than the best practices mentioned in <a href="#subsec-mobile-device-usage-lifecycle">Clause 5.1</a>, these scenarios may commonly occur in daily operation with noticeable impact to mobile device security. Example includes improper sensitive information handling, data leakage to other teams through device sharing or loss/theft of mobile devices, and attacks to mobile devices due to software vulnerabilities.</p>
+<div id="_handling_sensitive_information_with_mobile_devices"><h3>5.3.1.&#xA0; Handling Sensitive Information with Mobile Devices</h3><p id="_007d0355-327e-405a-94dc-226b26c2ef7b">In compliance with the security requirements of the Government, B/Ds shall observe government security requirements and documents. In addition, B/Ds should adopt the following security practices to protect mobile devices and information against common security threats:</p>
+<ul id="_5677b56f-4a21-449b-8b16-ea7854c452bd">
+<li>
+<p id="_e9891038-8ec2-4c01-9f2f-614949ec7d73">Do not process or store TOP SECRET or SECRET information on mobile devices.</p>
+</li>
+<li>
+<p id="_92932b77-7b5b-4d72-bc1e-3d4d4dfacca7">Encrypt all sensitive information when stored in and transmitted from a mobile device.</p>
+</li>
+<li>
+<p id="_84cf14d0-7d45-4642-b59a-ed4312a0a599">Minimise storing of sensitive information on a mobile device.</p>
+</li>
+<li>
+<p id="_32c7ee6f-0a80-40ff-a0f6-a63975e6f40a">Do not store sensitive information on mobile device, except the information is protected with appropriate security measures.</p>
+</li>
+<li>
+<p id="_5db3eea8-9d2b-4cb9-8f5e-28c51b3bd7d5">Do not synchronise sensitive information from a mobile device to public cloud storage, privately-owned IT equipment or other unauthorised devices.</p>
+</li>
+<li>
+<p id="_671f966b-0f8b-41d1-9533-b93afce224dc">Completely clear or destroy all sensitive information in a mobile device when it is no longer required, and protect the storage of the device until disposal or re-use.</p>
+</li>
+<li>
+<p id="_d91efe2a-acdf-46ea-af0e-19b5617866f6">Do not store sensitive information in privately-owned mobile devices.</p>
+</li>
+<li>
+<p id="_4631252b-1dd9-4c21-997c-1cf0c2ad9964">If the mobile device contains sensitive information, put the mobile device in a secure place and keep it in a locked room or cabinet, when not attended.</p>
+</li>
+<li>
+<p id="_08b9f2d2-78e4-4d9b-86bf-5b43e550a33d">Use privacy screen filter to narrow the viewing angle and position carefully the display screen so that sensitive information cannot be peeked by unauthorised persons.</p>
+</li>
+<li>
+<p id="_c0003774-56b9-4bd4-8bd8-c0e122e84c34">Configure multi-level password control for use of a mobile device and access to sensitive information, if possible.</p>
+</li>
+<li>
+<p id="_abeeef87-fcdf-428f-8c2c-b714d2144421">Do not capture screen displaying any sensitive information.</p>
+</li>
+<li>
+<p id="_73424457-96bf-48f3-88d2-8575a0d4e6e7">Do not allow sensitive information to be transferred to the facilities of public IT services and vendors&#x2019; backup services.</p>
+</li>
+<li>
+<p id="_08a74489-62a5-482c-909f-a2b639088863">Remind mobile users to inform administrators or the responsible party as soon as possible about any loss, theft or damage of government mobile device. Mobile user is responsible for the security and should protect the mobile devices from theft, loss and damage at all times.</p>
+</li>
+</ul></div>
+<div id="_shared_access_to_mobile_devices"><h3>5.3.2.&#xA0; Shared Access to Mobile Devices</h3><p id="_5c67b938-1020-43ee-8a12-ebe579b92ff9">Shared access to government mobile devices should be prohibited unless among persons who are authorised to access all the information stored on the device. Shared access should be authorised based on operational need. Example includes departmental mobile device accessing information within a team, testing device for mobile application development, and outside work and roster based jobs such as data centre operation. B/Ds should ensure that all activities in relation to sensitive information are tracked by audit trails and logical access control software in case shared access is needed.</p>
+<p id="_1bd9bb92-3223-47ba-b8f2-96fd75609f7a">If there is operational need for sharing mobile devices across government staff, the staff should observe the following best practices:</p>
+<ul id="_e2c95250-2738-406d-b5bc-e9f83166ba1b">
+<li>
+<p id="_501b3a37-e5a1-45e5-ac12-62aacb15eae6">Store information based on need-to-know basis.</p>
+</li>
+<li>
+<p id="_daa056f1-68d1-4940-8b2b-27b971b1c4cd">Do not perform any backup unless authorised.</p>
+</li>
+<li>
+<p id="_942f7673-2275-46b0-8a0d-83c45ace4866">Log out all applications after use or when handing over to other staff.</p>
+</li>
+<li>
+<p id="_4384aa45-9ec0-4903-be67-3d00e1ce0c5a">Do not configure or store individual email account and password.</p>
+</li>
+</ul></div>
+<div id="subsec-loss-theft-and-security-incident"><h3>5.3.3.&#xA0; Loss, Theft and Security Incident</h3><p id="_cbcbd5b7-46fa-436f-97d8-e85437837fd1">Mobile devices are usually small in size and easy to be stolen or lost. B/Ds should review and modify their security incident handling procedures with necessary adjustments for incident handling of lost or stolen devices. Users should report promptly and escalate if an information security incident occurs in accordance with the security incident handling procedures.</p>
+<p id="_09897b1c-db06-4be3-b961-e79677be1808">In particular, B/Ds should consider including the following best practices for handling lost or stolen mobile devices:</p>
+<ul id="_9404d5fb-abf0-41b8-b6e5-b8b361b57a9c">
+<li>
+<p id="_e103f7a8-ff1a-449a-b235-3ca520a781dd">Revoke the user accounts that may have been compromised.</p>
+</li>
+<li>
+<p id="_d94ad1f6-1d33-4e9c-ac8e-501109a9e2dd">Remotely wipe the data stored on the lost or stolen devices, whenever technically possible.</p>
+</li>
+<li>
+<p id="_ea4fde0e-06a9-4b58-94e3-a35e91a154ac">Establish, test and regularly review the handling procedures for handling lost or stolen mobile devices.</p>
+</li>
+<li>
+<p id="_629dcb78-184b-4e2a-a325-f2241177a080">Report the incident to the Government Information Security Incident Response Office (GIRO) if sensitive data is involved.</p>
+</li>
+</ul></div></div>
+        <div id="_security_guidance_on_privately_owned_mobile_devices"><h2 id="toc19">5.4.&#xA0; Security Guidance On Privately-Owned Mobile Devices</h2><p id="_0e11f858-b7d2-4432-8161-f8022a4ff60d">One basic security concern related to using privately-owned mobile devices in organisational environment is the role of ownership<a class="FootnoteRef" href="#fn:2" id="fnref:2"><sup>2</sup></a>. With the sole control of their mobile devices, staff may install any mobile applications based on their own preferences, which may introduce malware to the mobile devices. In addition, staff may modify the booting up software and/or firmware of their mobile devices to override vendors&#x2019; defined security controls so as to gain more control and flexibility on the devices. In view of the above security risks together with the risk of data leakage due to the loss of the devices to the wrong hands, using privately-owned mobile devices for business purpose should not be allowed unless with adequate security protection.</p>
+<p id="_58cfcc5c-20cc-4f4b-b4c7-3558f163370f">When considering adopting mobile device solution involving privately-owned mobile devices, B/Ds should observe government security requirements about use of privately-owned IT equipment. In addition, S17 section 20.1.3 requires that unclassified information should also be protected from unintentional disclosure.</p>
+<p id="_8c1fef34-95c3-4a11-a34b-73092abb6452">Mobile Device Management (MDM) and Mobile Data Loss Prevention (Mobile DLP) are two possible technical solutions for protecting government information from unauthorised access when using privately-owned mobile device for business purpose. MDM is more focused on device&#x2019;s management capability while mobile DLP emphasises on data controls. B/Ds may refer to the Practice Guide for Data Loss Prevention for additional considerations in protecting government information under different scenarios. The security services supported by a typical MDM solution are specified in <a href="#subsec-capabilities-mobile-device-management">Clause 5.2.1</a>.</p></div>
+        <div id="_restrictions_on_mobile_devices_and_access_levels"><h2 id="toc20">5.5.&#xA0; Restrictions on Mobile Devices and Access Levels</h2><p id="_c91d57ca-2646-4f1f-a81c-615b3a58fde2">B/Ds should specify their business and security requirements for the use of mobile device technologies in the mobile device security policy. For example, B/Ds may limit the types of mobile devices (by operating system version, by brand/model of mobile phone, etc.) and require tiered levels of access, such as allowing government provided mobile devices to access many resources, while privately-owned mobile devices running the B/D&#x2019;s mobile device management client software to access a limited set of resources.</p>
+<p id="_abc25cea-f19b-4f13-9ab0-6b74f982a29a">B/Ds should make their own risk-based decisions about what levels of access should be permitted from which types of mobile devices. Some factors that B/Ds should consider when setting mobile device security policy are highlighted in the following:</p>
+<ul id="_974a5bf4-ad4e-41aa-a69c-7518d72273f6">
+<li>
+<p id="_cc5e9302-11a0-47b1-bc41-318dfab253cf">Compliance with government security requirements</p>
+<p id="_4ad389f9-fc2b-433d-9b18-b4a7378dce0f">Privately-owned mobile devices for business purpose should not be allowed unless adequate security protection is enforced in accordance with government security requirements.</p>
+</li>
+<li>
+<p id="_e79aff89-2b01-4c65-bc7c-57fa42ea6ce8">Sensitivity of work</p>
+<p id="_fd3320d9-4db1-4d0b-9af0-20e8b83c009b">Some work involves access to sensitive information or resources, while other work does not. B/Ds may have more restrictive requirements for work based on their business needs.</p>
+</li>
+<li>
+<p id="_8dd41fbc-d5ac-4db7-84da-aa8e06688406">Technical limitations</p>
+<p id="_c3655f8f-4075-44b0-be7c-195c6166bbaf">Certain types of mobile devices or operating systems may be needed, such as those with hardware-based security features or those running a particular mobile device management client software.</p>
+</li>
+<li>
+<p id="_502641ce-cdd5-4cc5-b3ce-611ea2134cb8">Work location</p>
+<p id="_d175407d-a1c6-4198-998f-14ce674d3535">Risks will generally be lower for devices used only in the environment under B/Ds&#x2019; direct control than for devices used in a variety of locations.</p>
+</li>
+</ul></div>
+      </div>
+      <div id="sec-mobile-app-development-security">
+        <h1 id="toc21">6.&#xA0; Mobile App Development Security</h1>
+        <p id="_8c81b7b5-bdc4-4a89-8209-a048fd7a1947">This section is intended for developers who are involved in mobile app development life cycle. For users and administrators who are involved in the use and adoption of mobile devices and related management solutions, please refer to <a href="#sec-mobile-device-security">Clause 5</a>&#x2009;&#x2014;&#x2009;Mobile Device Security.</p>
+        <div id="_considerations_in_mobile_app_development"><h2 id="toc22">6.1.&#xA0; Considerations in Mobile App Development</h2><p id="_901c14e5-105c-41bb-bce3-240d7fec726e">Mobile apps are also susceptible to different threats as the applications are now used to access sensitive information and perform business critical activities. As a best practice, to develop and maintain secure mobile apps, various security considerations and measures, both technical and administrative, need to be implemented during different stages of mobile app development.</p>
+<p id="_a7cd9d71-529c-4564-920a-fa29351ceb0f">The methodology on software development is evolving with new development style such as agile software development, DevOps / DevSecOps (compounding &#x201C;development&#x201D;, &#x201C;security&#x201D; and &#x201C;operations&#x201D;) for continuous integration and continuous delivery to build mobile apps faster and/or more secured using an iterative development process. It focuses on continuous communication, integration, measurement and delivery to foster the processes between app development, testing and quality assurance. No matter what methodology is used, design for a secure mobile app should be embedded into every stage of development life cycle, in particular early stage, so as to minimise security risk and avoid re-work due to design deficiency.</p>
+<p id="_e15a03a4-ac56-4973-8775-a92eeb36f589">The following are common stages and key security considerations to help identify potential security risks in mobile app development:</p>
+<table id="_b98c4a02-065f-4b16-82d2-e58810b9dcfd" class="MsoISOTable" style="border-width:1px;border-spacing:0;"><thead><tr><th style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Development Life Cycle</th><th style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.5pt;" scope="col">Security Considerations</th></tr></thead><tbody><tr><td style="text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Requirement</td><td style="text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Security requirements should be defined along with functional requirements and further incorporate security during other phases of software development.</td></tr><tr><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Design</td><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Design the application architecture in accordance with the security specifications aligned in the requirement stage.</td></tr><tr><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Development</td><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Develop the mobile app following secure coding best practices and perform source code security assessment</td></tr><tr><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Testing</td><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Validate the performance, accuracy and security of system functionalities.</td></tr><tr><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Pre-production</td><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Perform security risk assessment and security audit</td></tr><tr><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Maintenance and Support</td><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Maintain security assurance with continuous testing and appropriate security controls.</td></tr><tr><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">Decommission</td><td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">Decommission the app when it no longer serves the purposes.</td></tr></tbody></table></div>
+        <div id="_mobile_app_development_lifecycle"><h2 id="toc23">6.2.&#xA0; Mobile App Development Lifecycle</h2><div id="_requirement_stage"><h3>6.2.1.&#xA0; Requirement Stage</h3><p id="_42f77efe-3893-4399-bd85-8c6a1a1d4096">Security should be considered during the requirement phase so that security is included throughout the development life cycle. Security requirements should be defined along with functional requirements and further incorporate security during other phases of software development. If the requirements are defined properly, identified risks could be addressed in early stages, which can greatly reduce extra work in later stages and remediation effort. The following areas should be considered for security requirements:</p>
+<ul id="_cf214a0c-334f-49ae-8d22-35b8f0280104">
+<li>
+<p id="_7616b92d-9aa1-42be-81f9-db32e9e59ec2">Architecture, Design and Threat Modelling Requirements</p>
+<p id="_b4a01a46-eccb-4785-b491-b15a8ce49b0e">Process should be in place to ensure the security concern has been explicitly addressed when planning the architecture and design of the mobile app. The functional and security roles of each component should be well defined. Topics such as threat modelling, secure development and key management should be covered. For example, apply relevant and sufficient security controls to safeguard the data and transactions before implementation.</p>
+</li>
+<li>
+<p id="_69977c42-fc70-46e3-9c9a-c65c2cad9f19">Data Storage and Privacy Requirements</p>
+<p id="_585161cb-4d18-4bba-a41b-2f8b0ed35448">Developer should have good understanding on the type and sensitivity of data to be handled and if any critical transaction would be involved. Sensitive data can be unintentionally exposed to other apps on the same device and data may also be leaked during transmission. Moreover, mobile devices are more easily lost or stolen compared to other types of devices. Developers should adhere to concerned laws and regulations on privacy, e.g., Personal Data (Privacy) Ordinance, in order to define a suitable data storage and privacy requirements. Privacy Impact Assessment (PIA) should be conducted if the mobile app has significant privacy implications.</p>
+</li>
+<li><p id="_160ab646-f1d4-44c8-9046-2b4e3a5903b6">Cryptography Requirements</p><p id="_7ca2cee5-84c7-47af-ba32-ea4ab38a25b2">Cryptography should be adopted in protecting the data stored and processed on a mobile device, or in transit between the device and servers. Ensure the mobile app uses cryptography according to industry best practices, including:</p>
+<ol type="1" id="_e3d0c4f0-5a8d-42d7-8b4a-971ad85bf0a8">
+<li>
+<p id="_45ca84a2-7483-41e8-a138-a598cf81c29b">Use of proven cryptographic libraries.</p>
+</li>
+<li>
+<p id="_1a689e12-c74a-4938-9b17-70670c43b244">Proper choice and configuration of cryptographic primitives.</p>
+</li>
+<li>
+<p id="_9482c680-ec51-4fe0-83c4-10e78632ae95">Do not reuse the same cryptographic key for multiple purposes.</p>
+</li>
+<li>
+<p id="_b5506841-e1d8-4d32-9bcd-b2913b3f1603">Generate random values using a sufficiently secure random number generator.</p>
+</li>
+</ol></li>
+<li>
+<p id="_e85cd4a8-8ed5-4a92-b9f5-7d3ce643a086">Authentication and Session Management Requirements</p>
+<p id="_ac89fe30-9d9c-4bca-a7a1-33ca1a8b0d68">User accounts and sessions should be properly authenticated and managed. This includes using randomly generated access tokens to authenticate client requests, enforcing explicit password policy, and locking of user account when excessive login attempts are found, etc. Application should also be properly handled for change of states, such as requiring re-authentication when the app resumes from background.</p>
+</li>
+<li>
+<p id="_4239a66b-f7ee-4273-92f6-3e069c90310f">Network Communication Requirements</p>
+<p id="_7ebd6d4e-1211-458d-a15f-82b8125ce718">Developer should ensure the confidentiality and integrity of information exchanged between the mobile apps and remote service endpoints. Encrypted channel using the TLS protocol with appropriate settings should be used for handling all application data. When using TLS, the apps must enforce certificate validation functions and should not accept self-signed and/or un-trusted certificates. Apps should also be able to detect the use of unauthorised certificates to defend against network attack (e.g., man-in-the-middle attacks).</p>
+</li>
+<li>
+<p id="_cba8775e-bb46-45ca-8a75-94b44c46deaa">Platform Interaction Requirements</p>
+<p id="_a8a89f6c-1ef5-4459-8f9b-a399352d60c5">Platform application program interfaces (APIs) and standard components in a secure manner including communications between apps (inter-process communications, e.g. communication of APIs resided in different containers) should be considered.</p>
+</li>
+<li>
+<p id="_002add20-4bd8-4bf2-a23f-8a08c9d656de">Code Quality and Build Setting Requirements</p>
+<p id="_d2bcd4c3-a207-4b7e-ab77-0b98ab805e13">Security coding practices should be followed in developing the app. For example, the app should be signed with trusted certificate. Mobile device default accessed entitlement should be reduced to minimum (e.g. disable camera/microphone and enable &#x201C;Do Not Track&#x201D; by default).</p>
+</li>
+<li>
+<p id="_1caf711e-ad85-4e7f-bbd6-3c7aa1e41f2a">Resilience Against Reverse Engineering Requirements</p>
+<p id="_d707f553-cea0-421b-8b4e-c8164fb99837">If the mobile app will process or access sensitive information, protection measures should be applied to increase the app&#x2019;s resiliency against reverse engineering. A list of obfuscation controls such as &#x201C;app isolation&#x201D;, &#x201C;impede dynamic analysis and tampering&#x201D;, &#x201C;device binding&#x201D; and &#x201C;emulator detection&#x201D; should be considered.</p>
+</li>
+</ul></div>
+<div id="_design_stage"><h3>6.2.2.&#xA0; Design Stage</h3><p id="_d885c8fa-8bbe-4c25-8e46-f3e3bd24fb11">The design stage involves designing the application architecture in accordance with the specifications aligned in the requirement stage. As application architecture is established, development team should review the system design by identifying possible compliance issues as well as security risks with reference to defined security requirements. This includes designing appropriate security controls for a given type of data and incorporating threat modelling to identify and address the risks associated with the application.</p>
+<p id="_753f04c8-9689-44d5-b419-0e644d18427d">A security review should also be conducted in the design stage. It serves as a checkpoint to ensure necessary security requirements are identified and incorporated in the system design.</p></div>
+<div id="_development_stage"><h3>6.2.3.&#xA0; Development Stage</h3>
+
+<p id="_6b0d57be-cb7c-4f49-a7c5-c7f2bf35e5d2">Observing secure coding standards can help improving security and reducing the number of common mistakes that may result in security breaches. Performing security assessments during the development stage also helps to identify necessary security controls, and provides timely feedback to developers regarding the security of their codes. Source code security assessments should also be performed to provide an early indicator of code quality in order to deliver consistent, high-quality mobile apps.</p>
+</div>
+<div id="_testing_stage"><h3>6.2.4.&#xA0; Testing Stage</h3>
+
+<p id="_6b6d8689-48e6-4c99-a220-32216369aedd">In addition to user acceptance test, system tests, stress tests, regression tests and unit tests are also useful in validating the performance and accuracy of system functionalities. Testing mobile apps could be more challenging than web apps due to the high variant of platforms and testing environment. A comprehensive testing plan should be established to design the testing approach and define the details on &#x201C;what&#x201D;, &#x201C;when&#x201D; and &#x201C;how&#x201D; to test.</p>
+</div>
+<div id="_pre_production_stage"><h3>6.2.5.&#xA0; Pre-Production Stage</h3>
+
+<p id="_09070bc6-274b-4722-b9db-ef93e20cc0fe">A security risk assessment with security audit should be performed before the production launch and after any major changes. Each vulnerability fix may require updates to custom codes that could introduce new vulnerabilities. It is imperative to continuously assess the risk and impact to maintain secure mobile app.</p>
+</div>
+<div id="_maintenance_and_support_stage"><h3>6.2.6.&#xA0; Maintenance and Support Stage</h3>
+
+<p id="_b37bef5c-3b78-4a1c-9d68-fce3ee498814">New functionalities to the app or updates to existing functions may introduce changes in which security controls should be identified, documented, tested and reviewed to ensure that the system can be effectively protected from attacks or being compromised. Continuous testing is vital to maintain security assurance and protect the app where most attacks occur. The app should be regularly reviewed to ensure sufficient security is in place.</p>
+</div>
+<div id="_decommission_stage"><h3>6.2.7.&#xA0; Decommission Stage</h3><p id="_afe31dcf-c89b-456f-a873-8d22f0c37c31">Consider decommissioning the app if it no longer meets the purposes, or when there are other apps that can better serve the business. Some suggestions on the decommission plan:</p>
+<ul id="_339b2c72-bd7d-48db-81e1-69c13c54cb96">
+<li>
+<p id="_1526bfa7-a30f-47e9-9c64-2c6a6d01239a">Develop communication strategy to inform all necessary stakeholders (e.g., app users)</p>
+</li>
+<li>
+<p id="_c0d26b4f-f12e-48a8-99f5-57317a65ab4d">Remove the app from the production environment (e.g., app store)</p>
+</li>
+</ul></div></div>
+        <div id="_security_by_design_and_data_privacy"><h2 id="toc24">6.3.&#xA0; Security by Design and Data Privacy</h2><p id="_90004d8c-5805-4740-90dd-3bc7daee6722">Security by design and data privacy should be embedded into the whole app system design and development processes to protect the data and individual&#x2019;s right to privacy. Developers should ensure that security issues are incorporated as part of the basic architectural design. Detailed designs for possible security issues should be reviewed, and mitigations for possible threats should be determined and developed. Related laws, regulations and ordinances (e.g., Personal Data (Privacy) Ordinance) should also be followed when defining the privacy requirements. Developers should pay attention to the following best practices during system design in order to protect users&#x2019; privacy.</p>
+<div id="_user_notification"><h3>6.3.1.&#xA0; User Notification</h3>
+
+<ul id="_dbda5a21-9f2f-4946-8f20-f2652c2402f3">
+<li>
+<p id="_a371c4f8-5832-428d-8c5a-7fef50a3474a">Inform users on what information / data that the app would collect, what purpose it serves on and how data would be handled.</p>
+</li>
+<li>
+<p id="_d1c732c1-298b-428f-b2aa-4d279d4b659c">Allow users to opt-out from any personal data access/use.</p>
+</li>
+<li>
+<p id="_38a941ec-4e2b-44e8-bdd0-7a6b02030951">Offer users with option to delete all app-related data and account related information when he/she requests to remove the app or delete the account.</p>
+</li>
+</ul>
+</div>
+<div id="_data_handling"><h3>6.3.2.&#xA0; Data Handling</h3>
+
+<ul id="_91995730-4a41-4d45-9702-61405410db88">
+<li>
+<p id="_d66a5678-6966-452c-a793-1a95a826d09f">Reduce the collection of personal data (especially for sensitive personal data) and permission of mobile devices features (e.g., camera and location tracking) to the absolute minimum.</p>
+</li>
+<li>
+<p id="_098b40f2-f19a-4897-9fcf-e78cb8dbe327">Protect users&#x2019; personal data from unauthorised access, disclosure or use by using strong encryption and access control. Avoid storing personally identifiable information (PII) (e.g., credential ID, call logs) or other sensitive data on the user device.</p>
+</li>
+<li>
+<p id="_8caa7b70-ffd9-4afd-b959-cc2ed4c51560">Do not upload or synchronise sensitive information to external systems or devices without users&#x2019; permission.</p>
+</li>
+<li>
+<p id="_8a81a559-15da-4d0e-be5e-e1adcfff9633">Discard sensitive data after fulfilling the claimed data usage purpose (e.g., geo-location data).</p>
+</li>
+</ul>
+</div></div>
+        <div id="_testing_for_mobile_app_development"><h2 id="toc25">6.4.&#xA0; Testing for Mobile App Development</h2><p id="_06197d91-29ca-4670-9338-5c02a51ad52d">Testing mobile apps on mobile devices can be more challenging than testing web applications on personal computer due to wide varieties of mobile OS, hardware components and network environment, etc. The following areas should be considered in mobile app testing cycle.</p>
+<div id="_testing_mobile_app_functionality"><h3>6.4.1.&#xA0; Testing Mobile App Functionality</h3><p id="_9e28916a-f5ea-4496-b07e-e882b4215067">To make sure the mobile app functions properly on supported device, functional testing should be conducted to verify the mobile app features specification. There are also different types of mobile app testing that need to be considered:</p>
+<ul id="_d0f34cd1-651a-4928-a8b8-10d9e15895c8">
+<li>
+<p id="_bc0d1b5f-7fb6-4bbc-9641-fb58b6fc1800">Compatibility testing: Ensure the mobile app functions properly on supported device with different mobile platform such as iOS and Android, and with different screen sizes and versions of operating systems.</p>
+</li>
+<li>
+<p id="_200a3f83-af57-4040-bdd6-79dc411e3862">Performance testing: Measure the app performance such as response speed, acceptable user load and app stability, etc.</p>
+</li>
+<li>
+<p id="_dd6b93d1-6e3c-48ba-afcc-bf48819833df">System testing: Ensure the mobile app handles possible exception and recovers properly from accidental termination.</p>
+</li>
+</ul></div>
+<div id="_testing_code_quality"><h3>6.4.2.&#xA0; Testing Code Quality</h3>
+
+<p id="_05fbd38d-8641-4082-82d8-cf6bf61113eb">Developers use a wide variety of programming languages and frameworks in mobile app development. Common vulnerabilities such as injection flaws, memory corruption, and cross-site scripting, may manifest in apps when failed to follow secure programming practices. For example, injection attacks against a mobile app are most likely to occur through inter-process communication (IPC) interfaces, where a malicious app attacks another app running on the device. Testing should be conducted to identify possible entry points for untrusted input or to identify known, dangerous library / application program interface (API) calls.</p>
+</div>
+<div id="_cryptography_in_mobile_apps"><h3>6.4.3.&#xA0; Cryptography in Mobile Apps</h3>
+
+<p id="_13a72c2f-cda7-4af4-891e-fc995b3383a8">Cryptography is crucial in securing the user&#x2019;s data in a mobile environment, where attackers may have physical access to the user&#x2019;s device. Proper encryption or use appropriate key storage APIs should be adopted for storing sensitive information. Avoid using any cryptographic algorithms or protocols that contain known weaknesses. Adopt the best practices and security configurations to ensure the cryptographic algorithms are up to date and in-line with industry standards. Outdated ciphers such as DES, or hashing function such as SHA1 must not be used. Other mis-configuration issues such as insufficient key length, hard-coded cryptographic keys and weak key generation functions should be handled properly.</p>
+</div>
+<div id="_mobile_app_authentication"><h3>6.4.4.&#xA0; Mobile App Authentication</h3><p id="_6053dc6a-f11b-4ddf-8d26-288b4354f063">Appropriate authentication methods should be integrated and performed by both front-end client and back-end service to protect against attacks such as password dictionary attack or brute force attack. In general, username/password authentication is considered for apps that are not sensitive; two-factor authentication is generally considered for protecting sensitive app (e.g., SMS and token). Testing should be conducted to ensure the authentication procedure is consistently enforced on both front-end client and back-end server.</p>
+<p id="_ce81d111-0403-4e83-9879-6a0863245516">The following steps should be tested on authentication and authorisation:</p>
+<ul id="_62fbb2f7-c183-49b6-af70-a8101d4c2d34">
+<li>
+<p id="_b10f8b96-feb2-4b72-9522-8934c26828ef">Identify the additional authentication factors the app uses.</p>
+</li>
+<li>
+<p id="_f7c08f7b-c8a9-401a-8bf8-37e088470f5d">Locate all endpoints that provide critical functionality.</p>
+</li>
+<li>
+<p id="_e6cf96a1-72eb-4e6a-be4a-30f9be6cab32">Verify that the additional factors are strictly enforced on all server-side endpoints.</p>
+</li>
+</ul></div>
+<div id="_testing_network_communication"><h3>6.4.5.&#xA0; Testing Network Communication</h3>
+
+<p id="_4a8f1220-a005-4fc9-9046-ff581e5992a9">Network communication between mobile device and server usually takes place over untrusted networks. It may put the mobile app at risk of network-based attacks such as packet sniffing or man-in-middle-attacks. Encrypted connection (e.g., HTTPS) should be used to ensure confidentiality and integrity of the network data while handling sensitive data. Intercept the tested app&#x2019;s incoming and outgoing network traffic and make sure that the traffic is encrypted, such as capture the network traffic with packet analyser and display the captured traffic in a human-readable format with network protocol analyser. After all, verify that the server is configured according to best practices.</p>
+</div></div>
+        <div id="_points_to_note_for_securing_mobile_app_development"><h2 id="toc26">6.5.&#xA0; Points to Note for Securing Mobile App Development</h2><p id="_ae74a645-2889-43af-9786-78549869e69a">Mobile apps are subject to similar security considerations and risks as other applications, thus general best practices for application development are also relevant to mobile app development. Due to varying use cases, usage patterns and various mobile platforms, mobile app developers should also take note of the remote web services, platform integration issues and insecurity of mobile devices. Developer should consider the following areas to build a secure mobile app:</p>
+<ul id="_eae1657a-54c7-417c-8874-a4a80ddcdd5f">
+<li>
+<p id="_8734cd7a-acb7-4560-aee3-96ad7efc6e10">General Considerations</p>
+</li>
+<li>
+<p id="_f49ff70b-591e-448c-862e-b99bd1d2c248">System/Software</p>
+</li>
+<li>
+<p id="_3af22f1a-5066-4749-843c-ee01056ed71a">Data</p>
+</li>
+<li>
+<p id="_9011a796-ce44-4c89-ab59-f882304f0b20">Network Management</p>
+</li>
+</ul>
+<div id="_general_considerations"><h3>6.5.1.&#xA0; General Considerations</h3>
+
+<ul id="_331dcad2-796c-4238-af77-a63064a31296">
+<li>
+<p id="_b2f7d745-675a-4a05-ac58-bb9c8f68b7b1">Adopt security-in-mind approach and apply adequate protection for sensitive data being handled.</p>
+</li>
+<li>
+<p id="_33de23c0-4300-45d5-b652-1347adb063c8">Inform users on what information the app would access or upload, and for what purpose.</p>
+</li>
+<li>
+<p id="_d6a8a9ab-53ef-4a22-b1f4-0aa363d68bbb">Provide a personal information collection statement if personal information will be collected.</p>
+</li>
+<li>
+<p id="_07534d18-ff10-4b15-9bd0-567228413ea5">Apply &#x201C;least privilege&#x201D; principle to run the app with the least amount of system privileges and access rights.</p>
+</li>
+<li>
+<p id="_3abe9460-3abc-447f-9c0f-5dfc95d2c871">Develop and implement the app according to best practices.</p>
+</li>
+<li>
+<p id="_d711f1f3-5304-4e83-b028-0a4d3707ee17">Design and provision an app to allow updates for security patches.</p>
+</li>
+<li>
+<p id="_a748cf53-a1e0-4e29-9c8f-056e2fd6e0c8">Refuse executing the app or alerting users in case jailbreaking or rooting is detected if the app would process critical/ sensitive data.</p>
+</li>
+<li>
+<p id="_feef2f64-cc64-4bff-b8b0-933e9174e588">Validate all client provided data before processing with expected whitelist of data types, data range, and data length.</p>
+</li>
+<li>
+<p id="_c5f23dd0-22e6-4d72-9a81-c3fd3d483a6b">Inform users and obtain consent for any large data consuming app activities.</p>
+</li>
+</ul>
+</div>
+<div id="_systemsoftware"><h3>6.5.2.&#xA0; System/Software</h3><div id="_authentication_and_session_management"><h4>6.5.2.1.&#xA0; Authentication and Session Management</h4>
+
+<ul id="_f9521daf-1d82-4fbc-8048-ad878a5099ab">
+<li>
+<p id="_7507ade3-72e1-4100-b3eb-d4e8969a6bfe">Avoid solely using device-provided identifier (like UID or MAC address) to identify the device, but rather leverage identifiers specific to the app as well as the device.</p>
+</li>
+<li>
+<p id="_e50e4893-4ca7-4e64-bc54-57f3103fa5cd">Adopt appropriate authentication mechanism, consider two-factor authentication based on risk assessment of the mobile app, such as processing sensitive or financial transactions.</p>
+</li>
+<li>
+<p id="_d0ecd1d6-4990-41ec-b098-8d514f8aa879">Avoid storing passwords, wipe/clear memory locations holding passwords directly after their hashes are calculated.</p>
+</li>
+<li>
+<p id="_2ec130f7-2fa9-44fe-801b-f4a4b7386201">Always make use of the latest security mechanism provided by mobile platform to protect user credentials.</p>
+</li>
+<li>
+<p id="_aa123e6d-1d91-4cb0-8ee9-faee120cacff">Perform checking at the start of each activity/screen to see if the user is in a logged in state. If not, switch to the login state.</p>
+</li>
+<li>
+<p id="_108797f9-5b39-48c5-bb10-498cd6795ee8">Discard and clear all memory associated with the user data, and any master keys used to decrypt the data when an app&#x2019;s session is timed out or user logout.</p>
+</li>
+</ul>
+</div>
+<div id="_server_controls"><h4>6.5.2.2.&#xA0; Server Controls</h4>
+
+<ul id="_4c0100ee-2281-4959-aded-da58eb542621">
+<li>
+<p id="_ad7a6b3a-a3d0-495a-b8ca-dee2c5765dcd">Assess backend services for mobile apps for vulnerabilities and ensure that the backend system is running with a hardened configuration with the latest security patches applied.</p>
+</li>
+<li>
+<p id="_ed1e9a73-514e-4a85-bceb-06ba93f835cc">Ensure sufficient logs or information are retained on the backend servers to detect and respond to incidents and perform investigation.</p>
+</li>
+<li>
+<p id="_bf449de6-47a3-4371-9aeb-144adcbf7d91">Review the code of the app to avoid unintentional data transfer between the mobile app and backend servers.</p>
+</li>
+</ul>
+</div>
+<div id="_code_obfuscation_reverse_engineering"><h4>6.5.2.3.&#xA0; Code Obfuscation / Reverse Engineering</h4>
+
+<ul id="_79154da1-1f05-4f6e-8b29-bd08f5787b3c">
+<li>
+<p id="_c2ebd9f3-40c6-49a8-91d8-37ba5f17f8f3">Verify the app signature on start-up to ensure that the code has not been altered or corrupted.</p>
+</li>
+<li>
+<p id="_142b35ae-3aef-4651-9199-47d4f9dbf5fe">Use obfuscation software to protect source code and hide the app details as far as possible if it is not compiled to machine code format to prevent reverse engineering.</p>
+</li>
+<li>
+<p id="_f309c20b-3893-40b6-8029-0b9d004dc1cd">Implement anti-debugging techniques (e.g., prevent a debugger from attaching to the process) for apps containing sensitive data.</p>
+</li>
+</ul>
+</div>
+<div id="_use_of_third_partyopen_source_libraries"><h4>6.5.2.4.&#xA0; Use of Third-Party/Open Source Libraries</h4>
+
+<ul id="_0cbd3a7f-5867-4145-a7e4-7ee5110deb2d">
+<li>
+<p id="_9614d07e-a983-4b2a-bfb8-a25cc21f14bf">Use reliable and/or official versions of software development tools (e.g., software development kits, software libraries) to avoid introducing Trojan Horses or backdoors unknowingly.</p>
+</li>
+<li>
+<p id="_bb3fa47b-44ac-473b-806b-f7373871f314">Track third-party frameworks/ APIs used in the mobile app for security patches and perform upgrades.</p>
+</li>
+<li>
+<p id="_1ec37498-d85a-4e67-9768-e208852d259b">Validate all data when received from and send to un-trusted third-party apps (e.g., ad network) before incorporating their use in the mobile app.</p>
+</li>
+</ul>
+</div></div>
+<div id="_data"><h3>6.5.3.&#xA0; Data</h3><div id="_data_storage_and_protection"><h4>6.5.3.1.&#xA0; Data Storage and Protection</h4>
+
+<ul id="_b99ebe59-9236-4c4b-b7e1-1a3c00eea968">
+<li>
+<p id="_32acbd5b-5788-40fa-af52-fe2b2a784038">Only collect and disclose data which is required for business use of the app.</p>
+</li>
+<li>
+<p id="_6b49c12e-c5da-4e48-b08d-6bebbda4cbbf">Classify data storage according to sensitivity and apply controls accordingly. Process, store and use data according to its classification.</p>
+</li>
+<li>
+<p id="_1ae9a14f-4dd8-44b5-8a65-d294227b4154">Application data should not be stored in external storage unless appropriate security measures (e.g., strong encryption) are applied.</p>
+</li>
+<li>
+<p id="_45170817-dc85-4a1d-846e-305e92d52007">Use encryption with appropriate algorithm and key length when storing or caching sensitive data to non-volatile memory and keep minimum necessary data for the use of mobile app for the sake of data protection.</p>
+</li>
+<li>
+<p id="_8148f09c-db47-4082-9303-ebb7e4e761c6">Perform input validation and perform checking on related areas that the app can receive data to prevent client-side code injection or screen hijack.</p>
+</li>
+<li>
+<p id="_ac9e2392-d5f2-4642-886e-e6dea5eadd3c">Discard and clear all sensitive data from memory when no longer needed.</p>
+</li>
+<li>
+<p id="_5a60a44c-15bb-4965-8e95-efd92a480d16">Adopt sandboxing technology to improve security by isolating an application to prevent other applications from interacting with the protected app.</p>
+</li>
+</ul>
+</div>
+<div id="_on_line_payment"><h4>6.5.3.2.&#xA0; On-line Payment</h4>
+
+<ul id="_da3a1650-21a1-4d35-bc70-6347e194a9c4">
+<li>
+<p id="_a074631e-4ad0-4dd0-b09f-ecf89283ab20">Warn users and obtain consent for any cost implications for app behaviour.</p>
+</li>
+<li>
+<p id="_97afe487-0777-4279-8ff5-0e752eab1ca5">If paid-for resources are involved, security controls such as a whitelist model or re-authentication for paid-for resources should be implemented to prevent unauthorised or accidental access.</p>
+</li>
+<li>
+<p id="_63f42d8e-b454-48f7-81f3-d05061b3072c">Use secure mobile payment services if online payment is required. Use application program interfaces (APIs)/templates provided by the official providers and follow closely their guidelines for implementation.</p>
+</li>
+<li>
+<p id="_2a6d717c-d9d8-46af-8c31-fc28eb51f2c2">Inform user the minimum technical specifications that a mobile device must support for the payment service (e.g., TLS supports).</p>
+</li>
+<li>
+<p id="_e6dd53bc-2ae2-4293-8891-e571af83e088">Adhere to the specific data security standard (e.g., PCI DSS) on developing a mobile app with on-line mobile payment.</p>
+</li>
+</ul>
+</div></div>
+<div id="_network_management"><h3>6.5.4.&#xA0; Network Management</h3>
+
+<div id="_communication_security"><h4>6.5.4.1.&#xA0; Communication Security</h4>
+
+<ul id="_aed90603-fc6e-445a-8a7e-df08928683a3">
+<li>
+<p id="_6ddeafc2-cc33-4359-8cc5-bad904e4977e">Transmission of any sensitive data such as personal data or credit card information should be protected with end-to-end encryption (e.g., TLS).</p>
+</li>
+<li>
+<p id="_8fa9b48c-76c9-476b-a174-76604e1f3126">Detect if the connection is not HTTPS with every request when it is known that the connection should be HTTPS.</p>
+</li>
+<li>
+<p id="_db6f4572-cdad-4301-abba-5155397f710a">When using TLS, the apps must enforce certificate validation functions and should not accept self-signed and/or un-trusted certificates.</p>
+</li>
+<li>
+<p id="_5f58529d-60f4-4397-ac2f-45172a3428ea">Enable per-app VPN to secure access internal network resources from anywhere and on any mobile devices.</p>
+</li>
+</ul>
+</div>
+</div></div>
+        <div id="_best_practices_on_secure_mobile_development_for_android_and_ios"><h2 id="toc27">6.6.&#xA0; Best Practices on Secure Mobile Development for Android and iOS</h2><p id="_92c6ac35-3fa4-4279-8dab-912bd12fee24">Developers may also refer to the best practices guide jointly developed by the Hong Kong Wireless Technology Industry Association (WTIA)<a class="FootnoteRef" href="#fn:3" id="fnref:3"><sup>3</sup></a> and the Mobile Security Research Lab<a class="FootnoteRef" href="#fn:4" id="fnref:4"><sup>4</sup></a> on recommendations and practical coding practices for developing secure mobile apps. The guide can be referenced at:</p>
+<p id="_56306cb6-96ba-4d6c-8640-3b0496d9da12">
+<a href="http://www.msr-lab.com/Secure_Mobile_Development_Best_Practices.pdf">http://www.msr-lab.com/Secure_Mobile_Development_Best_Practices.pdf</a>
+</p></div>
+      </div>
+      <br />
+      <div id="annex-sample-configurations" class="Section3">
+        <h1 class="Annex" id="toc28"><b>Annex A</b><br />(informative)<br /><b>Sample Configurations for Security Hardening</b></h1>
+        <p id="_02bf42e0-fedf-4cc3-bf21-12219bcc5d5e">Security configurations for mobile device hardening as reference are recommended below. The configurations may be enhanced and modified based on B/Ds&#x2019; business need. Some configurations require additional security solution such as MDM or DLP solution for enforcement purpose. B/Ds may seek advice from product vendors or third party consultants for best practices on security hardening if necessary.</p>
+        <table id="_d66d4725-673c-4e6b-a051-fcce0423a8c7" class="MsoISOTable" style="border-width:1px;border-spacing:0;">
+          <tbody>
+            <tr>
+              <th style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Controls<a href="#_d66d4725-673c-4e6b-a051-fcce0423a8c7a" class="TableFootnoteRef">a</a></th>
+              <th style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Portable Computer</th>
+              <th style="font-weight:bold;text-align:left;vertical-align:top;border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;" scope="row">Mobile Phones and Tablets</th>
+            </tr>
+            <tr>
+              <td colspan="3" style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<b>Password</b>
+</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Require password</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Require complex password (e.g. alphanumeric)</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Minimum password length</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">8</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">8</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Number of failed attempts allowed</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">5</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">5</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Maximum password age</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">90 days</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">90 days</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Password history</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">8</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">8</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Inactive device timeout</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">5 minutes</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">5 minutes</td>
+            </tr>
+            <tr>
+              <td colspan="3" style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">
+<b>Other Device Setting</b>
+</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Detect and restrict jail-broken, rooted or software version violations</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Allow installing apps from trusted sources</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Allow installing apps from unknown sources</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Allow backup to vendor&#x2019;s cloud service</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Allow keychain / key repository backup</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Allow photo sharing</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Allow USB file transfer</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes, if encrypted<a href="#_d66d4725-673c-4e6b-a051-fcce0423a8c7b" class="TableFootnoteRef">b</a></td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes, if encrypted<a href="#_d66d4725-673c-4e6b-a051-fcce0423a8c7b" class="TableFootnoteRef">b</a></td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Allow users to accept untrusted TLS certificates</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Allow modifying account setting</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Allow tethering configuration</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Allow biometric to unlock device</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Show notification messages when the screen is locked</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Modify Bluetooth setting</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Allow sending diagnostic and usage data to mobile vendor</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Require encryption on device</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Enable audit trails</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Use auto time or synchronise with trusted time server</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Force encrypted backups</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Enable Remote Wipe</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Not available<a href="#_d66d4725-673c-4e6b-a051-fcce0423a8c7c" class="TableFootnoteRef">c</a></td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Enable local wipe when maximum of failed attempt reached</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Not available<a href="#_d66d4725-673c-4e6b-a051-fcce0423a8c7c" class="TableFootnoteRef">c</a></td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">Allow mail preview</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.0pt;">No</td>
+            </tr>
+            <tr>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">Allow message preview</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">No</td>
+              <td style="text-align:left;vertical-align:top;border-top:none;border-bottom:solid windowtext 1.5pt;">No</td>
+            </tr>
+          </tbody>
+        <tfoot><tr><td colspan="3" style="border-top:0pt;border-bottom:solid windowtext 1.5pt;"><div class="TableFootnote"><div id="fn:_d66d4725-673c-4e6b-a051-fcce0423a8c7a">
+  
+  <p id="_a99349f6-1d1b-488e-9167-e094fed5b128" class="TableFootnote"><span><span id="_d66d4725-673c-4e6b-a051-fcce0423a8c7a" class="TableFootnoteRef">a</span>&#xA0; </span>The control items are sample for controlling mobile devices, including portable computers, mobile phones and tablets. However, they are not exhaustive such that B/Ds should modify a best-fit requirement list based on business needs</p>
+</div></div><div class="TableFootnote"><div id="fn:_d66d4725-673c-4e6b-a051-fcce0423a8c7b">
+  
+  <p id="_5c45c074-2f25-4344-aad6-464cd6d35b42" class="TableFootnote"><span><span id="_d66d4725-673c-4e6b-a051-fcce0423a8c7b" class="TableFootnoteRef">b</span>&#xA0; </span>All data should be encrypted when stored in mobile devices or removable media.</p>
+</div></div><div class="TableFootnote"><div id="fn:_d66d4725-673c-4e6b-a051-fcce0423a8c7c">
+  
+  <p id="_d96b06d0-92cc-486a-961e-a4e23265d90c" class="TableFootnote"><span><span id="_d66d4725-673c-4e6b-a051-fcce0423a8c7c" class="TableFootnoteRef">c</span>&#xA0; </span>Remote wipe and local wipe may not be available for major computer OS. Therefore, B/Ds should consider the risk of lost or stolen mobile device and apply encryption as one of the compensative controls.</p>
+</div></div></td></tr></tfoot></table>
+      </div>
+      <br />
+      <div id="annex-containerisation-technology" class="Section3">
+        <h1 class="Annex" id="toc29"><b>Annex B</b><br />(normative)<br /><b>Containerisation Technology</b></h1>
+        <p id="_f9d169d6-8e69-4fbb-99de-9ca3dfcedfba">The central aspect of a mobile management strategy is creating distinct lines of separation on privately-owned mobile devices between users&#x2019; personal apps and business apps and their associated data. This has come to be known as containerisation, the securing of business apps and their associated data within digital containers (either physical or virtual) that govern app behaviour and prevent unauthorised interaction with personal apps.</p>
+        <p id="_91a3d9bd-ecc9-4ebd-bf27-5fe34ff323eb">With the various container offerings from different vendors, there are three main types of containerisation, namely, physical container, virtual container and per-app container.</p>
+        <div id="_physical_container"><h2 id="toc30">B.1.&#xA0; Physical Container</h2><p id="_642ba831-91f2-4c12-bd72-f9799f547271">Working at the chipset or kernel level of a mobile device to separate business apps and their data from a user&#x2019;s personal apps. Physical containers creates hardware level segmentation between a mobile user&#x2019;s business environment and personal environment. Implying a separate OS stack at the kernel level just for business apps to reside and operate. This OS stack is completely distinct from the mobile device&#x2019;s normal OS stack where the users&#x2019; regular apps reside. As it is a separated domain, administrators can enforce organisation specific security requirements to that particular &#x201C;Physical Container&#x201D;. A key security aspect of physical containers is that the OS stack typically has to leverage processor-specific capabilities.</p>
+<p id="_187abb87-c27d-41c4-90d7-8912e59c4a83">One of the biggest benefits offered by physical containers is the top to bottom secure isolation that they offer between the separate OS stack and the device&#x2019;s normal OS stack, ensuring that no interaction can occur between business and personal apps. Since it is a separated platform, the vulnerability will not inherit from mobile device.</p>
+<p id="_27e9ff56-8b67-48be-a96b-6c76088d6fb0">However, this stack-level isolation also creates one of the major drawbacks inherent to physical container solutions&#x2014;disruption of the user experience. Whenever users are logged into the mobile devices&#x2019; normal OS stack, they have to exit and enter into the separate OS stack anytime they want to use a corporate app. When they want to use a personal app, they have to reverse the process. The constant switching between physical containers not only creates user inconvenience, but also would affect user productivity over an extended period of time. Currently, this kind of solution is OS dependent; third-party and internal software developers have to customise the application to support the physical container.</p></div>
+        <div id="_virtual_container"><h2 id="toc31">B.2.&#xA0; Virtual Container</h2><p id="_fb741f41-59bc-411b-9e8b-25b0a7572f2b">Business apps are segmented within an encrypted workspace inside the operating system comparable to a single sandbox with multiple apps running inside it. Policies are implemented to govern what types of interactions may occur among apps inside the virtual container. All interactions between business apps in the container stay within the container. Likewise, all of the data associated with the virtual container&#x2019;s apps remains secure within the confines of the virtual sandbox.</p>
+<p id="_c1b6a0fa-43ae-4f76-ab7c-7a531c5591db">Mobile users is required to input a separated password for authenticating the container and perform business activities. With the adoption of virtual container, the logical separation between the business apps and personal apps is executed by the operating system and kernel. Since the container is run inside the mobile device, the vulnerabilities of the operating system and kernel may affect the security of container. Furthermore, the solution requires third-party and internal software developers to develop or modify their apps to support a vendor-specific container environment. Virtual container strategies also requires specific skills and additional administration effort in the on-going support activities.</p></div>
+        <div id="_per_app_container"><h2 id="toc32">B.3.&#xA0; Per-App Container</h2><p id="_96f27d11-c899-4f24-ada3-098f7f47331d">Per-app container provides a secure self-contained sandbox to each individual app and its associated data, which can provide more granular control to its administrators in securing organisational data, while presenting users a more seamless user experiences. Under this model, administrators can choose to configure general policies that apply to all apps, specific policies for individual apps, or a combination of both. Administrators can also granularly control the directional flow of data for each app, such as inbound and outbound communications. Additionally, since each contained app&#x2019;s data is individually encrypted and secured by policy, the business app will remain protected if a malicious app happens to infect the mobile device.</p>
+<p id="_81314980-934b-4228-9936-4d578da035d8">As enforcement is on per-app basis, users typically do not have to constantly enter and exit contained and non-contained environments to switch between personal apps and business apps. Users can easily see and access all the apps they are authorised to use whether they are personal or corporate apps. The combination of the per-app policy governance and application-level encryption gives B/Ds the additional level of security they need to keep their business apps and data safe.</p></div>
+      </div>
+      <aside id="fn:1" class="footnote">
+  <p id="_82efbe04-493e-469e-ac71-7a0a3c2025ac"><a class="FootnoteRef" href="#fn:1"><sup>1</sup></a>MDM is an application (or a set of applications) that provides management capabilities in policy, inventory, security and service for mobile devices such as mobile phones and tablets. For details of MDM, please refer to <a href="#subsec-mobile-device-management-solution">Clause 5.2</a> Mobile Device Management Solution</p>
+<a href="#fnref:1">&#x21A9;</a></aside>
+      <aside id="fn:2" class="footnote">
+  <p id="_60cd89d7-5e68-4ae8-bb26-c7dd4cb2f7af"><a class="FootnoteRef" href="#fn:2"><sup>2</sup></a>Bring your own device Security and risk consideration for your mobile device program <a href="http://www.ey.com/Publication/vwLUAssets/EY_-_Bring_your_own_device:_mobile_security_and_risk/$FILE/Bring_your_own_device.pdf">http://www.ey.com/Publication/vwLUAssets/EY_-_Bring_your_own_device:_mobile_security_and_risk/$FILE/Bring_your_own_device.pdf</a></p>
+<a href="#fnref:2">&#x21A9;</a></aside>
+      <aside id="fn:3" class="footnote">
+  <p id="_cb04f4aa-63dc-4575-aeef-b1d01b5f43ac"><a class="FootnoteRef" href="#fn:3"><sup>3</sup></a>
+    <a href="http://wtiahk.org/">http://wtiahk.org/</a>
+  </p>
+<a href="#fnref:3">&#x21A9;</a></aside>
+      <aside id="fn:4" class="footnote">
+  <p id="_07524154-4541-4fba-8e1e-77565ff8acf0"><a class="FootnoteRef" href="#fn:4"><sup>4</sup></a>
+    <a href="http://www.msr-lab.com/">http://www.msr-lab.com/</a>
+  </p>
+<a href="#fnref:4">&#x21A9;</a></aside>
+    </main>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": { preferredFont: "STIX" },
+    asciimath2jax: { delimiters: [['(#(', ')#)']] }
+ });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=MML_HTMLorMML-full" async="async"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>  <script>
+    $("#toc").on('click', 'li', function(e) {
+    $(this).parent().find('li.toc-active').removeClass('toc-active');
+    $(this).addClass('toc-active');
+});
+  </script>
+
+  <script>
+  //TOC toggle animation
+$('#toggle').on('click', function(){
+    if( $('nav').is(':visible') ) {
+        $('nav').animate({ 'left': '-353px' }, 'slow', function(){
+            $('nav').hide();
+        });
+        $('body').animate({ 'margin-left': '0' }, 'slow');
+    }
+    else {
+        $('nav').show();
+        $('nav').animate({ 'left': '0px' }, 'slow');
+        $('body').animate({ 'margin-left': '298px' }, 'slow');
+    }
+});
+</script>
+
+<script>
+    // Scroll to top button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+<script>
+/*
+  $(document).ready(function() {
+	  $('[id^=toc]').each(function ()
+	  {
+	     var currentToc = $(this);
+       var url = window.location.href;
+            currentToc.wrap("<a href='" + url + "#" + currentToc.attr("id") + "'></a>");
+	  });
+});
+*/
+</script>
+
+  <script>
+    document.querySelectorAll('*|svg a').forEach(function(item) {
+      var loc = item.getAttribute('href');
+      if (loc !== null && loc.startsWith('#')) {
+  item.setAttribute('href', location.pathname + loc);
+      }
+});
+  </script>
+
+
+<script>
+
+// jQuery Inline Footnotes v1.0.3
+// Copyright (c) 2011 Vesa Vänskä, released under the MIT License.
+
+// Generated by CoffeeScript 1.6.1
+(function() {
+
+  (function($) {
+    $.inlineFootnote = function(el, options) {
+      var _this = this;
+      this.el = $(el);
+      this.el.data("inlineFootnote", this);
+      this.initialize = function() {
+        this.options = $.extend({}, $.inlineFootnote.defaultOptions, options);
+        this.footnoteId = this.el.attr("href").match(/#(.*)/)[1];
+        if (this.footnoteId) {
+          this.el.mouseenter(this.openBox);
+          return $("body").mousemove(this.closeBox);
+        }
+      };
+      this.openBox = function(event) {
+        var footnoteContent, linkOffset;
+        if (!_this.box) {
+          footnoteContent = $("[id='" + _this.footnoteId + "']").children().filter(":not('" + _this.options.hideFromContent + "')");
+          linkOffset = _this.el.offset();
+          _this.box = $("<div />", {
+            id: _this.options.boxId,
+            html: footnoteContent.clone().find(_this.options.hideFromContent).remove().end(),
+            css: {
+              position: "absolute",
+              top: linkOffset.top,
+              left: linkOffset.left + _this.el.outerWidth()
+            }
+          }).appendTo("body");
+          return _this.positionBox();
+        }
+      };
+      this.closeBox = function(event) {
+        if (_this.box) {
+          if (_this.isHoveringFootnote(event)) {
+            clearTimeout(_this.closeTimeout);
+            return _this.closeTimeout = null;
+          } else {
+            if (!_this.closeTimeout) {
+              return _this.closeTimeout = setTimeout((function() {
+                _this.box.remove();
+                return _this.box = null;
+              }), _this.options.hideDelay);
+            }
+          }
+        }
+      };
+      this.isHoveringFootnote = function(event) {
+        return this.box.is(event.target) || $(event.target).closest(this.box).length > 0 || event.target === this.el[0];
+      };
+      this.positionBox = function() {
+        var boxHorizontalPadding, boxLeft, boxWidth, linkLeftOffset, windowWidth;
+        boxHorizontalPadding = parseInt(this.box.css("padding-left")) + parseInt(this.box.css("padding-right"));
+        linkLeftOffset = this.el.offset().left;
+        windowWidth = $(window).width();
+        if ((windowWidth / 2) > linkLeftOffset) {
+          boxLeft = linkLeftOffset + 20;
+          boxWidth = windowWidth - boxLeft - boxHorizontalPadding - this.options.boxMargin * 2;
+          if (boxWidth > this.options.maximumBoxWidth) {
+            boxWidth = this.options.maximumBoxWidth;
+          }
+        } else {
+          boxWidth = linkLeftOffset - boxHorizontalPadding - this.options.boxMargin * 2;
+          if (boxWidth > this.options.maximumBoxWidth) {
+            boxWidth = this.options.maximumBoxWidth;
+          }
+          boxLeft = linkLeftOffset - boxWidth - this.options.boxMargin * 2;
+        }
+        return this.box.css({
+          width: boxWidth,
+          left: boxLeft
+        });
+      };
+      return this.initialize();
+    };
+    $.inlineFootnote.defaultOptions = {
+      boxMargin: 20,
+      hideDelay: 200,
+      hideFromContent: "[rel=footnote]",
+      maximumBoxWidth: 500,
+      boxId: "footnote_box"
+    };
+    return $.fn.inlineFootnote = function(options) {
+      return this.each(function() {
+        return new $.inlineFootnote(this, options);
+      });
+    };
+  })(jQuery);
+
+}).call(this);
+</script>
+
+<script>
+      $(function() {
+        $("[rel=footnote]").inlineFootnote();
+        });
+</script>
+  <script>
+// @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+//
+// AnchorJS - v4.2.2 - 2020-04-20
+// https://www.bryanbraun.com/anchorjs/
+// Copyright (c) 2020 Bryan Braun; Licensed MIT
+//
+// @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function f(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.base=A.hasOwnProperty("base")?A.base:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64,A.titleText=A.hasOwnProperty("titleText")?A.titleText:""}function p(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}this.options=A||{},this.elements=[],f(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var e,t,i,n,o,s,a,r,c,h,l,u,d=[];if(f(this.options),"touch"===(l=this.options.visible)&&(l=this.isTouchDevice()?"always":"hover"),0===(e=p(A=A||"h2, h3, h4, h5, h6")).length)return this;for(!function(){if(null!==document.head.querySelector("style.anchorjs"))return;var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"],style'))?document.head.appendChild(e):document.head.insertBefore(e,A);e.sheet.insertRule(".anchorjs-link{opacity:0;text-decoration:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}",e.sheet.cssRules.length),e.sheet.insertRule(":hover>.anchorjs-link,.anchorjs-link:focus{opacity:1}",e.sheet.cssRules.length),e.sheet.insertRule("[data-anchorjs-icon]::after{content:attr(data-anchorjs-icon)}",e.sheet.cssRules.length),e.sheet.insertRule('@font-face{font-family:anchorjs-icons;src:url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype")}',e.sheet.cssRules.length)}(),t=document.querySelectorAll("[id]"),i=[].map.call(t,function(A){return A.id}),o=0;o<e.length;o++)if(this.hasAnchorJSLink(e[o]))d.push(o);else{if(e[o].hasAttribute("id"))n=e[o].getAttribute("id");else if(e[o].hasAttribute("data-anchor-id"))n=e[o].getAttribute("data-anchor-id");else{for(c=r=this.urlify(e[o].textContent),a=0;void 0!==s&&(c=r+"-"+a),a+=1,-1!==(s=i.indexOf(c)););s=void 0,i.push(c),e[o].setAttribute("id",c),n=c}(h=document.createElement("a")).className="anchorjs-link "+this.options.class,h.setAttribute("aria-label",this.options.ariaLabel),h.setAttribute("data-anchorjs-icon",this.options.icon),this.options.titleText&&(h.title=this.options.titleText),u=document.querySelector("base")?window.location.pathname+window.location.search:"",u=this.options.base||u,h.href=u+"#"+n,"always"===l&&(h.style.opacity="1"),""===this.options.icon&&(h.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(h.style.lineHeight="inherit")),"left"===this.options.placement?(h.style.position="absolute",h.style.marginLeft="-1em",h.style.paddingRight="0.5em",e[o].insertBefore(h,e[o].firstChild)):(h.style.paddingLeft="0.375em",e[o].appendChild(h))}for(o=0;o<d.length;o++)e.splice(d[o]-o,1);return this.elements=this.elements.concat(e),this},this.remove=function(A){for(var e,t,i=p(A),n=0;n<i.length;n++)(t=i[n].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(i[n]))&&this.elements.splice(e,1),i[n].removeChild(t));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){return this.options.truncate||f(this.options),A.trim().replace(/\'/gi,"").replace(/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\\\n\t\b\v]/g,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&-1<(" "+A.firstChild.className+" ").indexOf(" anchorjs-link "),t=A.lastChild&&-1<(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ");return e||t||!1}}});
+// @license-end
+  </script>
+    <script>
+  anchors.options = {
+  placement: 'left'
+};
+anchors.add('h1, h2, h3, h4');
+</script>
+
+</body>
+</html>
